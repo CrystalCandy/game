@@ -77,21 +77,37 @@ var HouseWindow = (function (_super) {
         var config = GameConfig.FunUpgradeStageConfig;
         var houseConfig = config["Hourse"];
         if (level >= size_t(houseConfig)) {
-            // need_rd1
-            // need_rd2
+            AddRdContent(this.mElemList["need_rd1"], "", "ht_20_cc", "white");
+            AddRdContent(this.mElemList["need_rd2"], "", "ht_20_cc", "white");
             return;
         }
         var curInfo = houseConfig[level];
         //消耗材料
         var itemId = curInfo.itemid;
-        var ownItemCount = ItemSystem.getInstance().getItemCount(itemId);
-        var needItemCount = curInfo.itemnum;
+        var ownItemCount = ItemSystem.getInstance().getItemCount(itemId); //0
+        var needItemCount = curInfo.itemnum; //2
+        var str = "";
+        var needColor = "#green";
+        if (needItemCount > ownItemCount) {
+            needColor = "#red";
+        }
+        str = String.format(Localize_cns("SANSHENG_TXT10"), needColor + ownItemCount + "/" + needItemCount);
+        AddRdContent(this.mElemList["need_rd1"], str, "ht_20_cc", "white");
+        needColor = "#green";
         //消耗货币
         var moneyUnit = curInfo.moneyunit;
-        var ownMoney = GetHeroMoney(moneyUnit);
-        var costMoney = curInfo.money;
+        var ownMoney = GetHeroMoney(moneyUnit); //322164
+        var costMoney = curInfo.money; //1300
+        if (costMoney > ownMoney) {
+            needColor = "#red";
+        }
+        str = String.format(Localize_cns("SANSHENG_TXT11"), needColor + costMoney);
+        AddRdContent(this.mElemList["need_rd2"], str, "ht_20_cc", "white");
         // need_rd1
         // need_rd2
+        var cur = 10;
+        var max = 100;
+        UiUtil.updateProgress(this.mElemList["exp_progress"], cur, max);
     };
     HouseWindow.prototype.setCountDown = function (num) {
         var imageBox = this.mElemList["countdown"];

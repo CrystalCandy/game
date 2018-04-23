@@ -1617,9 +1617,11 @@ SANSHENG_TXT6,%d阶,,
 SANSHENG_TXT7,姻缘,,
 SANSHENG_TXT8,房屋,,
 SANSHENG_TXT9,师徒,,
+SANSHENG_TXT10,消耗:#BAOSHI%s,,
+SANSHENG_TXT11,消耗:#JINBI%s,,
+
 
 SANSHENG_TXT100,经济住房,,
 SANSHENG_TXT102,舒适住房,,
-SANSHENG_TXT103,豪华别墅,,||||||| .r2406
-MAP_TXT3,%s#br进入条件：#br人物等级#lime%d#white级#br击败#lime%s#white所有头目,,=======
+SANSHENG_TXT103,豪华别墅,,
 MAP_TXT3,%s#br进入条件：#br人物等级#lime%d#white级#br击败#lime%s#white所有头目,,

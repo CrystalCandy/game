@@ -67,23 +67,45 @@ class HouseWindow extends BaseCtrlWnd {
 		let config = GameConfig.FunUpgradeStageConfig
 		let houseConfig = config["Hourse"]
 		if(level>=size_t(houseConfig)){
-			// need_rd1
-			// need_rd2
+			AddRdContent(this.mElemList["need_rd1"],"" , "ht_20_cc", "white")
+			AddRdContent(this.mElemList["need_rd2"],"" , "ht_20_cc", "white")
 			return
 		}
 		let curInfo = houseConfig[level]
 		//消耗材料
 		let itemId = curInfo.itemid
-		let ownItemCount = ItemSystem.getInstance().getItemCount(itemId)
-		let needItemCount = curInfo.itemnum
+		let ownItemCount = ItemSystem.getInstance().getItemCount(itemId)	//0
+		let needItemCount = curInfo.itemnum	//2
 
+		let str = ""
+		let needColor = "#green"
+		if(needItemCount > ownItemCount){
+			needColor = "#red"
+		}
+		str = String.format(Localize_cns("SANSHENG_TXT10"),needColor+ownItemCount+"/"+needItemCount)
+		AddRdContent(this.mElemList["need_rd1"],str ,"ht_20_cc", "white")
+		
+
+		needColor = "#green"
         //消耗货币
         let moneyUnit = curInfo.moneyunit
-        let ownMoney = GetHeroMoney(moneyUnit) 
-        let costMoney = curInfo.money
+        let ownMoney = GetHeroMoney(moneyUnit) 	//322164
+        let costMoney = curInfo.money	//1300
+		if(costMoney > ownMoney){
+			needColor = "#red"
+		}
+
+		str = String.format(Localize_cns("SANSHENG_TXT11"),needColor+costMoney)
+		AddRdContent(this.mElemList["need_rd2"],str ,"ht_20_cc", "white")
+
 		// need_rd1
 		// need_rd2
+
+		let cur = 10
+		let max = 100
+		UiUtil.updateProgress(this.mElemList["exp_progress"], cur, max)
 	}
+
 
 	setCountDown(num) {
         let imageBox:gui.BatchImage = this.mElemList["countdown"]

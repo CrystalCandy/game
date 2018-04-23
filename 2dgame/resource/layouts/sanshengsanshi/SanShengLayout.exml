@@ -85,18 +85,18 @@
 			<e:Group width="560" height="190" horizontalCenter="0" bottom="0">
 				<e:Image width="106" height="30" source="ssss_text09" horizontalCenter="0" top="0"/>
 				<e:Group width="560" height="30" y="35" scaleX="1" scaleY="1" horizontalCenter="0" x="0">
-					<gui:ProgressBar id="exp_progress0" width="547" height="30" horizontalCenter="0" includeInLayout="true" labelDisplay="false" y="0">
+					<gui:ProgressBar id="exp_progress" width="547" height="30" horizontalCenter="0" includeInLayout="true" y="0">
 					<gui:skinName>
 						<e:Skin minWidth="30" minHeight="18">
 						<e:Image scale9Grid="1,1,4,4" width="100%" height="100%" verticalCenter="0" source="hb_loadingDi01"/>
 						<e:Image id="thumb" height="100%" width="100%" source="hb_loading01"/>
-						<e:Label id="labelDisplay" textAlign="center" verticalAlign="middle" size="15" fontFamily="Tahoma" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke" textColor="0xffffff" visible="false"/>
+						<e:Label id="labelDisplay" textAlign="center" verticalAlign="middle" size="15" fontFamily="Tahoma" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke" textColor="0xffffff"/>
 						</e:Skin>
 					</gui:skinName>
 					</gui:ProgressBar>
 				</e:Group>
-				<gui:RichDisplayer id="need_rd1" width="150" height="24" scaleX="1" scaleY="1" verticalCenter="0" x="40"/>
-				<gui:RichDisplayer id="need_rd2" width="80" height="24" scaleX="1" scaleY="1" verticalCenter="0" x="200"/>
+				<gui:RichDisplayer id="need_rd1" width="110" height="24" scaleX="1" scaleY="1" verticalCenter="0" x="20"/>
+				<gui:RichDisplayer id="need_rd2" width="150" height="24" scaleX="1" scaleY="1" verticalCenter="0" x="150"/>
 				<e:Group width="160" height="46" anchorOffsetY="0" anchorOffsetX="0" x="340" y="70" scaleX="1" scaleY="1">
 					<e:CheckBox id="buy_checkbox" label="" left="0" y="0">
 					<e:skinName>
