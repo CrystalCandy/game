@@ -47,7 +47,7 @@ let PayActivityUiGroup = {
 
     ["MainCity"]: [//主城界面
         { index: PayActivityIndex.DAY_ACCUM_PAY_PRIZE, image: "zjm_Bt01", handle: PayActivityHandler.onHandleUI, param:"DailyPayFrame"},//每日充值
-        { index: PayActivityIndex.DAILY_EXPENSIVE_GIFT, image: "zjm_Bt35" , handle: PayActivityHandler.onHandleUI, param:"TodayGiftsFrame"},//今日豪礼
+        //{ index: PayActivityIndex.DAILY_EXPENSIVE_GIFT, image: "zjm_Bt35" , handle: PayActivityHandler.onHandleUI, param:"TodayGiftsFrame"},
         { index: PayActivityIndex.STAGE_UP, image: "zjm_Bt03" , handle: PayActivityHandler.onHandleUI, param:"PayStageUpFrame"},//直升一阶
         { index: PayActivityIndex.LEVEL_FUNDS, image: "zjm_Bt04" , handle: PayActivityHandler.onTouziUI, param:PayActivityIndex.LEVEL_FUNDS},//成长基金
         { index: PayActivityIndex.INVEST_PLAN, image: "zjm_Bt05" , handle: PayActivityHandler.onTouziUI, param:PayActivityIndex.INVEST_PLAN},//投资计划
