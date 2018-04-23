@@ -1,0 +1,7 @@
+{"file":"15_boss.png","frames":{
+"boss_bossDi01":{"x":0,"y":204,"w":179,"h":158,"offX":0,"offY":0,"sourceW":179,"sourceH":158},
+"boss_bossDi02":{"x":287,"y":0,"w":185,"h":311,"offX":0,"offY":0,"sourceW":185,"sourceH":311},
+"boss_fengYin01":{"x":181,"y":313,"w":165,"h":76,"offX":0,"offY":0,"sourceW":165,"sourceH":76},
+"boss_loading01":{"x":0,"y":387,"w":166,"h":14,"offX":4,"offY":4,"sourceW":174,"sourceH":21},
+"boss_loadingDi01":{"x":0,"y":364,"w":174,"h":21,"offX":0,"offY":0,"sourceW":174,"sourceH":21},
+"boss_xinXiDi01":{"x":0,"y":0,"w":285,"h":202,"offX":0,"offY":0,"sourceW":285,"sourceH":202}}}
