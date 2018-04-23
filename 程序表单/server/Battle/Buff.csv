@@ -1,0 +1,597 @@
+名称,名称,ID,状态类型Buff DeBuff Null,技能伤害类型火FIRE 冰ICE 神圣HOLY 黑暗DARKLY 无NONE,状态系列,状态效果,持续时间(毫秒),替换规则,状态最大叠加数,是否发送到客户端,基础概率,成长参数,flag
+Name_s,title_c,Id_kn,Type_s,DamageElement_s,Series_t,Effects_t,Life,Stack_s,StackMax,Show,Rate,BuffGrow_t,falg_c
+A1,眩晕,10002,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",1850,Replace,1,1,,TimeGrowRatio=30,0
+A2,速度降低,10003,DeBuff,NONE,,"{'ChaLAPercent', 'SPEED', -21.2,Time='Apply'}",4000,Replace,1,1,,RateGrowRatio=-0.35,0
+A3,生命恢复,10004,Buff,NONE,,"{'CureHP', 0.25, Time='Interval', Interval=1000,CureHPGrowRatio=0.0042}",6000,Replace,1,1,,,0
+A4,吸收伤害,10005,Buff,NONE,,"{'AbsorbDamage',111,DamageType=""SpellDamage"",DamageRateGrowRatio=1.9,Time='Apply'}",6000,Replace,1,1,,,0
+A5,受伤减免,10006,Null,NONE,,"{""AcceptDAddValue"",""MAX_HP"",0.056,Rate=0.5,AttackType=""FIRE_ATT"",DamageRateGrowRatio=0.0006}",0,Unique,1,1,,,0
+A6,当生命低于10%时攻击提升,10007,Null,NONE,1,"{'CondHPChangeLA',0.1,'ATTACK',0.022,Time='HPChange',AbilityGrowRatio=0.004}",0,Unique,1,1,,,0
+A7,攻击提升,10008,Null,NONE,,"{'ChaLAPercent', 'ATTACK', 2.2,Time='Apply'}",0,Unique,1,1,,RateGrowRatio=0.4,0
+A8,生命恢复,10009,Buff,NONE,,"{'CureHP', 0.18,CureHPGrowRatio=0.003,Param='MaxHP',Time='Apply'}",3000,Replace,1,1,,,0
+A9,降低物理攻击,10010,DeBuff,NONE,,"{'ChaLAPercent', 'ATTACK', -37,Time='Apply'}",0,Unique,1,1,,RateGrowRatio=-0.6,0
+A10,眩晕,10011,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",1500,Replace,1,1,,TimeGrowRatio=60,0
+A11,冰冻并且受伤,10012,Null,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'},{'Damage', Param='SpellDamage', Rate=0.25, Time='Interval', Interval=500}",1200,Replace,1,1,,TimeGrowRatio=20,0
+A12,速度降低,10013,DeBuff,NONE,,"{'ChaLAPercent', 'SPEED', -21.2,Time='Apply'}",4000,Replace,1,1,,,0
+A13,每次攻击有22%概率触发冰冻,10014,Null,NONE,,"{'ProcBuff', {{'A14', 2200},{'Nothing', 7800}}, Time='Damage',SuccessGrowRatio=25}",0,Unique,1,1,,,0
+A14,冰冻,10015,Buff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'},{'Damage', Param='SpellDamage', Rate=0.25, Time='Interval', Interval=300}",1200,Replace,1,1,,,0
+A15,生命低于50%时触发状态,10016,Null,NONE,,"{'CondProcBuff', 'HPPercent', 0, 50,'A16', Time='HPChange'},",0,Unique,1,1,,,0
+A16,伤害加倍,10017,Null,NONE,,"{'Damage', Param='Attack', Rate=1.8, Time='Apply'}",0,Unique,1,1,,,0
+A17,增加闪避率,10018,Null,NONE,,"{'ChaLAEx','DODGE',1.02,450,75,0.07,0.0012,Time='Apply'}",0,Unique,1,1,,,0
+A18,每次命中敌人增加,10019,Null,NONE,,"{'ProcBuff', {{'A19', 100}}, Time='Damage'}",0,Unique,1,1,,,0
+A19,增加物理攻击,10020,Null,NONE,,"{'ChaLAPercent', 'ATTACK', 5,Time='Apply'}",0,Unique,1,1,,RateGrowRatio=0.08,0
+A20,触发暴击产生眩晕,10021,Null,NONE,,"{'ProcBuff', {{'A21', 100}}, Time='Critial', Tag='Target'}",0,Unique,1,1,,,0
+A21,眩晕,10022,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",1850,Replace,1,1,,TimeGrowRatio=30,0
+A22,无法成为目标,10023,Buff,NONE,,{'NotTarget'},2000,Replace,1,1,,TimeGrowRatio=33,0
+A23,每秒回复7.5%气血,10024,Buff,NONE,1,"{'ChaHPPercent', 7.5, Time='Interval', Interval=1000}",2000,Replace,1,1,,TimeGrowRatio=33,0
+A24,受到伤害有50%率触发状态,10025,Null,NONE,1,"{'ProcBuff', {{'A5', 50},{'Nothing', 50}}, Time='BeDamage',},",0,Unique,1,1,,,0
+A25,生命恢复,10027,Buff,NONE,,"{'CureHP',0.7,CureHPGrowRatio=0.012,DamageType=""SpellDamage"",Time='Apply'}",500,Replace,1,1,,,0
+A26,生命大于或小于40%时触发状态,10028,Null,NONE,,"{'CondProcBuff', 'HPPercent', 0, 40, 'A28', Time='Apply'},{'CondProcBuff', 'HPPercent', 40, 100, 'A27', Time='Apply'}",500,Replace,1,1,,,0
+A27,生命恢复,10029,Buff,NONE,,"{'CureHP',0.83,CureHPGrowRatio=0.014,DamageType=""SpellDamage"",Time='Apply'}",500,Replace,1,1,,,0
+A28,生命恢复,10030,Buff,NONE,,"{'CureHP',1.66,CureHPGrowRatio=0.014,DamageType=""SpellDamage"",Time='Apply'}",500,Replace,1,1,,,0
+A29,治疗效果增加,10031,Buff,NONE,,"{'AcceptResAdd', 'HP', 7,CureHPGrowRatio=1.2}",0,Unique,1,1,,,0
+A30,负面状态抵抗增加,10032,DeBuff,NONE,,"{'ChaLAEx','DEBUFF_DEC',1.02,450,75,0.03,0.0006,Time='Apply'}",0,Unique,1,1,,,0
+A31,生命恢复,10033,Buff,NONE,,"{'CureHP', 0.85,CureHPGrowRatio=0.015,Param='SpellDamage',Time='Apply'}",500,Replace,1,1,,,0
+A32,有概率驱散负面状态,10034,Null,NONE,,"{'ProcBuff', {{'A33', 660},{'Nothing', 340}}, Time='Apply',SuccessGrowRatio=11}",500,Replace,1,1,,,0
+A33,驱散负面状态,10035,Buff,NONE,,"{'PurgeBuff',{'DeBuff'}, Time='Apply'},",500,Replace,1,1,,,0
+A34,有概率不消耗能量,10036,Buff,NONE,,"{'NoConsumeRP', 0.113,SuccessGrowRatio=0.002}",500,Replace,1,1,,,0
+A35,速度降低,10037,Buff,NONE,,"{'ChaLAPercent', 'SPEED',-13,Time='Apply'}",6000,Replace,1,1,,RateGrowRatio=-0.22,0
+A36,受到致命伤害时有概率转移,10038,Null,NONE,,"{'ProcBuff', {{'A37', 120},{'Nothing', 880}}, Time='Dead', Tag='CastList',SuccessGrowRatio=3}",100,Replace,1,1,,,0
+A37,转移伤害,10039,Buff,NONE,,"{'DeadHPTransfer',Ratio=1,Rate=1}",100,Replace,1,1,,,0
+A38,护甲提升,10040,DeBuff,NONE,,"{'ChaLAEx','DEFENCE',1.02,180,30,0.042,0.0007,Time='Apply'}",0,Unique,1,1,,,0
+A39,伤害反弹,10041,Buff,NONE,,"{'ReboundDamage',0.028,1,Time=""BeDamage"",DamageRateGrowRatio=0.0005}",100,Replace,1,1,,,0
+A40,受伤降低、速度提升,10042,DeBuff,NONE,,"{'ChaLAPercent', 'SPEED', 10.7, Time='Apply'},{'ChaLAEx','FIRE_DEF',1.02,180,30,0.08,0.00013,Time='Apply'},{'ChaLAEx','DEFENCE',1.02,180,30,0.08,0.00013,Time='Apply'}",7000,Replace,1,1,,RateGrowRatio=0.18,0
+A41,打断施法,10043,Null,NONE,,"{'DamageBreak',Time='Apply'},",100,Unique,1,1,,,0
+A42,有概率触发眩晕,10044,Null,NONE,,"{'ProcBuff', {{'A57', 67},{'Nothing', 933}}, Time='Cast',SuccessGrowRatio=11,Tag='Target'},{'SerialSignObject',2,""A52"",BuffMaxOverCount=5,Time=""Cast"",Tag='Target'}",0,Unique,1,1,,,0
+A43,眩晕,10045,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",3000,Replace,1,1,,,0
+A44,每损失5%生命触发状态,10046,Null,NONE,,"{'LostHPAddBuff','HPPercent',0.05,'A45',Time='HPChange'}",0,Unique,1,1,,,0
+A45,速度提升,10047,Null,NONE,,"{'ChaLAPercent', 'SPEED', 1.23,Time='Apply'}",0,Stack,99,1,,RateGrowRatio=0.021,0
+A46,增加物理攻击,10048,Null,NONE,,"{'ChaLAPercent', 'ATTACK', 57,Time='Apply'}",8000,Replace,1,1,,TimeGrowRatio=140,0
+A47,减少物理伤害,10049,Buff,NONE,,"{'TempReduceDamage', 0.072, Time='BeDamage', Tag='Target'}",8000,Replace,1,1,,TimeGrowRatio=140,0
+A48,驱散负面状态,10050,Null,NONE,,"{'PurgeBuff',{'DeBuff'}, Time='Apply'},",500,Unique,1,1,,,0
+A49,免疫负面状态,10051,Buff,NONE,,"{'ImmunBuff', 'DeBuff'}",4000,Replace,1,1,,TimeGrowRatio=67,0
+A50,减少伤害,10052,Null,NONE,,"{'TempReduceDamage', 1, Time='BeAllCast', Tag='Target'}",4000,Replace,1,1,,TimeGrowRatio=67,0
+A51,损失生命造成伤害,10053,DeBuff,NONE,,"{'CurrentTotallLostHP',0.5,DamageType=""PhyDamage"",isRealDamage=1}",500,Replace,1,1,,,0
+A52,连续攻击增加伤害,10054,DeBuff,NONE,,"{'Damage',Param='ATTACK',Rate=0.06,Time='Apply',DamageRateGrowRatio=0.001}",2000,Replace,1,1,,,0
+A53,眩晕,10055,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",790,Replace,1,1,,TimeGrowRatio=14,0
+A54,移除状态,10056,Null,NONE,,"{'RemoveBuff','A36',Tag='CastList',Time='Dead'}",500,Replace,1,1,,,0
+A55,移除状态,10057,Null,NONE,,"{'RemoveBuff','A38',Tag='CastList',Time='Dead'}",500,Replace,1,1,,,0
+A56,移除状态,10058,Null,NONE,,"{'RemoveBuff','A39',Tag='CastList',Time='Dead'}",500,Replace,1,1,,,0
+A57,眩晕,10059,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",2000,Replace,1,1,,,0
+A58,打断施法,10060,Null,NONE,,"{'DamageBreak',Time='Apply'},",100,Unique,1,1,,,0
+A59,检测血量,10061,Null,NONE,,"{'allTotallDamge',0.125,'A60',Time='BeDamge'}",0,Unique,1,0,,,0
+A60,血精,10062,Null,NONE,,"{'ChaLAPercent','SPEED',3,Time='Apply',AbilityGrowRatio=0.0005}",0,Stack,8,1,,,0
+A61,吸血,10063,Null,NONE,,"{'SuckBlood',0.136,AbilityGrowRatio=0.023}",0,Unique,1,0,,,0
+A62,根据BUFF数量造成伤害（RealDamage=1填了就是无视护甲）,10064,Null,NONE,,"{'Damage',Param='ATTACK',Rate=0.17,Time='Apply',DamageRateGrowRatio=0.011,RealDamage=1,Tag='TargetList'},{'ChaDamageBySign','A60','0.0625',DamageType='ATTACK',RealDamage=1,Tag='TargetList'},{'RemoveBuff','A60',Time='Apply'}",500,Unique,1,0,,,0
+A63,开启奥义,10065,Null,NONE,,"{'ChaLAEx','DEFENCE',1.02,180,30,0.30,0.0051,Time='Apply'},{'ChaLAEx','FIRE_DEF',1.02,180,30,0.30,0.0051,Time='Apply'},{'ProcBuff',{{'A64', 25},{'Nothing',75},Time='Cast'}},{'ChaMP', -3, Time='Interval', Interval=1000},{'ChaHPPercent', -1, Time='Interval', Interval=1000}, {'SwitchSkill', 50117}",0,Unique,1,1,,,0
+A64,眩晕,10066,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",2700,Unique,1,1,,TimeGrowRatio=45,0
+A65,法攻提升,10067,Null,NONE,,"{'ChaLAPercent', 'FIRE_ATT',9,Time='Apply',AbilityGrowRatio=0.015}",0,Replace,1,1,,,0
+A66,眩晕,10068,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",1800,Unique,1,1,,TimeGrowRatio=30,0
+A67,故技重施,10069,Null,NONE,,"{'DoubleCast',0.2,SuccessRateGrowRatio=0.0035} ",0,Unique,1,1,,,0
+B1,眩晕,20000,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",100,Replace,1,1,,,0
+B2,无法成为目标,20001,Buff,NONE,,{'NotTarget'},1500,Replace,1,1,,,0
+B3,生命恢复,20002,Null,NONE,,"{'CureHP', 1.66, Time='Apply',CureHPGrowRatio=0.0288}",0,Unique,1,1,,,0
+B4,生命扣除,20003,Null,NONE,,"{'Damage', Param='Attack', Rate=1.66, Time='Apply',DamageRateGrowRatio=0.0288}",0,Unique,1,1,,,0
+B5,攻击提升,20004,Buff,NONE,,"{'ChaLAPercent', 'ATTACK', 50,Time='Apply'}",0,Unique,1,1,,,0
+B6,死亡触发状态,20005,DeBuff,NONE,1,"{'ProcBuff', {{'B7', 100}}, Time='Dead', Tag='CastList'}",0,Unique,1,1,,,0
+B7,攻击提升,20006,Buff,NONE,,"{'ChaLAPercent', 'ATTACK', 50,Time='Apply'}",0,Unique,1,1,,,0
+B8,速度提升,20007,Buff,NONE,,"{'ChaLAPercent', 'SPEED', 40,Time='Apply'}",5000,Replace,1,1,,TimeGrowRatio=100,0
+B9,死亡时触发状态,20008,Buff,NONE,,"{'ProcBuff', {{'B10', 100}}, Time='Dead', Tag='Cast'},",5000,Replace,1,1,,TimeGrowRatio=100,0
+B10,保留1点生命,20009,Null,NONE,,"{""NotDead"", 1, 1, Time=""HPChange""}",0,Unique,1,1,,,0
+B11,攻击降低,20010,DeBuff,NONE,,"{'ChaLAPercent', 'ATTACK', -30,Time='Apply'}",6000,Replace,1,1,,TimeGrowRatio=100,0
+B12,受伤减免,20011,Null,NONE,,"{'AcceptDAdd', -12.77,DamageRateGrowRatio=-0.21}",0,Unique,1,1,,,0
+B13,生命恢复,20012,Null,NONE,,"{'CureHP', 0.0174,Param='MaxHP',Time='Interval', Interval=4000,CureHPGrowRatio=0.0003}",0,Stack,999,1,,,0
+B14,眩晕,20013,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",880,Replace,1,1,,TimeGrowRatio=14,0
+B15,生命恢复,20014,Buff,NONE,,"{'CureHP', 0.55, Time='Interval', Interval=1000,CureHPGrowRatio=0.0092}",4000,Replace,1,1,,,0
+B16,吸收伤害,20015,Buff,NONE,,"{'AbsorbDamage', 22,Time='Apply',Caster=1, DamageRateGrowRatio=5.6}",4000,Replace,1,1,,,0
+B17,6次出手触发技能,20016,Null,NONE,1,"{'CounterCast', 6, 80005,Time='AllCast'}",0,Replace,1,0,,,0
+B18,生命扣除,20017,Null,NONE,,"{'ChaHPCurPercent', -30,Time='Apply'}",500,Replace,1,1,,RateGrowRatio=0.33,0
+B19,扣除当前生命42%,20018,Null,NONE,,"{'ChaHPCurPercent', -42, Time='Apply',AbilityGrowRatio=-0.44}",500,Replace,1,1,,,0
+B20,生命恢复,20019,Null,NONE,,"{'CureHP',0.05,Param='MaxHP',Time='Interval', Interval=1000,CureHPGrowRatio=0.00083}",6000,Replace,1,1,,,0
+B21,每损失生命触发状态,20020,Null,NONE,1,"{'LostHPAddBuff','HPPercent',0.075,'B22',Time='HPChange',DecBuff=1,AbilityGrowRatio=-0.00083},{'LostHPAddBuff','HPPercent',0.075,'B23',Time='HPChange',DecBuff=1,AbilityGrowRatio=-0.00083}",0,Normal,1,1,,,0
+B22,攻击提升,20021,Buff,NONE,,"{'ChaLAPercent', 'ATTACK', 3.1,Time='Apply'}",0,Stack,99,1,,,0
+B23,法免提升,20022,Buff,NONE,,"{'ChaLAEx','FIRE_DEF',1.02,180,30,0.01,0,Time='Apply'}",0,Stack,99,1,,,0
+B24,每次普通攻击时自身生命扣除,20023,Null,NONE,1,"{'ChaHPPercent', -2.5, Time='Cast'}",0,Unique,1,1,,,0
+B25,每次普通攻击时降低敌方护甲,20024,Null,NONE,1,"{'ProbCastSkill', 0, '80013', 1, Time='Cast'}",0,Unique,1,1,,,0
+B26,生命扣除,20025,Null,NONE,,"{'ChaHPPercent', -2.5,Time='Apply'}",500,Unique,1,1,,,0
+B27,伤害增加,20026,DeBuff,NONE,,"{'ChaLAEx','DEFENCE',1.02,180,30,-0.055,-0.001,Time='Apply'}",6000,Stack,6,1,,,0
+B28,免疫打断提升33.33%,20027,DeBuff,NONE,,"{'ChaSA', 'IMMU_BREAK', 33.33, Time='Apply',SuccessGrowRatio=0.56}",4000,Replace,1,1,,,0
+B29,免疫负面提升33.33%,20028,DeBuff,NONE,,"{'ChaSA', 'IMMU_DEBUFF', 33.33, Time='Apply',SuccessGrowRatio=0.56}",4000,Replace,1,1,,,0
+B30,增加治疗量,20029,DeBuff,NONE,,"{'AcceptResAdd', 'HP', 50}",5000,Replace,1,1,,,0
+B31,受伤触发感电,20030,Null,NONE,,"{'CallUpSignBuff','B80',Tag='Target',Time='BeAllCast'}",8000,Stack,99,1,,,0
+B32,圣盾,20031,Buff,NONE,,"{'AbsorbDamage',40,Caster=1,Time='Apply',DamageRateGrowRatio=0.7}",4000,Unique,1,1,,,0
+B33,免疫负面状态,20032,Buff,NONE,,"{'ImmunBuff', 'DeBuff'}",3000,Replace,1,1,,,0
+B34,损失生命增加法抗,20033,Buff,NONE,,"{'CondHPChangeLA',0.05,'FIRE_DEF',0.02,Time='HPChange'}",0,Unique,1,1,,,0
+B35,无敌,20034,Null,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'},{'ImmDamage', '*'},{'AcceptResAdd', 'HP', 25}",3000,Replace,1,1,,,0
+B36,眩晕,20035,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",1760,Replace,1,1,,TimeGrowRatio=28,0
+B37,命中降低,20036,DeBuff,NONE,,"{'ChaLAEx','HITRATE',1.02,450,75,-0.5,0,Time='Apply'}",3660,Replace,1,1,,TimeGrowRatio=60,0
+B38,眩晕,20037,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",1200,Replace,1,1,,TimeGrowRatio=20,0
+B39,反弹伤害,20038,Buff,NONE,1,"{'ProcBuff', {{'B182', 25},{'Nothing', 75}}, Time='BeDamage'}",0,Unique,1,1,,,0
+B40,分摊伤害,20039,Null,NONE,,"{'TransferDamage',0.2,DamageRateGrowRatio=0.0034},{'ProcBuff', {{'B41', 100}}, Time='Dead', Tag='CastList'}",16000,Replace,1,1,,,0
+B41,死亡触发状态,20040,Buff,NONE,1,"{'ChaLAEx','DEFENCE',1.02,180,30,0.15,0.0025,Time='Apply'}",0,Stack,99,1,,,0
+B42,攻击提升,20041,Buff,NONE,,"{'ChaLAPercent', 'ATTACK', 35.6,Time='Apply'}",8000,Replace,1,1,,RateGrowRatio=0.6,0
+B43,护甲提升,20042,Buff,NONE,,"{'ChaLAEx','DEFENCE',1.02,180,30,0.24,0.004,Time='Apply'}",8000,Replace,1,1,,,0
+B44,中毒,20043,DeBuff,NONE,,"{'Damage', Param='FIRE_ATT', Rate=0.14, Time='Interval', Interval=1000,DamageRateGrowRatio=0.0023}",4000,Replace,1,1,,,0
+B45,攻击提升,20044,Buff,NONE,,"{'ChaLAPercent', 'FIRE_ATT', 63.5,Time='Apply'},{'ChaLAPercent', 'ATTACK', 63.5,Time='Apply'}",6000,Replace,1,1,,RateGrowRatio=1.1,0
+B46,速度提升,20045,Buff,NONE,,"{'ChaLAPercent', 'SPEED', 22,Time='Apply'}",6000,Replace,1,1,,RateGrowRatio=0.37,0
+B47,受到5次伤害触发,20046,Null,NONE,,"{'CounterDamage', 5, '80002', Time='BeAllCast'}",0,Unique,1,1,,,0
+B48,沉默,20047,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'CmdModify', {'*'}, 'normalAttack'}",3300,Replace,1,1,,TimeGrowRatio=55,0
+B49,沉默，能量降低,20048,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'ChaRP', -5,Time='Interval', Interval=1000},{'CmdModify', {'*'}, 'normalAttack'}",5000,Replace,1,1,,,0
+B50,生命扣除,20049,Null,NONE,,"{'ChaHPPercent', -20,Time='Apply'},{'CondBuffApplyBuff', 'B50', 'B70', Time='Dead'}",500,Replace,1,1,,,0
+B51,生命治疗,20050,Null,NONE,,"{'CureHP', 0.44,CureHPGrowRatio=0.007,Param='MaxHP',Time='Apply'}",500,Replace,1,1,,,0
+B52,生命治疗,20051,Buff,NONE,,"{'CureHP', 0.3, Time='Apply'}",1000,Replace,1,1,,,0
+B53,速度降低,20052,Null,NONE,,"{'ChaLAPercent','SPEED',-13.4,Time='Apply'}",4000,Replace,1,1,,RateGrowRatio=-0.22,0
+B54,攻击提升，速度提升,20053,Buff,NONE,,"{'ChaLAPercent', 'ATTACK', 52,Time='Apply',RateGrowRatio=0.85},{'ChaLAPercent', 'SPEED', 22.3,Time='Apply',RateGrowRatio=0.37}",6000,Replace,1,1,,,0
+B55,变成狐狸,20054,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'},{'ForbidBuffSeries',1}",1700,Replace,1,1,,TimeGrowRatio=30,0
+B56,集火,20055,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'},{'forceTarget'} ",2300,Replace,1,1,,TimeGrowRatio=38,0
+B57,沉默,20056,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'CmdModify', {'*'}, 'normalAttack'}",3600,Replace,1,1,,TimeGrowRatio=60,0
+B58,当生命低于50%时攻击提升,20057,Null,NONE,1,"{'CondProcBuff', 'HPPercent', 0, 50, 'B59', Time='HPChange'}",0,Unique,1,1,,,0
+B59,攻击提升,20058,Null,NONE,,"{'ChaLAPercent', 'ATTACK', 37,Time='Apply'}",0,Unique,1,1,,RateGrowRatio=0.62,0
+B60,攻击提升，速度提升,20059,Buff,NONE,,"{'ChaLAPercent', 'ATTACK', 20,Time='Apply'},{'ChaLAPercent', 'SPEED', 20,Time='Apply'}",5000,Replace,1,1,,,0
+B61,无视护甲,20060,Buff,NONE,1,"{'ChaLAEx','DEF_THROUGH',1.02,180,30,999999,0,Time='Apply'}",8000,Unique,1,1,,TimeGrowRatio=130,0
+B62,护甲降低,20061,DeBuff,NONE,,"{'ChaLAEx','DEFENCE',1.02,180,30,-0.4,0,Time='Apply'}",6000,Replace,1,1,,,0
+B63,判断状态,20062,Null,NONE,,"{'CondBuffApplyBuff', 'B64', 'B65', 3,Time='BeforeApply'}",3000,Replace,1,1,,,0
+B64,生命扣除,20063,Null,NONE,,"{'ChaHPCurPercent', -10, Time='Apply'}",100,Unique,1,1,,,0
+B65,空,20064,DeBuff,NONE,,,4000,Stack,99,1,,,0
+B66,判断状态,20065,Null,NONE,,"{'CondBuffApplyBuff', 'B64', 'B65', 6,Time='BeforeApply'}",300,Replace,1,1,,,0
+B67,生命扣除,20066,Null,NONE,,"{'ChaHPCurPercent', -15, Time='Apply'}",100,Unique,1,1,,,0
+B68,空,20067,DeBuff,NONE,,,4000,Stack,99,1,,,0
+B69,释放技能触发状态,20068,Null,NONE,,"{'ProcBuff', {{'B207', 100}}, Time='CastSkill', Tag='RandEnemy'}",500,Unique,1,1,,,0
+B70,交易技巧-全体治疗,20069,Null,NONE,,"{'CureHP', 0.2,Param='MaxHP',Time='Apply',Tag='CastList'}",500,Replace,1,1,,,0
+B71,眩晕,20070,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",1200,Replace,1,1,,TimeGrowRatio=20,0
+B72,反击,20071,Null,NONE,,"{'Damage', Param='FIRE_ATT', Rate=0.83, Tag='Target', Time='BeAllCast'}",0,Unique,1,1,,RateGrowRatio=0.014,0
+B74,攻击减少对方法防,20073,Null,NONE,,"{'ProcBuff', {{'B220', 100}}, Time='AllCast', Tag='Target'}",0,Unique,1,1,,,0
+B75,攻击提升,20074,Null,NONE,,"{'ChaLAPercent', 'ATTACK', 46.8,Time='Apply'},{'RemoveBuff', 'B75', Time='Cast'}",500,Replace,1,1,,RateGrowRatio=-0.47,0
+B76,速度降低,20075,DeBuff,NONE,,"{'ChaLAPercent', 'SPEED', -33.47,Time='Apply'}",2000,Replace,1,1,,RateGrowRatio=-0.55,0
+B77,生命扣除,20076,Null,NONE,,"{'ChaHPPercent', -1.36,Time='Interval', Interval=1000}",2000,Replace,1,1,,RateGrowRatio=0.023,0
+B78,攻击提升,20077,Null,NONE,,"{'ChaLAPercent', 'FIRE_ATT', 18.42,Time='Apply'}",8000,Replace,1,1,,RateGrowRatio=0.3,0
+B79,生命扣除,20078,Buff,NONE,,"{'Damage', Param='Attack', Rate=0.6447, Time='Interval', Interval=500,DamageRateGrowRatio=0.0112}",5000,Replace,1,1,,,0
+B80,感电额外伤害,20079,DeBuff,NONE,,"{'CondBuffDamage','B80',0.23,DamageRateGrowRatio=0.004,Caster=1}",0,Unique,1,1,,,0
+B81,火神不死,20080,Null,NONE,,"{""NotDead"",1,1,Time=""HPChange""},{'ProcBuff', {{'B84', 100}}, Time='Remove'}",0,Unique,1,1,,,0
+B82,满次数死亡,20081,Null,NONE,,"{'RemoveBuff', 'B84', Time='Apply'},{'ChaHPPercent', -100, Time='Apply'} ",500,Unique,1,1,,,0
+B83,火神复活,20082,Null,NONE,,"{'ChaHPPercent', 5, Time='Apply', AbilityGrowRatio=1.7},{'RemoveBuff', 'B81', Time='Apply'},",500,Unique,1,1,,,0
+B84,变成球体,20083,Null,NONE,,"{'ImmLostHP'},{'ImmunBuff', 'DeBuff'},{'CastProcBuff', 6, 'B82', Time='BeCast'},{'ProcBuff', {{'B83', 100}}, Time='Remove'},{'Dizziness'}",6000,Replace,1,1,,,0
+B85,连续3次同一个目标触发,20084,Null,NONE,,"{'SerialSignObject',3,""B86"",Time=""CastSkill""}",0,Unique,1,1,,,0
+B86,生命扣除,20085,Buff,NONE,,"{'Damage',Param='FIRE_ATT',Rate=2.5,Time='Apply',DamageRateGrowRatio=0.04}",500,Unique,1,1,,,0
+B87,攻击降低,20086,DeBuff,NONE,,"{'ChaLAPercent', 'ATTACK', -20,Time='Apply'}",4000,Replace,1,1,,RateGrowRatio=-0.3,0
+B88,圣盾伤害,20087,Null,NONE,,"{'Damage',Param='FIRE_ATT',Rate=0.83, Time='Apply',DamageRateGrowRatio=0.014}",1300,Unique,1,0,,,0
+B89,吸收伤害,20088,Null,NONE,,"{'TransferDamage', 1}",0,Unique,1,0,,,0
+B90,印记,20089,Null,NONE,,"{'ChaLAPercent', 'ATTACK', 50,Time='Apply'}",4000,Stack,99,1,,,0
+B91,受伤减免,20090,Buff,NONE,,"{'AcceptDAdd', -6.46,DamageRateGrowRatio=-0.106}",0,Unique,1,1,,,0
+B92,每损失生命触发技能,20091,Null,NONE,1,"{'LostHPCastSkill',0.5,'50061',Time='HPChange',AbilityGrowRatio=-0.0056}",0,Normal,1,1,,,0
+B93,速度降低,20092,DeBuff,NONE,,"{'ChaLAPercent', 'SPEED', -5.3,Time='Apply'}",6000,Replace,1,1,,RateGrowRatio=0.086,0
+B94,命中降低,20093,DeBuff,NONE,,"{'ChaLAEx','HITRATE',1.02,180,30,-0.1,0.00162,Time='Apply'}",6000,Replace,1,1,,,0
+B95,嘲讽,20094,Null,NONE,,{'forceTarget'} ,2030,Replace,1,1,,TimeGrowRatio=34,0
+B96,受伤转换为治疗,20095,Null,NONE,,"{'DamageToCureHP',Ratio=1,Time='HPChange'}",2030,Replace,1,1,,TimeGrowRatio=34,0
+B97,队友死亡时触发状态,20096,Null,NONE,1,"{'ProcBuff', {{'B98', 100}}, Time='AllyDead'}",0,Unique,1,1,,,0
+B98,物理伤害降低、速度提升,20097,Null,NONE,,"{'AcceptDAdd', -2,DamageRateGrowRatio=-0.04},{'ChaLAPercent', 'SPEED', 1.5,Time='Apply',AbilityGrowRatio=0.03}",0,Stack,99,1,,RateGrowRatio=0.03,0
+B99,眩晕,20098,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",2300,Replace,1,1,,TimeGrowRatio=40,0
+B100,速度降低,20099,DeBuff,NONE,,"{'ChaLAPercent', 'SPEED', -21,Time='Apply'}",4000,Replace,1,1,,RateGrowRatio=-0.35,0
+B101,累计2次触发伤害,20100,Null,NONE,,"{'RecordTarget',2,'B102'}",0,Unique,1,1,,,0
+B102,额外伤害,20101,Null,NONE,,"{'Damage',Param='ATTACK',Rate=1,Time='Apply',DamageRateGrowRatio=0.017}",0,Unique,1,1,,,0
+B103,吸血,20102,Buff,NONE,,"{'SuckBlood', 0.5,AbilityGrowRatio=0.0083}",500,Replace,1,1,,,0
+B104,能量降低,20103,Null,NONE,,"{'ChaRP', -28,Time='Apply',AbilityGrowRatio=-0.5}",500,Replace,1,1,,,0
+B105,判断是否命中,20104,Null,NONE,,"{'ProcBuff', {{'B106',100}}, Time='BeCast'},{'RemoveBuff', 'B105', Time='Dodge'}",500,Replace,1,1,,,0
+B106,伤害提升,20105,Null,NONE,,"{'ChaLAPercent', 'ATTACK', 2.8,Time='Apply'}",0,Stack,8,1,,RateGrowRatio=0.05,0
+B107,无法治疗,20106,Null,NONE,,"{'NoRestore'},",4600,Replace,1,1,,TimeGrowRatio=80,0
+B108,伤害增加,20107,Null,NONE,,"{'ChaDamageBySign', 'B106', 0.45}",500,Replace,1,1,,,0
+B109,移除状态,20108,Null,NONE,,"{'RemoveBuff', 'B106', Time='Apply',Tag='Target'}",500,Replace,1,1,,,0
+B110,伤害反弹,20109,Buff,NONE,,"{'ImmDamage', '*'},{'ReboundDamage',0.34,1,Time=""Kill"",DamageRateGrowRatio=0.022},{'ProcBuff', {{'B184', 100}}, Time='BeDamage', Tag='TargetList'}",3500,Replace,1,1,,,0
+B111,敌方死亡时触发状态,20110,Null,NONE,,"{'ChaLAPercent','ATTACK',4,Time=""EnemyDead"",AbilityGrowRatio=0.07},{'ChaLAPercent','HP',15,Time=""Kill"",AbilityGrowRatio=0.25}",0,Unique,1,1,,,0
+B112,伤害增加,20111,Buff,NONE,,"{'ChaLAPercent', 'ATTACK', 9,Time='Apply'}",0,Unique,1,1,,,0
+B113,生命恢复,20112,Buff,NONE,,"{'CureHP', 0.25, Time='Apply'}",500,Replace,1,1,,,0
+B114,有概率触发状态,20113,Null,NONE,,"{'ProcBuff', {{'B115', 50},{'Nothing', 50}}, Time='Apply'}",500,Replace,1,1,,,0
+B115,眩晕,20114,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",2000,Replace,1,1,,TimeGrowRatio=30,0
+B116,速度提升,20115,Buff,NONE,,"{'ChaLAPercent', 'SPEED', 80,Time='Apply'}",8000,Replace,1,1,,RateGrowRatio=1.32,0
+B117,额外伤害,20116,DeBuff,NONE,,"{'AcceptDAdd', 36}",8000,Unique,1,1,,DamageRateGrowRatio=0.4,0
+B118,攻击提升,20117,Null,NONE,,"{'ChaLAPercent', 'ATTACK', 40,Time='Apply'}",6000,Replace,1,1,,RateGrowRatio=0.66,0
+B119,速度降低,20118,DeBuff,NONE,,"{'ChaLAPercent', 'SPEED', -7.07,Time='Apply'}",6000,Replace,1,1,,RateGrowRatio=-0.12,0
+B120,受伤时触发普攻,20119,Null,NONE,,"{'ProcBuff', {{'B142', 1400},{'Nothing', 8600}}, Time='BeDamage',SuccessGrowRatio=23}",500,Replace,1,1,,,0
+B121,沉默,20120,DeBuff,NONE,,"{'DamageBreak',Time='Apply'}",2000,Replace,1,1,,TimeGrowRatio=33,0
+B122,受伤减免,20121,Buff,NONE,,"{'AcceptDAdd', -0.7706}",2000,Replace,1,1,,TimeGrowRatio=33,0
+B123,生命大于或小于17.77%时触发状态,20122,Null,NONE,,"{'CondProcBuff', 'HPPercent', 0, 17.77, 'B125', Time='HPChange',UpRangeGrowRatio=0.3},{'CondProcBuff', 'HPPercent', 17.77, 100, 'B124', Time='HPChange',LowRangeGrowRatio=0.3}",100,Unique,1,1,,,0
+B124,生命扣除,20123,Null,NONE,,"{'Damage', Param='Attack', Rate=1.33, Time='Apply',DamageRateGrowRatio=0.0222}",100,Unique,1,1,,,0
+B125,生命扣除,20124,Null,NONE,,"{'ChaHPCurPercent', -100, Time='Apply'}",100,Unique,1,1,,,0
+B126,能量降低,20125,Null,NONE,,"{'ChaRP', -14,Time='Apply'}",100,Unique,1,1,,,0
+B127,眩晕,20126,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",1100,Replace,1,1,,,0
+B128,速度降低、法术伤害,20127,DeBuff,NONE,,"{'ChaLAPercent', 'SPEED', -20,Time='Apply'},{'Damage',Param='FIRE_ATT',Rate=0.17,Time='Interval',Interval=1000,DamageRateGrowRatio=0.003}",4000,Replace,1,1,,RateGrowRatio=-0.33,0
+B129,护甲降低、法术伤害,20128,DeBuff,NONE,,"{'ChaLAPercent', 'FIRE_ATT', -20,Time='Apply'},{'Damage', Param='FIRE_ATT', Rate=0.17, Time='Interval', Interval=1000,DamageRateGrowRatio=0.003}",4000,Replace,1,1,,RateGrowRatio=-0.44,0
+B130,死亡时有概率触发状态,20129,Null,NONE,,"{'ProcBuff', {{'B131', 3333},{'Nothing', 6667}}, Time='Dead',SuccessGrowRatio=56},",0,Unique,1,1,,,0
+B131,复活85%的生命,20130,Null,NONE,,"{'ChaHPPercent', 85, Time='Apply'}",0,Unique,1,1,,,0
+B132,法术伤害,20131,DeBuff,NONE,,"{'Damage', Param='Attack', Rate=0.23, Time='Interval', Interval=1000,DamageRateGrowRatio=0.004}",8000,Replace,1,1,,,0
+B133,无法治疗,20132,DeBuff,NONE,,"{'NoRestore'},",4800,Replace,1,1,,TimeGrowRatio=80,0
+B134,累计治疗量8.3%的伤害,20133,Null,NONE,,"{'CureHPDamge',0.083,Time='Apply', DamageType=""SpellDamage"", DamageRateGrowRatio=0.0014}",100,Unique,1,1,,,0
+B135,眩晕,20134,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",2300,Replace,1,1,,TimeGrowRatio=40,0
+B136,法术伤害,20135,DeBuff,NONE,,"{'Damage', Param='Attack', Rate=1.11, Time='Apply',DamageRateGrowRatio=0.019},{'ChaLAPercent', 'SPEED', -21,Time='Apply'}",4000,Replace,1,1,,RateGrowRatio=-0.35,0
+B137,恢复生命,20136,Buff,NONE,,"{'CureHP', 0.0089, DamageType=""SpellDamage"", Tag='CastList', Time='Interval', Interval=1000,CureHPGrowRatio=0.00015},{'ChaMP', -6, Time='Interval', Interval=1000},{'SwitchSkill', 50118}",0,Unique,1,1,,,0
+B138,概率触发状态,20137,Null,NONE,,"{'ProcBuff', {{'B139', 2748},{'Nothing', 7252}}, Time='Apply',SuccessGrowRatio=47}",500,Replace,1,1,,,0
+B139,争吵,20138,DeBuff,NONE,,"{Quarrel,AttackType=""normalAttack""}",6000,Replace,1,1,,,0
+B140,伤害转移,20139,Buff,NONE,,"{'DeadHPTransfer',Ratio=1,Rate=1}",1850,Replace,1,1,,TimeGrowRatio=30,0
+B141,背叛,20140,Null,NONE,,{'Betray'},1900,Replace,1,1,,,0
+B142,反击吸血,20141,DeBuff,NONE,,"{'SuckBloodByAttack',1,DamageType=""PhyDamage""},{'ProbCastSkill',5000,'normalAttack',1,Time='BeAllCast'},",500,Replace,1,1,,,0
+B143,交换生命,20142,Buff,NONE,,"{'SwitchTargetHpMax',0.3,HPMin=1,TargetGrowRatio=0.56}",500,Replace,1,1,,,0
+B144,触发状态,20143,Null,NONE,,"{'ProcBuff',{{'B146',100}},Time=""Dead""}",0,Replace,1,1,,,0
+B145,移除状态,20144,Null,NONE,,"{'RemoveBuff','B144',caster=1,Time='Dead',Tag='CastList'}",0,Replace,1,1,,,0
+B146,诸神黄昏,20145,Null,NONE,,"{'ChaHP', 1, Time='Apply'},{""ShallowGrave"",1,Caster=1}",3000,Replace,1,1,,TimeGrowRatio=70,0
+B147,疯狂攻击,20146,Buff,NONE,,"{'ImmDamage', '*'},{'ProbCastSkill', 0, '80012', 1, Time='Apply'}",2500,Unique,1,1,,,0
+B148,反弹,20147,Null,NONE,,"{'CmdModify',{'*'}},{""ReDamage""},{ProcBuff,{{'B149',100}},Time=BeAllCast},{'ProbCastSkill',0,'80007',1,Time='Remove'},{""RemoveBuff"",""B148"",Time=""Dead""}",4000,Replace,1,1,,,0
+B149,眩晕,20148,Buff,NONE,,{"Dizziness"},820,Replace,1,1,,,0
+B150,开场触发技能,20149,Null,NONE,,"{'ProbCastSkill', 0, '80008', 1, Time='Remove'}",500,Unique,1,1,,,0
+B151,敌方死亡时触发状态,20150,Null,NONE,,"{'ChaLAPercent','ATTACK',4,Time=""EnemyDead"",AbilityGrowRatio=0.07},{'ChaLAPercent','HP',15,Time=""Kill"",AbilityGrowRatio=0.25}",0,Unique,1,1,,,0
+B152,开场触发技能,20151,Null,NONE,,"{'ProbCastSkill', 0, '80009', 1, Time='Remove'}",500,Unique,1,1,,,0
+B153,吸血,20152,Buff,NONE,,"{'SuckBlood',1.34,AttackType=""normalAttack"",Critial=1}",500,Replace,1,1,,,0
+B154,疯狂攻击,20153,Buff,NONE,,"{'ImmDamage', '*'},{'ProbCastSkill', 0, '80012', 1, Time='Apply'}",2500,Unique,1,1,,,0
+B155,速度提升,20154,Buff,NONE,,"{'ChaLAPercent', 'SPEED', 80,Time='Apply'}",8000,Replace,1,1,,RateGrowRatio=1.32,0
+B156,额外伤害,20155,Null,NONE,,"{'Damage', Param='Attack', Rate=0.36, Time='Apply',DamageRateGrowRatio=0.004}",0,Unique,1,1,,,0
+B157,眩晕,20156,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",2800,Replace,1,1,,,0
+B158,敌方死亡时触发状态,20157,Buff,NONE,,"{'ChaLAPercent','ATTACK',4,Time=""EnemyDead"",AbilityGrowRatio=0.07},{'ChaLAPercent','HP',15,Time=""Kill"",AbilityGrowRatio=0.25}",0,Unique,1,1,,,0
+B159,开场触发技能,20158,Null,NONE,,"{'ProbCastSkill', 0, '80010', 1, Time='Remove'}",500,Unique,1,1,,,0
+B160,吸血,20159,Buff,NONE,,"{'SuckBlood',1.34,AttackType=""normalAttack"",Critial=1}",500,Replace,1,1,,,0
+B161,疯狂攻击,20160,Buff,NONE,,"{'ImmDamage', '*'},{'ProbCastSkill', 0, '80012', 1, Time='Apply'}",2500,Unique,1,1,,,0
+B162,速度提升,20161,Buff,NONE,,"{'ChaLAPercent', 'SPEED', 80,Time='Apply'}",8000,Replace,1,1,,RateGrowRatio=1.32,0
+B163,额外伤害,20162,Null,NONE,,"{'Damage', Param='Attack', Rate=0.36, Time='Apply',DamageRateGrowRatio=0.004}",0,Unique,1,1,,,0
+B164,眩晕,20163,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",2800,Replace,1,1,,,0
+B165,敌方死亡时触发状态,20164,Buff,NONE,,"{'ChaLAPercent','ATTACK',4,Time=""EnemyDead"",AbilityGrowRatio=0.07},{'ChaLAPercent','HP',15,Time=""Kill"",AbilityGrowRatio=0.25}",0,Unique,1,1,,,0
+B166,开场触发技能,20165,Null,NONE,,"{'ProbCastSkill', 0, '80011', 1, Time='Remove'}",500,Unique,1,1,,,0
+B167,吸血,20166,Buff,NONE,,"{'SuckBlood',1.34,AttackType=""normalAttack"",Critial=1}",500,Replace,1,1,,,0
+B168,疯狂攻击,20167,Buff,NONE,,"{'ImmDamage', '*'},{'ProbCastSkill', 0, '80012', 1, Time='Apply'}",2500,Unique,1,1,,,0
+B169,速度提升,20168,Buff,NONE,,"{'ChaLAPercent', 'SPEED', 80,Time='Apply'}",8000,Replace,1,1,,RateGrowRatio=1.32,0
+B170,额外伤害,20169,Null,NONE,,"{'Damage', Param='Attack', Rate=0.36, Time='Apply',DamageRateGrowRatio=0.004}",0,Unique,1,1,,,0
+B171,眩晕,20170,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",2800,Replace,1,1,,,0
+B172,敌方死亡时触发状态,20171,Buff,NONE,,"{'ChaLAPercent','ATTACK',9,Time=""EnemyDead""},{'ChaLAPercent','HP',15,Time=""Kill""}",0,Unique,1,1,,RateGrowRatio=0.74,0
+B173,开场触发技能,20172,Null,NONE,,"{'ProbCastSkill', 0, '80012', 1, Time='Apply'}",0,Unique,1,1,,,0
+B174,暴击时触发,20173,Buff,NONE,,"{'ProcBuff', {{'B178', 50},{'Nothing', 50}},Time=""Critial"",BuffCond={""Cast"",""attackType"",{""normalAttack""}}}",0,Unique,1,1,,,0
+B175,疯狂攻击,20174,Buff,NONE,,"{'ImmDamage', '*'},{'ProbCastSkill', 0, '80012', 1, Time='Apply'}",2500,Unique,1,1,,,0
+B176,速度提升,20175,Buff,NONE,,"{'ChaLAPercent', 'SPEED', 80,Time='Apply'}",8000,Replace,1,1,,RateGrowRatio=1.32,0
+B177,额外伤害,20176,Null,NONE,,"{'Damage', Param='Attack', Rate=0.36, Time='Apply',DamageRateGrowRatio=0.004}",0,Unique,1,1,,,0
+B178,眩晕，吸血,20177,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'},{'SuckBlood',1.34,AttackType=""normalAttack"",Critial=1}",2800,Replace,1,1,,,0
+B179,增加能量,20178,Null,NONE,,"{'ChaRP',44,Time=""Kill"",AbilityGrowRatio=0.75}",500,Replace,1,1,,,0
+B180,有概率触发状态,20179,Null,NONE,,"{'ProcBuff', {{'B181', 330},{'Nothing', 670}},SuccessGrowRatio=6,Time='Apply'}",500,Replace,1,1,,,0
+B181,驱散负面状态,20180,Null,NONE,,"{'PurgeBuff',{'DeBuff'}, Time='Apply'},{'ImmunBuff', 'DeBuff'}",3000,Replace,1,1,,,0
+B182,反弹伤害,20181,Null,NONE,,"{'ReboundDamage',0.48,1,Time=""BeDamage"",DamageRateGrowRatio=0.008}",500,Replace,1,1,,,0
+B183,死亡触发状态,20182,Null,NONE,,"{'CureHP', 0.2, Param='MaxHP',Tag='CastList',Time='Dead'}",500,Replace,1,1,,,0
+B184,眩晕,20183,Buff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",1420,Replace,1,1,,TimeGrowRatio=24,0
+B185,冲击波触发双倍伤害,20184,Null,NONE,,"{'ProcBuff', {{'B205', 660},{'Nothing', 340}},Time='Apply'}",0,Unique,1,1,,,0
+B186,死亡时触发状态,20185,Buff,NONE,,"{'ProcBuff', {{'B187', 100}}, Time='Dead', Tag='Cast'},",5000,Replace,1,1,,TimeGrowRatio=100,0
+B187,保留1点生命,20186,Null,NONE,,"{""NotDead"", 1, 2, Time=""HPChange""}",0,Unique,1,1,,,0
+B188,史诗圣盾,20187,Buff,NONE,,"{'AbsorbDamage',70,Caster=1,Time='Apply',DamageRateGrowRatio=0.7}",4000,Unique,1,1,,,0
+B189,开场触发护盾,20188,Null,NONE,,"{'ProbCastSkill', 0, '5001802', 1, Time='Apply'}",0,Unique,1,1,,,0
+B190,吸收伤害,20189,Null,NONE,,"{'AbsorbDamage', 25,Time='Apply',Caster=1}",5000,Replace,1,1,,,0
+B191,死亡有概率触发,20190,Null,NONE,,"{'ProcBuff', {{'B192', 25},{'Nothing', 75}}, Time='Dead', Tag='Cast'},",0,Unique,1,1,,,0
+B192,获得护盾,20191,Null,NONE,,"{""NotDead"", 1, 1, Time=""HPChange""}",0,Unique,1,1,,,0
+B193,攻击降低,20192,DeBuff,NONE,,"{'ChaLAPercent', 'ATTACK', -75,Time='Apply'}",6000,Replace,1,1,,TimeGrowRatio=100,0
+B194,受伤减免,20193,Null,NONE,,"{'AcceptDAdd', -27.07,DamageRateGrowRatio=-0.21}",0,Unique,1,1,,,0
+B195,眩晕,20194,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",2580,Replace,1,1,,,0
+B196,眩晕,20195,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",3460,Replace,1,1,,,0
+B197,嘲讽,20196,Null,NONE,,{'forceTarget'} ,4030,Replace,1,1,,TimeGrowRatio=34,0
+B198,受伤转换为治疗,20197,Null,NONE,,"{'DamageToCureHP',Ratio=1,Time='HPChange'}",4030,Replace,1,1,,TimeGrowRatio=34,0
+B199,嘲讽,20198,Null,NONE,,{'forceTarget'} ,4030,Replace,1,1,,TimeGrowRatio=34,0
+B200,受伤转换为治疗,20199,Null,NONE,,"{'DamgeToCure',Ratio=1} ",4030,Replace,1,1,,TimeGrowRatio=34,0
+B201,增加能量,20200,Null,NONE,,"{'ChaRP',100,Time=""Apply""}",0,Unique,1,1,,,0
+B202,吸血,20201,Null,NONE,,"{'SuckBlood',0.1}",0,Unique,1,0,,,0
+B203,增加护甲穿透,20202,Null,NONE,,"{'ChaLAEx','DEF_THROUGH',1.02,180,30,0.125,0,Time='Apply'}",0,Unique,1,1,,,0
+B204,眩晕,20203,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",2000,Replace,1,1,,,0
+B205,触发冲击波,20204,Null,NONE,,"{'ProbCastSkill', 0, '5000502', 1, Time='Apply'}",500,Unique,1,1,,,0
+B206,增加法术穿透,20205,Null,NONE,,"{'ChaLAEx','FIRE_DEF_THR',1.02,180,30,0.125,0,Time='Apply'}",0,Unique,1,1,,,0
+B207,眩晕,20206,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",429,Replace,1,1,,TimeGrowRatio=8,0
+B208,释放技能触发状态,20207,Null,NONE,,"{'ProcBuff', {{'B209', 100}}, Time='CastSkill', Tag='RandEnemy'}",500,Unique,1,1,,,0
+B209,眩晕,20208,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",1629,Replace,1,1,,TimeGrowRatio=8,0
+B210,有概率触发无法治疗,20209,Null,NONE,,"{'ProcBuff', {{'B209', 500},{'Nothing', 500}}, Time='Apply'}",0,Unique,1,1,,,0
+B211,无法治疗,20210,DeBuff,NONE,,{'NoRestore'},7000,Replace,1,1,,,0
+B212,触发状态,20211,Null,NONE,,"{'ProcBuff',{{'B213',100}},Time=""Dead""}",0,Replace,1,1,,,0
+B213,诸神黄昏,20212,Null,NONE,,"{'ChaHP', 1, Time='Apply'},{""ShallowGrave"",1,Caster=1}",6000,Replace,1,1,,TimeGrowRatio=70,0
+B214,能量降低,20213,Null,NONE,,"{'ChaRP', -53,Time='Apply',AbilityGrowRatio=-0.5}",500,Replace,1,1,,,0
+B215,死亡时触发状态,20214,Null,NONE,,"{'ProcBuff', {{'B216', 100}}, Time='Dead', Tag='Cast'},",0,Unique,1,1,,,0
+B216,保留1点生命，并回复生命,20215,Null,NONE,,"{""NotDead"", 1, 1, Time=""HPChange""},{'CureHP',0.25,Param='MaxHP',Time='Remove'}",0,Unique,1,1,,,0
+B217,增加11%法术攻击,20216,Null,NONE,,"{'ChaLAPercent', 'FIRE_ATT',11,Time='Apply'}",0,Unique,1,1,,,0
+B218,受到伤害有20%率触发状态,20217,Null,NONE,1,"{'ProcBuff', {{'B219', 20},{'Nothing', 80}}, Time='BeAllCast',Tag='Target'}",0,Unique,1,1,,,0
+B219,眩晕,20218,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",2000,Replace,1,1,,,0
+B220,降低免伤,20219,DeBuff,NONE,,"{'ChaLAEx','FIRE_DEF',1.02,180,30,-0.2,-0.0032,Time='Apply'}",4000,Replace,1,1,,,0
+B221,沉默,20220,DeBuff,NONE,,"{'DamageBreak',Time='Apply'}",2500,Replace,1,1,,TimeGrowRatio=50,0
+B222,释放大招时触发状态,20221,DeBuff,NONE,,"{'ProbProcBuff', 'B226', Time=""CastManualSkill""},{'Damage', Param='Attack', Rate=4,Time='CastManualSkill'},{'DamageBreak',Time='CastPrepare'},{'ProbProcBuff', 'B226', Time=""CastPrepare""},{'Damage', Param='Attack', Rate=4,Time='CastPrepare'}",500,Unique,1,1,,,0
+B223,免疫负面,20222,Null,NONE,,"{'ImmunBuff', 'DeBuff'}",2500,Unique,1,1,,TimeGrowRatio=50,0
+B224,每隔7.5秒产生状态,20223,Null,NONE,1,"{'ProcBuff', {{'B225', 70},{'Nothing', 30}},SuccessGrowRatio=100,Time='Interval', Interval=7500,NoFirst=1},",0,Unique,1,1,,,0
+B225,免疫指向性攻击,20224,Null,NONE,,"{'ImmLostHP'},{'ImmunBuff', 'DeBuff'},{'RemoveBuff', 'B225', Time='BeDamage'}",0,Unique,1,1,,,0
+B226,眩晕,20226,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'},",7000,Unique,1,1,,,0
+B228,治疗,20227,Null,NONE,,"{'CureHP', 0.15, DamageType=""SpellDamage"",Time='Interval', Interval=1000,Tag='ALLY'},",6000,Replace,1,1,,TimeGrowRatio=70,0
+B229,免疫负面,20228,Null,NONE,,"{'ImmunBuff', 'DeBuff'}",4000,Unique,1,1,,TimeGrowRatio=50,0
+B230,月蚀,20229,Buff,NONE,,"{'ProcBuff', {{'B222', 100}}, Time='Interval', Interval=500,Tag='TargetList'}",6000,Unique,1,1,,TimeGrowRatio=100,0
+B231,受到指向性技能-移除,20230,Null,NONE,,"{'RemoveBuff', 'B225', Time='Apply'}",500,Replace,1,0,,,0
+B232,每秒增加伤害,20231,Null,NONE,1,"{'ChaLAPercent', 'ATTACK', 4,Time='Interval', Interval=5000}",0,Stack,12,1,,RateGrowRatio=0.07,0
+B233,增加闪避率,20232,Null,NONE,,"{'ChaLAEx','DODGE',1.02,450,75,0.2,0,Time='Apply'}",0,Unique,1,1,,,0
+B234,自身无敌，反弹攻击伤害,20233,Null,NONE,,"{'ImmLostHP'},{'ReboundDamage',0.17,1,Time='BeAllCast',DamageRateGrowRatio=0.03},{'ProcBuff', {{'B236',100}, Time='BeAllCast', Tag='Target'}},{'ProcBuff', {{'B235',100}, Time='Remove'}}",4000,Replace,1,0,,,0
+B235,给最虚弱的敌人造成伤害,20234,Null,NONE,,"{'Damage',Rate=0.9,Time='Apply', Tag='TargetMinHp', RealDamage=true}",500,Unique,1,1,,RateGrowRatio=0.014,0
+B236,眩晕,20235,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",1400,Unique,1,1,,TimeGrowRatio=20,0
+B237,眩晕,20236,Null,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",2000,Unique,1,1,,TimeGrowRatio=40,0
+B238,减少能量,20237,Null,NONE,,"{'ChaRP',-16,Time=""Apply"",AbilityGrowRatio=0.3}",0,Unique,1,1,,,0
+B239,闪避时增加伤害,20238,Null,NONE,,"{'ChaLAPercent', 'ATTACK', 9,Time='Dodge'}",0,Stack,6,1,,,0
+B240,对敌方全体减少物防,20239,DeBuff,NONE,,"{'ChaLAEx','DEFENCE',1.02,180,30,-0.26,0,Time='Apply'}",8000,Replace,1,1,,,0
+B241,死亡时有概率触发状态,20240,Null,NONE,,"{'ProcBuff', {{'B131', 8333},{'Nothing', 1667}}, Time='Dead',SuccessGrowRatio=56},",0,Unique,1,1,,,0
+B242,无法治疗,20241,DeBuff,NONE,,"{'NoRestore'},",8800,Replace,1,1,,TimeGrowRatio=80,0
+B243,法术伤害,20242,DeBuff,NONE,,"{'Damage', Param='Attack', Rate=0.39, Time='Interval', Interval=1000,DamageRateGrowRatio=0.004}",8000,Replace,1,1,,,0
+B244,概率触发状态,20243,Null,NONE,,"{'ProcBuff', {{'B139', 6248},{'Nothing', 3752}}, Time='Apply',SuccessGrowRatio=47}",500,Replace,1,1,,,0
+B245,恢复生命,20244,Buff,NONE,,"{'CureHP', 0.0159, DamageType=""SpellDamage"", Tag='CastList', Time='Interval', Interval=1000,CureHPGrowRatio=0.00015},{'ChaMP', -6, Time='Interval', Interval=1000},{'SwitchSkill', 50118}",0,Unique,1,1,,,0
+B246,受伤时触发状态,20245,Null,NONE,,"{'ProcBuff', {{'B247', 400},{'Nothing', 600}}, Time='Apply'}",500,Unique,1,1,,,0
+B247,减少能量,20246,Null,NONE,,"{'ChaRP',-10,Time=""Apply""}",0,Replace,1,1,,,0
+B248,受伤时触发普攻,20247,Null,NONE,,"{'ProcBuff', {{'B142', 3100},{'Nothing', 6900}}, Time='BeDamage',SuccessGrowRatio=23}",500,Replace,1,1,,,0
+B249,沉默,20248,DeBuff,NONE,,"{'DamageBreak',Time='Apply'}",3500,Replace,1,1,,TimeGrowRatio=33,0
+B250,受伤减免,20249,Buff,NONE,,"{'AcceptDAdd', -0.7706}",3500,Replace,1,1,,TimeGrowRatio=33,0
+B251,生命大于或小于17.77%时触发状态,20250,Null,NONE,,"{'CondProcBuff', 'HPPercent', 0, 29.77, 'B125', Time='HPChange',UpRangeGrowRatio=0.3},{'CondProcBuff', 'HPPercent', 29.77, 100, 'B124', Time='HPChange',LowRangeGrowRatio=0.3}",100,Unique,1,1,,,0
+B252,每损失生命触发状态,20251,Null,NONE,1,"{'LostHPAddBuff','HPPercent',0.075,'B22',Time='HPChange',DecBuff=1,AbilityGrowRatio=-0.00083},{'LostHPAddBuff','HPPercent',0.075,'B23',Time='HPChange',DecBuff=1,AbilityGrowRatio=-0.00083},{'LostHPAddBuff','HPPercent',0.075,'B253',Time='HPChange',DecBuff=1,AbilityGrowRatio=-0.00083}",0,Normal,1,1,,,0
+B253,速度提升,20252,Null,NONE,,"{'ChaLAPercent', 'SPEED',1.4,Time='Apply'}",0,Stack,99,1,,RateGrowRatio=0.021,0
+B254,火神不死,20253,Null,NONE,,"{""NotDead"",1,1,Time=""HPChange""},{'ProcBuff', {{'B255', 100}}, Time='Remove'}",0,Unique,1,1,,,0
+B255,变成球体,20254,Null,NONE,,"{'ImmLostHP'},{'ImmunBuff', 'DeBuff'},{'CastProcBuff', 9, 'B256', Time='BeCast'},{'ProcBuff', {{'B257', 100}}, Time='Remove'},{'Dizziness'}",6000,Replace,1,1,,,0
+B256,满次数死亡,20255,Null,NONE,,"{'RemoveBuff', 'B255', Time='Apply'},{'ChaHPPercent', -100, Time='Apply'} ",500,Unique,1,1,,,0
+B257,火神复活,20256,Null,NONE,,"{'ChaHPPercent', 5, Time='Apply', AbilityGrowRatio=1.7},{'RemoveBuff', 'B254', Time='Apply'},{'ProcBuff', {{'B258', 100}}, Time='Apply', Tag='TargetList'}",500,Unique,1,1,,,0
+B258,眩晕,20257,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",1500,Replace,1,1,,,0
+B259,受到伤害有15%率触发状态,20258,Null,NONE,,"{'ProcBuff', {{'B260', 15},{'Nothing', 85}}, Time='BeDamage',},",0,Unique,1,0,,,0
+B260,无敌,20259,Null,NONE,,"{'ImmLostHP'},{'RemoveBuff', 'B260', Time='BeDamage'}",0,Replace,1,1,,,0
+B261,死亡触发治疗,20260,Null,NONE,,"{'CureHP', 0.2,Param='MaxHP',Time='Dead',Tag='CastList'}",0,Unique,1,1,,,0
+B262,判断是否有眩晕,20261,Null,NONE,,"{""CondEffectApplyBuff"", 'Dizziness', 'B238',Time='Apply'}",0,Unique,1,0,,,0
+mianyipugong100%,100%免疫普攻,10001,Null,NONE,,"{""ImmNormal"", 1}",0,Unique,1,1,,,0
+mianyipugong101,1分钟后触发掉血,10000,Null,NONE,,"{'ProcBuff', {{'mianyipugong102',100}}, Time='Remove'}",30000,Replace,1,1,,,0
+mianyipugong102,掉血,10026,Null,NONE,,"{'ChaHPPercent', -20, Time='Interval', Interval=500}",5000,Replace,1,1,,,0
+W1,,41000,Null,NONE,,"{'CureHP', 0.15, Param='MaxHP',Time='Apply'}",500,Replace,1,1,,,0
+W2,,41001,Null,NONE,,"{'Damage',Rate=3,Time='Apply'}",500,Replace,1,1,,,0
+W3,,41002,Null,NONE,,"{'Damage',Rate=0.5,Time='Apply'}",500,Replace,1,1,,,0
+W4,,41003,DeBuff,NONE,,"{'ChaLAPercent', 'SPEED', -8,Time='Apply'}",5000,Replace,1,1,,,0
+W5,,41004,Null,NONE,,"{'ChaRP', 50,Time='Apply'}",500,Replace,1,1,,,0
+W6,,41005,Null,NONE,,"{'ChaMP', 23,Time='Apply'}",500,Replace,1,1,,,0
+W7,,41006,Null,NONE,,"{'DamageBreak',Time='Apply'},{'ImmDamage', '*'},{'Dizziness'},{'ImmunBuff', 'DeBuff'},{'ImmunBuff', 'Buff'},{'PurgeBuff', {'DeBuff'}, Time='Remove'},{'PurgeBuff', {'Buff'}, Time='Remove'}",5000,Replace,1,1,,,0
+W8,,41007,Null,NONE,,"{'ProcBuff', {{'wingskill9', 100}}, Time='Apply', Tag='CastList'},{'AcceptDAdd', -60}",5000,Replace,1,1,,,0
+W9,,41008,Null,NONE,,"{'TransferDamage', 1}",5000,Replace,1,1,,,0
+W10,,41009,Buff,NONE,,"{'NotTarget'},{'Dizziness'},",5000,Replace,1,1,,,0
+W11,,41010,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'},{'forceTarget'} ",4000,Replace,1,1,,,0
+W12,,41011,Buff,NONE,,"{'AcceptDAdd', -30} ",4000,Replace,1,1,,,0
+W13,,41012,Buff,NONE,,"{'SuckBlood', 2.4}",8000,Replace,1,1,,,0
+W14,,41013,Buff,NONE,,"{'ChaRP', -150,Time='Apply'}",100,Unique,1,1,,,0
+W15,,41014,Buff,NONE,,"{'ChaLAPercent', 'ATTACK', 75,Time='Apply'}",4000,Replace,1,1,,,0
+W16,,41015,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'CmdModify', {'*'}, 'normalAttack'}",5500,Replace,1,1,,,0
+W17,,41016,DeBuff,NONE,,"{'Damage',Rate=0.2,Time='Apply'}",5500,Replace,1,1,,,0
+W18,,41017,Null,NONE,,"{'CureHP', 0.15, Param='MaxHP',Time='Apply'}",500,Replace,1,1,,,0
+W19,,41018,Buff,NONE,,"{'ChaLAPercent', 'SPEED', 95,Time='Apply'}",5000,Replace,1,1,,,0
+W20,,41019,DeBuff,NONE,,"{'AcceptDAdd', 0.25}",5000,Replace,1,1,,,0
+W21,,41020,Null,NONE,,"{'Damage',Rate=2,Time='Apply'}",500,Replace,1,1,,,0
+W22,无法治疗,41021,DeBuff,NONE,,{'NoRestore'},9000,Replace,1,1,,,0
+W23,免疫技能伤害,41022,Null,NONE,,{'ImmSkill'},5000,Replace,1,1,,,0
+C1,生命恢复,30000,Buff,NONE,,"{'CureHP', 0.25, Time='Apply'}",500,Replace,1,1,,,0
+C2,无敌,30001,Null,NONE,,"{'ImmDamage', '*'},{'ImmunBuff', 'DeBuff'}",4000,Replace,1,1,,,0
+C3,每秒扣除生命,30002,Buff,NONE,,"{'CureHP', -0.04, Time='Interval', Interval=1000}",4300,Replace,1,1,,,0
+C4,无法治疗,30003,DeBuff,NONE,,{'NoRestore'},4300,Replace,1,1,,,0
+C5,提升物理法术攻击,30004,DeBuff,NONE,,"{'ChaLAPercent', 'ATTACK', 42,Time='Apply'}",4000,Replace,1,1,,,0
+C6,眩晕,30005,Buff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",1360,Replace,1,1,,,0
+C7,受伤减免,30006,Buff,NONE,,"{'AcceptDAdd', -83} ",3200,Replace,1,1,,,0
+C8,嘲讽,30007,Null,NONE,,{'forceTarget'} ,3200,Replace,1,1,,,0
+C9,每次攻击有50%概率触发冰冻,30008,Null,NONE,,"{'ProcBuff', {{'C10', 50},{'Nothing', 50}}, Time='Damage'}",0,Unique,1,1,,,0
+C10,冰冻,30009,Buff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",1700,Replace,1,1,,,0
+C11,每次攻击恢复生命,30010,DeBuff,NONE,,"{'ProcBuff', {{'C12', 100}}, Time='Damage'}",0,Unique,1,1,,,0
+C12,生命恢复,30011,Buff,NONE,,"{'CureHP', 0.1, Time='Apply'}",0,Unique,1,1,,,0
+C13,不受负面影响，每秒恢复生命,30012,DeBuff,NONE,,"{'CureHP', 0.02, Time='Interval', Interval=1000},{'ImmunBuff', 'DeBuff'}",0,Unique,1,1,,,0
+C14,吸血,30013,Null,NONE,,"{'SuckBlood', 0.7, Time='Interval', Interval=1000}",4000,Unique,1,1,,,0
+C15,每秒扣除生命,30014,Buff,NONE,,"{'CureHP', -0.7, Time='Interval', Interval=1000}",4000,Unique,1,1,,,0
+C16,免疫伤害,30015,Buff,NONE,,"{'ImmDamage', '*'}",5000,Replace,1,1,,,0
+C17,沉默,30016,DeBuff,NONE,,"{'DamageBreak',Time='Apply'}",6000,Replace,1,1,,,0
+C18,眩晕,30017,Buff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",5000,Replace,1,1,,,0
+C19,护甲降低,30018,DeBuff,NONE,,"{'ChaLA', 'DEFENCE', -50, 0,Time='Apply'}",5000,Replace,1,1,,,0
+C20,每次制造伤害时攻击提升,30019,Null,NONE,1,"{'ProcBuff', {{'C21', 100}}, Time='Damage'}",0,Unique,1,1,,,0
+C21,攻击提升,30020,Null,NONE,,"{'ChaLAPercent', 'ATTACK', 20,Time='Apply'}",5000,Stack,5,1,,,0
+C22,速度提升,30021,Buff,NONE,,"{'ChaLAPercent', 'SPEED', 10,Time='Apply'}",0,Unique,1,1,,,0
+C23,吸血,30022,Buff,NONE,,"{'SuckBlood', 0.15}",0,Unique,1,1,,,0
+C24,死亡触发状态,30023,Null,NONE,1,"{'ProcBuff', {{'C25', 100}}, Time='Dead',Tag='RandEnemy'}",0,Unique,1,1,,,0
+C25,生命扣除,30024,Null,NONE,,"{'Damage', Param='Attack', Rate=5, Time='Apply'}",0,Unique,1,1,,,0
+C26,死亡移除状态,30025,Null,NONE,1,"{'RemoveBuff', 'C23', Time='Dead',Tag='CastList'}",0,Unique,1,1,,,0
+C27,死亡移除状态,30026,Null,NONE,1,"{'RemoveBuff', 'C22', Time='Dead',Tag='CastList'}",0,Unique,1,1,,,0
+C28,眩晕,30027,Buff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",2500,Replace,1,1,,,0
+C29,生命恢复,30028,Null,NONE,,"{'CureHP', 0.32, Time='Apply'}",100,Replace,1,1,,,0
+C30,生命恢复,30029,Null,NONE,,"{'CureHP', 0.5, Time='Apply'}",100,Replace,1,1,,,0
+C31,不受伤害,30030,Null,NONE,,"{'ImmDamage', '*'}",0,Unique,1,1,,,0
+C32,死亡移除状态,30031,Null,NONE,1,"{'RemoveBuff', 'C31', Time='Dead',Tag='CastList'}",0,Unique,1,0,,,0
+C33,生命恢复,30032,Null,NONE,,"{'AddDelayBuff', 'C34', 4000, 400217, Time=""BeDamage""}",0,Unique,1,0,,,0
+C34,生命恢复,30033,Null,NONE,,"{'CureHP', 0.5, Time='Apply'}",100,Replace,1,1,,,0
+C35,必中、免疫各种状态、免各种伤害,30034,Null,NONE,,"{'CertainHit'},{'ImmunBuff', 'DeBuff'},{'ImmunBuff', 'Null'},{'ImmunRebound'},{'ImmSuckBlood'}",0,Unique,1,0,,,0
+C36,眩晕,30035,Buff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",3000,Replace,1,1,,,0
+C37,每秒扣除生命,30036,Buff,NONE,,"{'CureHP', -0.01, Time='Interval', Interval=1000}",3000,Replace,1,1,,,0
+C38,伤害转换治疗,30037,Null,NONE,,"{'SuckBlood', 1}",3000,Replace,1,1,,,0
+C39,沉默并且受伤加深,30038,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Damage',Param='ATTACK',Rate=0.42,Time='Apply'}",2000,Replace,1,1,,,0
+C40,攻击提升，免疫法术伤害,30039,Null,NONE,,"{'ChaLAPercent', 'ATTACK', 250,Time='Apply'},{'ImmDamage', DamageType=""SpellDamage""}",6000,Replace,1,1,,,0
+C41,受伤增加,30040,DeBuff,NONE,,"{'AcceptDAdd', 120}",6000,Replace,1,1,,,0
+C42,伤害转换治疗,30041,Null,NONE,,"{'SuckBlood', 1}",5000,Replace,1,1,,,0
+C43,沉默,30042,DeBuff,NONE,,"{'DamageBreak',Time='Apply'}",3000,Replace,1,1,,,0
+C44,伤害转换治疗,30043,Null,NONE,,"{'SuckBlood', 1}",100,Replace,1,1,,,0
+C45,速度伤害降低,30044,DeBuff,NONE,,"{'ChaLAPercent', 'SPEED', -23,Time='Apply'},{'ChaLAPercent', 'ATTACK', -54,Time='Apply'}",5000,Replace,1,1,,,0
+C46,受伤减免,30045,Buff,NONE,,"{'AcceptDAdd', -5}",0,Unique,1,1,,,0
+C47,累计3层印记触发伤害,30046,Null,NONE,,"{'RecordTarget',3,'C48'}",0,Unique,1,1,,,0
+C48,额外伤害,30047,Null,NONE,,"{'Damage', Param='Attack', Rate=1, Time='Apply'}",0,Unique,1,1,,,0
+C49,每次攻击有25%概率触发眩晕,30048,Null,NONE,,"{'ProcBuff', {{'C50', 25},{'Nothing', 75}}, Time='Damage'}",0,Unique,1,1,,,0
+C50,眩晕,30049,Buff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",3500,Replace,1,1,,,0
+C51,生命百分比,30050,Null,NONE,,"{'ChaLAPercent', 'HP', 25,Time='Apply'}",5000,Replace,1,0,,,0
+C52,免疫负面状态,30051,Null,NONE,,"{'ImmunBuff', 'DeBuff'}",5000,Replace,1,0,,,0
+C53,集火,30052,DeBuff,NONE,,"{'forceTarget'},{'AcceptDAdd', 100}",5000,Replace,1,1,,,0
+C54,攻击降低,30053,DeBuff,NONE,,"{'ChaLAPercent', 'ATTACK', -50,Time='Apply'}",8000,Replace,1,1,,,0
+C55,攻击提升,30054,Null,NONE,,"{'ChaLAPercent', 'ATTACK', 50,Time='Apply'}",8000,Replace,1,1,,,0
+C56,攻击提升,30055,Null,NONE,,"{'ChaLAPercent', 'FIRE_ATT', 60,Time='Apply'}",0,Unique,1,1,,,0
+C57,无法治疗,30056,DeBuff,NONE,,{'NoRestore'},4000,Replace,1,1,,,0
+C58,每次普通攻击时有概率触发状态,30057,Null,NONE,,"{'ProcBuff', {{'C59', 12.5},{'Nothing', 87.5}}, Time='Cast',Tag='Target'}",0,Unique,1,1,,,0
+C59,眩晕,30058,Buff,NONE,,"{'Damage', Param='Attack', Rate=2.5, Time='Apply'},{'DamageBreak',Time='Apply'},{'Dizziness'}",3500,Replace,1,1,,,0
+C60,护甲提升,30059,DeBuff,NONE,,"{'ChaLAPercent', 'DEFENCE', 10,Time='Apply'}",0,Unique,1,1,,,0
+C61,每3秒恢复生命,30060,Buff,NONE,,"{'CureHP', 0.02, Time='Interval', Interval=3000}",0,Unique,1,1,,,0
+C62,法术防御降低,30061,DeBuff,NONE,,"{'ChaLAPercent', 'FIRE_DEF', -5,Time='Apply'}",0,Unique,1,1,,,0
+C63,眩晕,30062,Buff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",1000,Replace,1,1,,,0
+C64,速度降低,30063,DeBuff,NONE,,"{'ChaLAPercent', 'SPEED', -58,Time='Apply'}",4000,Replace,1,1,,,0
+C65,速度提升,30064,DeBuff,NONE,,"{'ChaLAPercent', 'SPEED', 60,Time='Apply'}",8000,Replace,1,1,,,0
+C66,吸血,30065,Buff,NONE,,"{'SuckBlood', 1.6}",8000,Replace,1,1,,,0
+C67,攻击降低,30066,DeBuff,NONE,,"{'ChaLAPercent', 'ATTACK', -67,Time='Apply'}",10000,Replace,1,1,,,0
+C68,眩晕,30067,Buff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",1000,Replace,1,1,,,0
+C69,眩晕,30068,Buff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",6000,Replace,1,1,,,0
+C70,吸收伤害,30069,Buff,NONE,,"{'AbsorbDamage', 75,Time='Apply'},",10000,Replace,1,1,,,0
+C71,圣魔不死,30070,DeBuff,NONE,,"{""NotDead"",1,1,Time=""HPChange""},{'ProcBuff', {{'C74', 100}}, Time='Remove'}",0,Unique,1,1,,,0
+C72,满次数死亡,30071,Buff,NONE,,"{'ChaHPPercent', -100, Time='Apply'} ",0,Unique,1,1,,,0
+C73,复活,30072,DeBuff,NONE,,"{'ChaHPPercent', 100, Time='Apply'}",0,Unique,1,1,,,0
+C74,复活状态,30073,Null,NONE,,"{'CastProcBuff', 6, 'C72', Time='BeAllCast'},{'ProcBuff', {{'C73', 100}}, Time='Remove'}",5000,Replace,1,1,,,0
+C75,免伤减免,30074,Null,NONE,,"{'AcceptDAdd', -90}",0,Unique,1,1,,,0
+C76,死亡触发状态,30075,Null,NONE,,"{'ProcBuff', {{'C78', 100}}, Time='Dead',Tag='CastList'}",0,Unique,1,1,,,0
+C77,生命扣除,30076,Null,NONE,,"{'ChaHPPercent', -100,Time='Apply'}",500,Replace,1,1,,,0
+C78,状态判定,30077,Null,NONE,,"{'CondBuffApplyBuff', 'C75', 'C77', Time='BeforeApply'}",500,Replace,1,1,,,0
+C79,生命扣除,30078,Null,NONE,,"{'ChaHPPercent', -100,Time='Apply'}",500,Replace,1,1,,,0
+D1,吸血,40021,Null,NONE,,"{'SuckBlood', 0}",0,Unique,1,0,,,0
+D2,暴击伤害增加,40022,Null,NONE,,"{'ChaLAPercent', 'CRI_ATT', 5,Time='Apply'}",0,Unique,1,0,,,0
+D3,生命百分比,40023,Null,NONE,,"{'ChaLAPercent', 'HP', 2,Time='Apply'}",0,Unique,1,0,,,0
+D4,物攻百分比,40024,Null,NONE,,"{'ChaLAPercent', 'ATTACK', 2,Time='Apply'}",0,Unique,1,0,,,0
+D5,法攻百分比,40025,Null,NONE,,"{'ChaLAPercent', 'FIRE_ATT', 2,Time='Apply'}",0,Unique,1,0,,,0
+D6,速度提升,40026,Null,NONE,,"{'ChaLAPercent', 'SPEED', 5,Time='Apply'}",0,Unique,1,0,,,0
+D7,每3秒恢复生命,40027,Null,NONE,,"{'CureHP', 0, Time='Interval', Interval=3000}",0,Unique,1,0,,,0
+D8,免疫负面状态,40028,Null,NONE,,"{'ImmunBuff', 'DeBuff'}",8000,Unique,1,0,,,0
+D9,无视护甲,40029,Null,NONE,,"{'ChaLA', 'DEF_THROUGH', 999999,Time='Apply'}",0,Unique,1,0,,,0
+D10,死亡触发状态,40030,Null,NONE,1,"{'ProcBuff', {{'D11', 100}}, Time='Dead', Tag='CastList'}",0,Unique,1,0,,,0
+D11,复活,40031,Null,NONE,,"{'ChaHPPercent', 100, Time='Dead'}",0,Unique,1,0,,,0
+E1,普通攻击时有概率触发状态,50000,Null,NONE,1,"{'ProcBuff',{{'E201',12},{'Nothing', 88}},Time='Cast',Tag='Target'},",0,Unique,1,0,,,0
+E2,普通攻击时有概率触发状态,50001,Null,NONE,1,"{'ProcBuff',{{'E202',13.3},{'Nothing', 86.7}},Time='Cast',Tag='Target'},",0,Unique,1,0,,,0
+E3,普通攻击时有概率触发状态,50002,Null,NONE,1,"{'ProcBuff',{{'E203',14.6},{'Nothing', 85.4}},Time='Cast',Tag='Target'},",0,Unique,1,0,,,0
+E4,普通攻击时有概率触发状态,50003,Null,NONE,1,"{'ProcBuff',{{'E204',15.9},{'Nothing', 84.1}},Time='Cast',Tag='Target'},",0,Unique,1,0,,,0
+E5,普通攻击时有概率触发状态,50004,Null,NONE,1,"{'ProcBuff',{{'E205',17.2},{'Nothing', 82.8}},Time='Cast',Tag='Target'},",0,Unique,1,0,,,0
+E6,普通攻击时有概率触发状态,50005,Null,NONE,1,"{'ProcBuff',{{'E206',18.5},{'Nothing', 81.5}},Time='Cast',Tag='Target'},",0,Unique,1,0,,,0
+E7,普通攻击时有概率触发状态,50006,Null,NONE,1,"{'ProcBuff',{{'E207',19.8},{'Nothing', 80.2}},Time='Cast',Tag='Target'},",0,Unique,1,0,,,0
+E8,普通攻击时有概率触发状态,50007,Null,NONE,1,"{'ProcBuff',{{'E208',21.1},{'Nothing', 78.9}},Time='Cast',Tag='Target'},",0,Unique,1,0,,,0
+E9,普通攻击时有概率触发状态,50008,Null,NONE,1,"{'ProcBuff',{{'E209',22.4},{'Nothing', 77.6}},Time='Cast',Tag='Target'},",0,Unique,1,0,,,0
+E10,普通攻击时有概率触发状态,50009,Null,NONE,1,"{'ProcBuff',{{'E210',25},{'Nothing', 75}},Time='Cast',Tag='Target'},",0,Unique,1,0,,,0
+E201,眩晕,50010,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",3200,Replace,1,0,,,0
+E202,眩晕,50011,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",3200,Replace,1,0,,,0
+E203,眩晕,50012,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",3200,Replace,1,0,,,0
+E204,眩晕,50013,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",3200,Replace,1,0,,,0
+E205,眩晕,50014,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",3200,Replace,1,0,,,0
+E206,眩晕,50015,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",3200,Replace,1,0,,,0
+E207,眩晕,50016,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",3200,Replace,1,0,,,0
+E208,眩晕,50017,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",3200,Replace,1,0,,,0
+E209,眩晕,50018,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",3200,Replace,1,0,,,0
+E210,眩晕,50019,DeBuff,NONE,,"{'DamageBreak',Time='Apply'},{'Dizziness'}",3200,Replace,1,0,,,0
+E11,死亡触发状态,50020,Null,NONE,1,"{'ProcBuff', {{'E211', 10},{'Nothing', 90}}, Time='Dead', Tag='CastList'}",0,Unique,1,0,,,0
+E12,死亡触发状态,50021,Null,NONE,1,"{'ProcBuff', {{'E212', 11},{'Nothing', 89}}, Time='Dead', Tag='CastList'}",0,Unique,1,0,,,0
+E13,死亡触发状态,50022,Null,NONE,1,"{'ProcBuff', {{'E213', 12},{'Nothing', 88}}, Time='Dead', Tag='CastList'}",0,Unique,1,0,,,0
+E14,死亡触发状态,50023,Null,NONE,1,"{'ProcBuff', {{'E214', 13},{'Nothing', 87}}, Time='Dead', Tag='CastList'}",0,Unique,1,0,,,0
+E15,死亡触发状态,50024,Null,NONE,1,"{'ProcBuff', {{'E215', 14},{'Nothing', 86}}, Time='Dead', Tag='CastList'}",0,Unique,1,0,,,0
+E16,死亡触发状态,50025,Null,NONE,1,"{'ProcBuff', {{'E216', 15},{'Nothing', 85}}, Time='Dead', Tag='CastList'}",0,Unique,1,0,,,0
+E17,死亡触发状态,50026,Null,NONE,1,"{'ProcBuff', {{'E217', 16},{'Nothing', 84}}, Time='Dead', Tag='CastList'}",0,Unique,1,0,,,0
+E18,死亡触发状态,50027,Null,NONE,1,"{'ProcBuff', {{'E218', 17},{'Nothing', 83}}, Time='Dead', Tag='CastList'}",0,Unique,1,0,,,0
+E19,死亡触发状态,50028,Null,NONE,1,"{'ProcBuff', {{'E219', 18},{'Nothing', 82}}, Time='Dead', Tag='CastList'}",0,Unique,1,0,,,0
+E20,死亡触发状态,50029,Null,NONE,1,"{'ProcBuff', {{'E220', 20},{'Nothing', 80}}, Time='Dead', Tag='CastList'}",0,Unique,1,0,,,0
+E211,复活(每场一次),50030,Null,NONE,,"{'ChaHPPercent', 100, Time='Dead'}",0,Unique,1,0,,,0
+E212,复活(每场一次),50031,Null,NONE,,"{'ChaHPPercent', 100, Time='Dead'}",0,Unique,1,0,,,0
+E213,复活(每场一次),50032,Null,NONE,,"{'ChaHPPercent', 100, Time='Dead'}",0,Unique,1,0,,,0
+E214,复活(每场一次),50033,Null,NONE,,"{'ChaHPPercent', 100, Time='Dead'}",0,Unique,1,0,,,0
+E215,复活(每场一次),50034,Null,NONE,,"{'ChaHPPercent', 100, Time='Dead'}",0,Unique,1,0,,,0
+E216,复活(每场一次),50035,Null,NONE,,"{'ChaHPPercent', 100, Time='Dead'}",0,Unique,1,0,,,0
+E217,复活(每场一次),50036,Null,NONE,,"{'ChaHPPercent', 100, Time='Dead'}",0,Unique,1,0,,,0
+E218,复活(每场一次),50037,Null,NONE,,"{'ChaHPPercent', 100, Time='Dead'}",0,Unique,1,0,,,0
+E219,复活(每场一次),50038,Null,NONE,,"{'ChaHPPercent', 100, Time='Dead'}",0,Unique,1,0,,,0
+E220,复活(每场一次),50039,Null,NONE,,"{'ChaHPPercent', 100, Time='Dead'}",0,Unique,1,0,,,0
+E21,有概率致命伤害,50040,Null,NONE,,"{'ProcBuff', {{'E221', 50},{'Nothing', 50}}, Time='Dead', Tag='CastList'}",0,Unique,1,0,,,0
+E22,有概率致命伤害,50041,Null,NONE,,"{'ProcBuff', {{'E222', 55},{'Nothing', 45}}, Time='Dead', Tag='CastList'}",0,Unique,1,0,,,0
+E23,有概率致命伤害,50042,Null,NONE,,"{'ProcBuff', {{'E223', 60},{'Nothing', 40}}, Time='Dead', Tag='CastList'}",0,Unique,1,0,,,0
+E24,有概率致命伤害,50043,Null,NONE,,"{'ProcBuff', {{'E224', 65},{'Nothing', 35}}, Time='Dead', Tag='CastList'}",0,Unique,1,0,,,0
+E25,有概率致命伤害,50044,Null,NONE,,"{'ProcBuff', {{'E225', 70},{'Nothing', 30}}, Time='Dead', Tag='CastList'}",0,Unique,1,0,,,0
+E26,有概率致命伤害,50045,Null,NONE,,"{'ProcBuff', {{'E226', 75},{'Nothing', 25}}, Time='Dead', Tag='CastList'}",0,Unique,1,0,,,0
+E27,有概率致命伤害,50046,Null,NONE,,"{'ProcBuff', {{'E227', 80},{'Nothing', 20}}, Time='Dead', Tag='CastList'}",0,Unique,1,0,,,0
+E28,有概率致命伤害,50047,Null,NONE,,"{'ProcBuff', {{'E228', 85},{'Nothing', 15}}, Time='Dead', Tag='CastList'}",0,Unique,1,0,,,0
+E29,有概率致命伤害,50048,Null,NONE,,"{'ProcBuff', {{'E229', 90},{'Nothing', 10}}, Time='Dead', Tag='CastList'}",0,Unique,1,0,,,0
+E30,有概率致命伤害,50049,Null,NONE,,"{'ProcBuff', {{'E230', 100},{'Nothing', 0}}, Time='Dead', Tag='CastList'}",0,Unique,1,0,,,0
+E221,免疫伤害,50050,Buff,NONE,,"{""NotDead"",1,2,Time=""HPChange"",Rate=0.5}",0,Unique,1,0,,,0
+E222,免疫伤害,50051,Buff,NONE,,"{""NotDead"",1,2,Time=""HPChange"",Rate=0.55}",0,Unique,1,0,,,0
+E223,免疫伤害,50052,Buff,NONE,,"{""NotDead"",1,2,Time=""HPChange"",Rate=0.6}",0,Unique,1,0,,,0
+E224,免疫伤害,50053,Buff,NONE,,"{""NotDead"",1,2,Time=""HPChange"",Rate=0.65}",0,Unique,1,0,,,0
+E225,免疫伤害,50054,Buff,NONE,,"{""NotDead"",1,2,Time=""HPChange"",Rate=0.7}",0,Unique,1,0,,,0
+E226,免疫伤害,50055,Buff,NONE,,"{""NotDead"",1,2,Time=""HPChange"",Rate=0.75}",0,Unique,1,0,,,0
+E227,免疫伤害,50056,Buff,NONE,,"{""NotDead"",1,2,Time=""HPChange"",Rate=0.8}",0,Unique,1,0,,,0
+E228,免疫伤害,50057,Buff,NONE,,"{""NotDead"",1,2,Time=""HPChange"",Rate=0.85}",0,Unique,1,0,,,0
+E229,免疫伤害,50058,Buff,NONE,,"{""NotDead"",1,2,Time=""HPChange"",Rate=0.9}",0,Unique,1,0,,,0
+E230,免疫伤害,50059,Buff,NONE,,"{""NotDead"",1,2,Time=""HPChange"",Rate=1}",0,Unique,1,0,,,0
+E31,普攻时吸血,50060,Null,NONE,1,"{'SuckBlood',0.09, Time='Cast'}",0,Unique,1,0,,,0
+E32,普攻时吸血,50061,Null,NONE,1,"{'SuckBlood',0.1, Time='Cast'}",0,Unique,1,0,,,0
+E33,普攻时吸血,50062,Null,NONE,1,"{'SuckBlood',0.11, Time='Cast'}",0,Unique,1,0,,,0
+E34,普攻时吸血,50063,Null,NONE,1,"{'SuckBlood',0.12, Time='Cast'}",0,Unique,1,0,,,0
+E35,普攻时吸血,50064,Null,NONE,1,"{'SuckBlood',0.13, Time='Cast'}",0,Unique,1,0,,,0
+E36,普攻时吸血,50065,Null,NONE,1,"{'SuckBlood',0.14, Time='Cast'}",0,Unique,1,0,,,0
+E37,普攻时吸血,50066,Null,NONE,1,"{'SuckBlood',0.15, Time='Cast'}",0,Unique,1,0,,,0
+E38,普攻时吸血,50067,Null,NONE,1,"{'SuckBlood',0.16, Time='Cast'}",0,Unique,1,0,,,0
+E39,普攻时吸血,50068,Null,NONE,1,"{'SuckBlood',0.17, Time='Cast'}",0,Unique,1,0,,,0
+E40,普攻时吸血,50069,Null,NONE,1,"{'SuckBlood',0.185, Time='Cast'}",0,Unique,1,0,,,0
+E41,受到伤害有几率触发状态,50070,Null,NONE,,"{'ProcBuff', {{'E231', 10},{'Nothing', 90}}, Time='BeDamage', Tag='Target'}",0,Unique,1,0,,,0
+E42,受到伤害有几率触发状态,50071,Null,NONE,,"{'ProcBuff', {{'E232', 11},{'Nothing', 89}}, Time='BeDamage', Tag='Target'}",0,Unique,1,0,,,0
+E43,受到伤害有几率触发状态,50072,Null,NONE,,"{'ProcBuff', {{'E233', 12},{'Nothing', 88}}, Time='BeDamage', Tag='Target'}",0,Unique,1,0,,,0
+E44,受到伤害有几率触发状态,50073,Null,NONE,,"{'ProcBuff', {{'E234', 13},{'Nothing', 87}}, Time='BeDamage', Tag='Target'}",0,Unique,1,0,,,0
+E45,受到伤害有几率触发状态,50074,Null,NONE,,"{'ProcBuff', {{'E235', 14},{'Nothing', 86}}, Time='BeDamage', Tag='Target'}",0,Unique,1,0,,,0
+E46,受到伤害有几率触发状态,50075,Null,NONE,,"{'ProcBuff', {{'E236', 15},{'Nothing', 85}}, Time='BeDamage', Tag='Target'}",0,Unique,1,0,,,0
+E47,受到伤害有几率触发状态,50076,Null,NONE,,"{'ProcBuff', {{'E237', 16},{'Nothing', 84}}, Time='BeDamage', Tag='Target'}",0,Unique,1,0,,,0
+E48,受到伤害有几率触发状态,50077,Null,NONE,,"{'ProcBuff', {{'E238', 17},{'Nothing', 83}}, Time='BeDamage', Tag='Target'}",0,Unique,1,0,,,0
+E49,受到伤害有几率触发状态,50078,Null,NONE,,"{'ProcBuff', {{'E239', 18},{'Nothing', 82}}, Time='BeDamage', Tag='Target'}",0,Unique,1,0,,,0
+E50,受到伤害有几率触发状态,50079,Null,NONE,,"{'ProcBuff', {{'E240', 20},{'Nothing', 80}}, Time='BeDamage', Tag='Target'}",0,Unique,1,0,,,0
+E231,免伤减免,50080,Buff,NONE,,"{'AcceptDAdd', -3.5} ",0,Unique,1,0,,,0
+E232,免伤减免,50081,Buff,NONE,,"{'AcceptDAdd', -3.5} ",0,Unique,1,0,,,0
+E233,免伤减免,50082,Buff,NONE,,"{'AcceptDAdd', -3.5} ",0,Unique,1,0,,,0
+E234,免伤减免,50083,Buff,NONE,,"{'AcceptDAdd', -3.5} ",0,Unique,1,0,,,0
+E235,免伤减免,50084,Buff,NONE,,"{'AcceptDAdd', -3.5} ",0,Unique,1,0,,,0
+E236,免伤减免,50085,Buff,NONE,,"{'AcceptDAdd', -3.5} ",0,Unique,1,0,,,0
+E237,免伤减免,50086,Buff,NONE,,"{'AcceptDAdd', -3.5} ",0,Unique,1,0,,,0
+E238,免伤减免,50087,Buff,NONE,,"{'AcceptDAdd', -3.5} ",0,Unique,1,0,,,0
+E239,免伤减免,50088,Buff,NONE,,"{'AcceptDAdd', -3.5} ",0,Unique,1,0,,,0
+E240,免伤减免,50089,Buff,NONE,,"{'AcceptDAdd', -3.5} ",0,Unique,1,0,,,0
+E51,普攻时有概率触发能量降低状态,50090,Null,NONE,,"{'ProcBuff',{{'E241',5},{'Nothing', 95}},Time='Cast',Tag='Target'},",0,Unique,1,0,,,0
+E52,普攻时有概率触发能量降低状态,50091,Null,NONE,,"{'ProcBuff',{{'E242',10},{'Nothing', 90}},Time='Cast',Tag='Target'},",0,Unique,1,0,,,0
+E53,普攻时有概率触发能量降低状态,50092,Null,NONE,,"{'ProcBuff',{{'E243',15},{'Nothing', 85}},Time='Cast',Tag='Target'},",0,Unique,1,0,,,0
+E54,普攻时有概率触发能量降低状态,50093,Null,NONE,,"{'ProcBuff',{{'E244',20},{'Nothing', 80}},Time='Cast',Tag='Target'},",0,Unique,1,0,,,0
+E55,普攻时有概率触发能量降低状态,50094,Null,NONE,,"{'ProcBuff',{{'E245',22},{'Nothing', 78}},Time='Cast',Tag='Target'},",0,Unique,1,0,,,0
+E56,普攻时有概率触发能量降低状态,50095,Null,NONE,,"{'ProcBuff',{{'E246',25},{'Nothing', 75}},Time='Cast',Tag='Target'},",0,Unique,1,0,,,0
+E57,普攻时有概率触发能量降低状态,50096,Null,NONE,,"{'ProcBuff',{{'E247',30},{'Nothing', 70}},Time='Cast',Tag='Target'},",0,Unique,1,0,,,0
+E58,普攻时有概率触发能量降低状态,50097,Null,NONE,,"{'ProcBuff',{{'E248',32},{'Nothing', 68}},Time='Cast',Tag='Target'},",0,Unique,1,0,,,0
+E59,普攻时有概率触发能量降低状态,50098,Null,NONE,,"{'ProcBuff',{{'E249',35},{'Nothing', 65}},Time='Cast',Tag='Target'},",0,Unique,1,0,,,0
+E60,普攻时有概率触发能量降低状态,50099,Null,NONE,,"{'ProcBuff',{{'E250',40},{'Nothing', 60}},Time='Cast',Tag='Target'},",0,Unique,1,0,,,0
+E241,能量降低,50100,DeBuff,NONE,,"{'ChaRP', -4,Time='Apply'}",0,Unique,1,0,,,0
+E242,能量降低,50101,DeBuff,NONE,,"{'ChaRP', -4.4,Time='Apply'}",0,Unique,1,0,,,0
+E243,能量降低,50102,DeBuff,NONE,,"{'ChaRP', -4.8,Time='Apply'}",0,Unique,1,0,,,0
+E244,能量降低,50103,DeBuff,NONE,,"{'ChaRP', -5.2,Time='Apply'}",0,Unique,1,0,,,0
+E245,能量降低,50104,DeBuff,NONE,,"{'ChaRP', -5.6,Time='Apply'}",0,Unique,1,0,,,0
+E246,能量降低,50105,DeBuff,NONE,,"{'ChaRP', -6,Time='Apply'}",0,Unique,1,0,,,0
+E247,能量降低,50106,DeBuff,NONE,,"{'ChaRP', -6.4,Time='Apply'}",0,Unique,1,0,,,0
+E248,能量降低,50107,DeBuff,NONE,,"{'ChaRP', -6.8,Time='Apply'}",0,Unique,1,0,,,0
+E249,能量降低,50108,DeBuff,NONE,,"{'ChaRP', -7.2,Time='Apply'}",0,Unique,1,0,,,0
+E250,能量降低,50109,DeBuff,NONE,,"{'ChaRP', -8,Time='Apply'}",0,Unique,1,0,,,0
+E280,生命低于50%时触发状态,50110,Null,NONE,,"{'CondProcBuff', 'HPPercent', 0, 50,'E251', Time='HPChange'},",0,Unique,1,1,,,0
+E251,攻击提升,50111,Null,NONE,,"{'ChaLAPercent', 'ATTACK',16.5,Time='Apply'},{'ChaLAPercent', 'FIRE_ATT',16.5,Time='Apply'}",0,Unique,1,1,,,0
+E281,生命低于50%时触发状态,50112,Null,NONE,,"{'CondProcBuff', 'HPPercent', 0, 50,'E252', Time='HPChange'},",0,Unique,1,1,,,0
+E252,攻击提升,50113,Null,NONE,,"{'ChaLAPercent', 'ATTACK',18.15,Time='Apply'},{'ChaLAPercent', 'FIRE_ATT',18.15,Time='Apply'}",0,Unique,1,1,,,0
+E282,生命低于50%时触发状态,50114,Null,NONE,,"{'CondProcBuff', 'HPPercent', 0, 50,'E253', Time='HPChange'},",0,Unique,1,1,,,0
+E253,攻击提升,50115,Null,NONE,,"{'ChaLAPercent', 'ATTACK',19.8,Time='Apply'},{'ChaLAPercent', 'FIRE_ATT',19.8,Time='Apply'}",0,Unique,1,1,,,0
+E283,生命低于50%时触发状态,50116,Null,NONE,,"{'CondProcBuff', 'HPPercent', 0, 50,'E254', Time='HPChange'},",0,Unique,1,1,,,0
+E254,攻击提升,50117,Null,NONE,,"{'ChaLAPercent', 'ATTACK',21.45,Time='Apply'},{'ChaLAPercent', 'FIRE_ATT',21.45,Time='Apply'}",0,Unique,1,1,,,0
+E284,生命低于50%时触发状态,50118,Null,NONE,,"{'CondProcBuff', 'HPPercent', 0, 50,'E255', Time='HPChange'},",0,Unique,1,1,,,0
+E255,攻击提升,50119,Null,NONE,,"{'ChaLAPercent', 'ATTACK',23.1,Time='Apply'},{'ChaLAPercent', 'FIRE_ATT',23.1,Time='Apply'}",0,Unique,1,1,,,0
+E285,生命低于50%时触发状态,50120,Null,NONE,,"{'CondProcBuff', 'HPPercent', 0, 50,'E256', Time='HPChange'},",0,Unique,1,1,,,0
+E256,攻击提升,50121,Null,NONE,,"{'ChaLAPercent', 'ATTACK',24.75,Time='Apply'},{'ChaLAPercent', 'FIRE_ATT',24.75,Time='Apply'}",0,Unique,1,1,,,0
+E286,生命低于50%时触发状态,50122,Null,NONE,,"{'CondProcBuff', 'HPPercent', 0, 50,'E257', Time='HPChange'},",0,Unique,1,1,,,0
+E257,攻击提升,50123,Null,NONE,,"{'ChaLAPercent', 'ATTACK',26.4,Time='Apply'},{'ChaLAPercent', 'FIRE_ATT',26.4,Time='Apply'}",0,Unique,1,1,,,0
+E287,生命低于50%时触发状态,50124,Null,NONE,,"{'CondProcBuff', 'HPPercent', 0, 50,'E258', Time='HPChange'},",0,Unique,1,1,,,0
+E258,攻击提升,50125,Null,NONE,,"{'ChaLAPercent', 'ATTACK',28.05,Time='Apply'},{'ChaLAPercent', 'FIRE_ATT',28.05,Time='Apply'}",0,Unique,1,1,,,0
+E288,生命低于50%时触发状态,50126,Null,NONE,,"{'CondProcBuff', 'HPPercent', 0, 50,'E259', Time='HPChange'},",0,Unique,1,1,,,0
+E259,攻击提升,50127,Null,NONE,,"{'ChaLAPercent', 'ATTACK',29.7,Time='Apply'},{'ChaLAPercent', 'FIRE_ATT',29.7,Time='Apply'}",0,Unique,1,1,,,0
+E289,生命低于50%时触发状态,50128,Null,NONE,,"{'CondProcBuff', 'HPPercent', 0, 50,'E2522', Time='HPChange'},",0,Unique,1,1,,,0
+E2522,攻击提升,50129,Null,NONE,,"{'ChaLAPercent', 'ATTACK',33,Time='Apply'},{'ChaLAPercent', 'FIRE_ATT',33,Time='Apply'}",0,Unique,1,1,,,0
+E260,暴击加能量,50130,Null,NONE,,"{""RP_CRIT"",15}",0,Unique,1,1,,,0
+E261,暴击加能量,50131,Null,NONE,,"{""RP_CRIT"",16.5}",0,Unique,1,1,,,0
+E262,暴击加能量,50132,Null,NONE,,"{""RP_CRIT"",18}",0,Unique,1,1,,,0
+E263,暴击加能量,50133,Null,NONE,,"{""RP_CRIT"",19.5}",0,Unique,1,1,,,0
+E264,暴击加能量,50134,Null,NONE,,"{""RP_CRIT"",21}",0,Unique,1,1,,,0
+E265,暴击加能量,50135,Null,NONE,,"{""RP_CRIT"",22.5}",0,Unique,1,1,,,0
+E266,暴击加能量,50136,Null,NONE,,"{""RP_CRIT"",24}",0,Unique,1,1,,,0
+E267,暴击加能量,50137,Null,NONE,,"{""RP_CRIT"",25.5}",0,Unique,1,1,,,0
+E268,暴击加能量,50138,Null,NONE,,"{""RP_CRIT"",27}",0,Unique,1,1,,,0
+E269,暴击加能量,50139,Null,NONE,,"{""RP_CRIT"",30}",0,Unique,1,1,,,0
+E270,每4秒扣除生命,50140,Null,NONE,,"{'ChaHPPercent', -0.5, Time='Interval',Interval=4000}",0,Unique,1,1,,,0
+E271,每4秒扣除生命,50141,Null,NONE,,"{'ChaHPPercent', -0.55, Time='Interval',Interval=4000}",0,Unique,1,1,,,0
+E272,每4秒扣除生命,50142,Null,NONE,,"{'ChaHPPercent', -0.55, Time='Interval',Interval=4000}",0,Unique,1,1,,,0
+E273,每4秒扣除生命,50143,Null,NONE,,"{'ChaHPPercent', -0.6, Time='Interval',Interval=4000}",0,Unique,1,1,,,0
+E274,每4秒扣除生命,50144,Null,NONE,,"{'ChaHPPercent', -0.65, Time='Interval',Interval=4000}",0,Unique,1,1,,,0
+E275,每4秒扣除生命,50145,Null,NONE,,"{'ChaHPPercent', -0.7, Time='Interval',Interval=4000}",0,Unique,1,1,,,0
+E276,每4秒扣除生命,50146,Null,NONE,,"{'ChaHPPercent', -0.8, Time='Interval',Interval=4000}",0,Unique,1,1,,,0
+E277,每4秒扣除生命,50147,Null,NONE,,"{'ChaHPPercent', -0.85, Time='Interval',Interval=4000}",0,Unique,1,1,,,0
+E278,每4秒扣除生命,50148,Null,NONE,,"{'ChaHPPercent', -0.9, Time='Interval',Interval=4000}",0,Unique,1,1,,,0
+E279,每4秒扣除生命,50149,Null,NONE,,"{'ChaHPPercent', -1, Time='Interval',Interval=4000}",0,Unique,1,1,,,0
+X1,献祭技能，吸血+10%,70000,Null,NONE,,"{'SuckBlood',0.15}",0,Unique,1,0,,,0
+X2,献祭一阶开场特效,70001,Null,NONE,,"{'ChaLAEx','DEF_THROUGH',1.02,180,30,100,0,Time='Apply'},{'ChaLAEx','FIRE_DEF_THR',1.02,180,30,100,0,Time='Apply'},{'ChaRP', 20,Time='Apply'}",1,Unique,1,0,,,0

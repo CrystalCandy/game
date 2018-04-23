@@ -1,0 +1,268 @@
+命令,索引从1开始按顺序来,子命令,d
+group_ks,index_kn,cmd_s,s_c
+gjh,1,@give me rmb 1000000,0
+gjh,2,@set me fund 9000000,0
+gjh,3,@set me vip 12,0
+gjh,4,@camp me set 1083,0
+gjh,5,@set me level 60,0
+gjh,6,@give me pet 18000,0
+gjh,7,@give me pet 18001,0
+gjh,8,@give me pet 18003,0
+gjh,9,@give me pet 18004,0
+gjh,10,@give me pet 18005,0
+gjh,11,@give me pet 18006,0
+gjh,12,@give me pet 18007,0
+gjh,13,@give me pet 18009,0
+gjh,14,@pet me level 18000 60,0
+gjh,15,@pet me level 18001 60,0
+gjh,16,@pet me level 18003 60,0
+gjh,17,@pet me level 18004 60,0
+gjh,18,@pet me level 18005 60,0
+gjh,19,@pet me level 18006 60,0
+gjh,20,@pet me level 18007 60,0
+gjh,21,@pet me level 18009 60,0
+gjh,22,@grow me setgrow 0 150|150|150|150|150,0
+gjh,23,@grow me setgrow 18000 150|150|150|150|150,0
+gjh,24,@grow me setgrow 18001 150|150|150|150|150,0
+gjh,25,@grow me setgrow 18003 150|150|150|150|150,0
+gjh,26,@grow me setgrow 18004 150|150|150|150|150,0
+gjh,27,@grow me setgrow 18005 150|150|150|150|150,0
+gjh,28,@grow me setgrow 18006 150|150|150|150|150,0
+gjh,29,@grow me setgrow 18007 150|150|150|150|150,0
+gjh,30,@grow me setgrow 18009 150|150|150|150|150,0
+gjh,31,@pet me wake 18000 5,0
+gjh,32,@pet me wake 18001 5,0
+gjh,33,@pet me wake 18003 5,0
+gjh,34,@pet me wake 18004 5,0
+gjh,35,@pet me wake 18005 5,0
+gjh,36,@pet me wake 18006 5,0
+gjh,37,@pet me wake 18007 5,0
+gjh,38,@pet me wake 18009 5,0
+gjh,39,@pet me break 18000 5,0
+gjh,40,@pet me break 18001 5,0
+gjh,41,@pet me break 18003 5,0
+gjh,42,@pet me break 18004 5,0
+gjh,43,@pet me break 18005 5,0
+gjh,44,@pet me break 18006 5,0
+gjh,45,@pet me break 18007 5,0
+gjh,46,@pet me break 18009 5,0
+gjh,47,@give me item 300064 c4,0
+gjh,48,@give me item 300065 c4,0
+gjh,49,@give me item 300066 c9,0
+gjh,50,@give me item 300067 c9,0
+gjh,51,@give me item 300068 c4,0
+gjh,52,@give me item 300069 c4,0
+gjh,53,@give me item 300070 c4,0
+gjh,54,@give me item 300071 c4,0
+gjh,55,@give me item 300072 c4,0
+gjh,56,@give me item 300073 c4,0
+gjh,57,@give me item 300075 c9,0
+gjh,58,@give me item 21001,0
+gjh,59,@give me item 21002,0
+gjh,60,@give me item 21003,0
+gjh,61,@give me item 21004,0
+gjh,62,@give me item 21005,0
+gjh,63,@give me item 21006,0
+gjh,64,@give me item 21007,0
+gjh,65,@give me item 21008,0
+gjh,66,@give me item 21009,0
+gjh,67,@give me item 21010,0
+gjh,68,@give me item 21011,0
+gjh,69,@give me item 21012 c4,0
+gjh,70,@give me item 30001 c9000,0
+zjh,1,@give me rmb 1000000,0
+zjh,2,@set me fund 9000000,0
+zjh,3,@set me vip 7,0
+zjh,4,@camp me set 1083,0
+zjh,5,@set me level 60,0
+zjh,6,@give me pet 18000,0
+zjh,7,@give me pet 18001,0
+zjh,8,@give me pet 18003,0
+zjh,9,@give me pet 18004,0
+zjh,10,@give me pet 18005,0
+zjh,11,@pet me level 18000 60,0
+zjh,12,@pet me level 18001 60,0
+zjh,13,@pet me level 18003 60,0
+zjh,14,@pet me level 18004 60,0
+zjh,15,@pet me level 18005 60,0
+zjh,16,@grow me setgrow 0 150|150|150|150|150,0
+zjh,17,@grow me setgrow 18000 150|150|150|150|150,0
+zjh,18,@grow me setgrow 18001 150|150|150|150|150,0
+zjh,19,@grow me setgrow 18003 150|150|150|150|150,0
+zjh,20,@grow me setgrow 18004 150|150|150|150|150,0
+zjh,21,@grow me setgrow 18005 150|150|150|150|150,0
+zjh,22,@grow me setgrow 18006 150|150|150|150|150,0
+zjh,23,@grow me setgrow 18007 150|150|150|150|150,0
+zjh,24,@grow me setgrow 18009 150|150|150|150|150,0
+zjh,25,@pet me wake 18000 3,0
+zjh,26,@pet me wake 18001 3,0
+zjh,27,@pet me wake 18003 3,0
+zjh,28,@pet me wake 18004 3,0
+zjh,29,@pet me wake 18005 3,0
+zjh,30,@pet me break 18000 3,0
+zjh,31,@pet me break 18001 3,0
+zjh,32,@pet me break 18003 3,0
+zjh,33,@pet me break 18004 3,0
+zjh,34,@pet me break 18005 3,0
+zjh,35,@give me item 300064 c4,0
+zjh,36,@give me item 300065 c4,0
+zjh,37,@give me item 300066 c9,0
+zjh,38,@give me item 300067 c9,0
+zjh,39,@give me item 300068 c4,0
+zjh,40,@give me item 300069 c4,0
+zjh,41,@give me item 300070 c4,0
+zjh,42,@give me item 300071 c4,0
+zjh,43,@give me item 300072 c4,0
+zjh,44,@give me item 300073 c4,0
+zjh,45,@give me item 300075 c9,0
+zjh,46,@give me item 21001,0
+zjh,47,@give me item 21002,0
+zjh,48,@give me item 21003,0
+zjh,49,@give me item 21004,0
+zjh,50,@give me item 21005,0
+zjh,51,@give me item 21006,0
+zjh,52,@give me item 21007,0
+zjh,53,@give me item 21008,0
+zjh,54,@give me item 21009,0
+zjh,55,@give me item 21010,0
+zjh,56,@give me item 21011,0
+zjh,57,@give me item 21012 c4,0
+zjh,58,@give me item 30001 c9000,0
+itemwake,1,@give me item 30001 c9000,0
+itemwake,2,@give me item 20029 c100,0
+itemwake,3,@give me item 20047 c100,0
+itemwake,4,@give me item 20035 c100,0
+itemwake,5,@give me item 20032 c100,0
+itemwake,6,@give me item 20043 c100,0
+itemwake,7,@give me item 21008 c100,0
+itemwake,8,@give me item 21009 c100,0
+itemwake,9,@give me item 21002 c100,0
+itemwake,10,@give me item 20098 c100,0
+itemwake,11,@give me item 20090 c100,0
+itemwake,12,@give me item 20041 c100,0
+itemwake,13,@give me item 20042 c100,0
+itemwake,14,@give me item 20049 c100,0
+itemwake,15,@give me item 21003 c100,0
+itemwake,16,@give me item 21007 c100,0
+itemwake,17,@give me item 20036 c100,0
+itemwake,18,@give me item 21008 c100,0
+itemwake,19,@give me item 21009 c100,0
+itemwake,20,@give me item 21002 c100,0
+itemwake,21,@give me item 20098 c100,0
+itemwake,22,@give me item 20090 c100,0
+itemwake,23,@give me item 20036 c100,0
+itemwake,24,@give me item 20041 c100,0
+itemwake,25,@give me item 20042 c100,0
+itemwake,26,@give me item 20049 c100,0
+itemwake,27,@give me item 21003 c100,0
+itemwake,28,@give me item 21007 c100,0
+itemwake,29,@give me item 20108 c100,0
+itemwake,30,@give me item 20107 c100,0
+itemwake,31,@give me item 20088 c100,0
+itemwake,32,@give me item 20100 c100,0
+itemwake,33,@give me item 20091 c100,0
+itemwake,34,@give me item 20048 c100,0
+itemwake,35,@give me item 20038 c100,0
+itemwake,36,@give me item 20037 c100,0
+itemwake,37,@give me item 20054 c100,0
+itemwake,38,@give me item 20100 c100,0
+itemwake,39,@give me item 20038 c100,0
+itemwake,40,@give me item 20102 c100,0
+itemwake,41,@give me item 20053 c100,0
+itemwake,42,@give me item 20042 c100,0
+itemwake,43,@give me item 20107 c100,0
+itemwake,44,@give me item 20102 c100,0
+itemwake,45,@give me item 20097 c100,0
+itemwake,46,@give me item 20033 c100,0
+itemwake,47,@give me item 20094 c100,0
+itemwake,48,@give me item 20098 c100,0
+itemwake,49,@give me item 20042 c100,0
+itemwake,50,@give me item 20037 c100,0
+itemwake,51,@give me item 20053 c100,0
+itemwake,52,@give me item 20033 c100,0
+itemwake,53,@give me item 20094 c100,0
+itemwake,54,@give me item 20040 c100,0
+itemwake,55,@give me item 20039 c100,0
+itemwake,56,@give me item 20038 c100,0
+itemwake,57,@give me item 20052 c100,0
+itemwake,58,@give me item 20042 c100,0
+itemwake,59,@give me item 20037 c100,0
+itemwake,60,@give me item 20106 c100,0
+itemwake,61,@give me item 20039 c100,0
+itemwake,62,@give me item 20104 c100,0
+itemwake,63,@give me item 20100 c100,0
+itemwake,64,@give me item 20096 c100,0
+itemwake,65,@give me item 20042 c100,0
+itemwake,66,@give me item 20052 c100,0
+itemwake,67,@give me item 20088 c100,0
+itemwake,68,@give me item 20097 c100,0
+itemwake,69,@give me item 20038 c100,0
+itemwake,70,@give me item 20102 c100,0
+itemwake,71,@give me item 20104 c100,0
+itemwake,72,@give me item 20054 c100,0
+itemwake,73,@give me item 20042 c100,0
+itemwake,74,@give me item 20101 c100,0
+itemwake,75,@give me item 20092 c100,0
+itemwake,76,@give me item 20107 c100,0
+itemwake,77,@give me item 20039 c100,0
+itemwake,78,@give me item 20041 c100,0
+itemwake,79,@give me item 20050 c100,0
+itemwake,80,@give me item 20051 c100,0
+itembreak,1,@give me item 50005 c5,0
+itembreak,2,@give me item 50006 c10,0
+itembreak,3,@give me item 50007 c20,0
+itembreak,4,@give me item 50008 c30,0
+itembreak,5,@give me item 50009 c40,0
+itembreak,6,@give me item 50010 c50,0
+itembreak,7,@give me item 50011 c100,0
+itembreak,8,@give me item 50012 c100,0
+itembreak,9,@give me item 50013 c100,0
+itembreak,10,@give me item 50014 c100,0
+itembreak,11,@give me item 50015 c100,0
+itembreak,12,@give me item 50016 c100,0
+itembreak,13,@give me item 50017 c100,0
+itembreak,14,@give me item 50018 c200,0
+itembreak,15,@give me item 50019 c300,0
+defend,1,@give me item 40016 c100,0
+defend,2,@give me item 40184 c100,0
+defend,3,@give me item 40185 c100,0
+defend,4,@give me item 40186 c100,0
+defend,5,@give me item 40187 c100,0
+defend,6,@give me item 40188 c100,0
+defend,7,@give me item 40189 c100,0
+defend,8,@give me item 40190 c100,0
+defend,9,@give me item 40191 c100,0
+defend,10,@give me item 40192 c100,0
+defend,11,@give me item 40193 c100,0
+defend,12,@give me item 40194 c100,0
+defend,13,@give me item 40195 c100,0
+defend,14,@give me item 70008 c200,0
+defend,15,@give me item 40001 c300,0
+itemstone,1,@give me item 60005 c50,0
+itemstone,2,@give me item 60006 c20,0
+itemstone,3,@give me item 60007 c20,0
+itemstone,4,@give me item 60011 c100,0
+itemstone,5,@give me item 60012 c100,0
+itemstone,6,@give me item 60021 c100,0
+itemstone,7,@give me item 60022 c100,0
+itemstone,8,@give me item 60029 c100,0
+itemstone,9,@give me item 60030 c100,0
+itemstone,10,@give me item 60031 c100,0
+itemstone,11,@give me item 60041 c200,0
+itemstone,12,@give me item 60051 c300,0
+itemstone,13,@give me item 60061 c30,0
+itemstone,14,@give me item 60071 c40,0
+itemstone,15,@give me item 60081 c50,0
+vocunlock,1,@give me item 21001 c50,0
+vocunlock,2,@give me item 20050 c50,0
+vocunlock,3,@give me item 21012 c50,0
+vocunlock,4,@give me item 21003 c50,0
+vocunlock,5,@give me item 21010 c50,0
+vocunlock,6,@give me item 21014 c50,0
+vocunlock,7,@give me item 20038 c50,0
+vocunlock,8,@give me item 20101 c50,0
+vocunlock,9,@give me item 20039 c50,0
+vocunlock,10,@give me item 21014 c50,0
+vocunlock,11,@give me item 21008 c50,0
+vocunlock,12,@set me kiss 100,0
+vocunlock,13,@grow me setgrow 0 100|100|100|100|100,0
