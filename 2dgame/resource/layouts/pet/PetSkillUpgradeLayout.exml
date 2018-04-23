@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PetSkillUpgradeLayout" width="600" height="810" xmlns:e="http://ns.egret.com/eui" xmlns:gui="gui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="100%" height="100%" scale9Grid="66,70,1,1" source="ty_UIDi01" horizontalCenter="0" verticalCenter="0"/>
+	<e:Group width="540" height="120" y="37" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+		<e:Image source="ty_UIBg02" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" scale9Grid="20,16,1,1"/>
+		<e:Group id="Cur_Group_Skill" width="103" height="92" x="15" verticalCenter="0"/>
+		<e:Label id="Cur_Label_Name" text="秘术Lv.2" x="135" y="13" anchorOffsetX="0" width="193" style="ht_24_lc_stroke"/>
+		<e:Scroller width="395" height="68" x="135" y="47">
+			<gui:RichDisplayer id="Cur_Rd_Des"/>
+		</e:Scroller>
+	</e:Group>
+	<e:Group width="540" height="120" y="178" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+		<e:Image source="ty_UIBg02" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" scale9Grid="20,16,1,1"/>
+		<e:Group id="Next_Group_Skill" width="103" height="92" x="15" verticalCenter="0"/>
+		<e:Label id="Next_Label_Name" text="秘术Lv.2" x="135" y="13" anchorOffsetX="0" width="193" style="ht_24_lc_stroke"/>
+		<e:Scroller width="395" height="68" x="135" y="47">
+			<gui:RichDisplayer id="Next_Rd_Des"/>
+		</e:Scroller>
+	</e:Group>
+	<e:Image source="00_tongYong01.ty_jianTouIcon01" x="293" y="148"/>
+	<e:Group width="540" height="353" y="318" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+		<e:Image source="ty_UIBg02" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" scale9Grid="20,16,1,1" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Label id="Label_Max_Level" text="${PET_TXT13}" x="15" y="103" scaleX="1" scaleY="1" anchorOffsetX="0" width="511" anchorOffsetY="0" height="32" style="ht_28_lc_stroke" textAlign="center" verticalAlign="middle" textColor="0xC99F9F"/>
+		<e:Group id="Group_ConTitle_Pannel0" width="213" height="38" x="1" y="197" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image source="ty_TextBg02" x="10" y="4" scaleX="1" scaleY="1"/>
+			<e:Image source="00_tongYong01.ty_tongYongIcon03" x="19" y="-6" scaleX="1" scaleY="1"/>
+			<e:Label id="label_txt1" text="${EQUIP_NEED_MATERIAL}" x="62" y="6" anchorOffsetX="0" width="98" anchorOffsetY="0" height="21" textAlign="center" verticalAlign="middle" size="18" scaleX="1" scaleY="1" textColor="0x020000" style="ht_18_lc"/>
+		</e:Group>
+		<e:Group id="Group_ConTitle_Pannel" width="213" height="38" x="1" y="15" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image source="ty_TextBg02" x="10" y="4" scaleX="1" scaleY="1"/>
+			<e:Image x="19" y="-6" scaleX="1" scaleY="1" source="00_tongYong01.ty_tongYongIcon05"/>
+			<e:Label id="Label_Unlock_Title" text="${PROFE_TXT6}" x="62" y="6" anchorOffsetX="0" width="98" anchorOffsetY="0" height="21" textAlign="center" verticalAlign="middle" size="18" scaleX="1" scaleY="1" textColor="0x050000" style="ht_18_lc"/>
+		</e:Group>
+		<e:Group id="Group_Item_0" width="88" height="88" x="20" y="248" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1"/>
+		<e:Group width="88" height="88" x="124" y="248" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" id="Group_Item_1"/>
+		<e:Group width="88" height="88" x="332" y="248" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" id="Group_Item_3"/>
+		<e:Group width="88" height="88" x="436" y="248" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" id="Group_Item_4"/>
+		<e:Group width="88" height="88" x="228" y="248" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" id="Group_Item_2"/>
+		<gui:RichDisplayer id="Rd_Conditoin" width="515" height="121" x="13" y="65" anchorOffsetX="0" anchorOffsetY="0">
+		</gui:RichDisplayer>
+	</e:Group>
+	<gui:Button id="Btn_Return" label="" right="7" bottom="10">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back04"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<gui:Button id="Btn_Close" label="" top="0" right="0">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back02"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<e:Group id="Group_Submit" width="164" height="78" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" bottom="39">
+		<gui:Button id="Btn_Submit" label="${PET_TXT11}" x="-4" y="0" scaleX="1" scaleY="1">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_tongYongBt01"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_28_lc_stroke" textAlign="center" verticalAlign="middle" textColor="0xffffff"/>
+			</e:Skin>
+		</e:skinName>
+		</gui:Button>
+		<gui:RichDisplayer id="Rd_Submit" width="200" height="30" x="-18" y="0" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

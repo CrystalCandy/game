@@ -1,0 +1,9 @@
+#name_ks,动画宽,动画高,帧数,间隔（毫秒）
+name_ks,w_n,h_n,count_n,interval_n
+shoushou,121,123,11,100
+xinShouKuang,224,99,12,150
+yuan,196,196,11,100
+loading,146,148,6,150
+xsChengHao,106,31,1,100
+xsShengmingDan,67,67,1,100
+xsXianWei,74,31,1,100

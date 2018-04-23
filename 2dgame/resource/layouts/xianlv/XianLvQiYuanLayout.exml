@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="XianLvQiYuanLayout" width="470" height="430" xmlns:e="http://ns.egret.com/eui" xmlns:gui="gui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="group_1" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" top="0" bottom="0">
+		<e:Image source="00_tongYong01.ty_tipsDi" scale9Grid="8,8,23,23" left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="00_tongYong01.cz_uiLine01" width="418" scale9Grid="14,8,19,1" top="44" horizontalCenter="0"/>
+		<e:Image source="00_tongYong01.cz_uiLine01" scale9Grid="14,8,19,1" width="419" top="180" horizontalCenter="0"/>
+		<gui:RichDisplayer id="rd_1" height="30" top="12" width="396" horizontalCenter="0"/>
+		<gui:RichDisplayer id="rd_2" height="113" top="61" width="396" horizontalCenter="0" anchorOffsetY="0">
+		</gui:RichDisplayer>
+		<gui:RichDisplayer id="rd_3" width="396" horizontalCenter="0" anchorOffsetY="0" top="206" height="113"/>
+		<gui:RichDisplayer id="rd_4" width="396" horizontalCenter="0" anchorOffsetY="0" top="326" height="73.61"/>
+		<e:Image width="103" height="29" source="tz_text01" top="87" right="21"/>
+	</e:Group>
+</e:Skin>

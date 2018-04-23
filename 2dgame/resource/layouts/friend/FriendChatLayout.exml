@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FriendChatLayout" width="600" height="850" xmlns:e="http://ns.egret.com/eui" xmlns:gui="gui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="ty_UIDi01" scale9Grid="55,53,25,23" left="0" right="0" top="0" bottom="0"/>
+	<e:Group id="group_chat" width="537" height="78" x="32" y="654" anchorOffsetY="0" anchorOffsetX="0">
+		<gui:Button id="btn_send" label="${CHAT_SEND}" x="430" y="8" anchorOffsetX="0" width="107" anchorOffsetY="0" height="61">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="ty_tongYongBt01"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="" style="ht_24_lc_stroke" borderColor="0xd16b25"/>
+			</e:Skin>
+		</gui:skinName>
+		</gui:Button>
+		<e:Image source="ty_UIBg02" x="7" y="16" anchorOffsetX="0" width="414" anchorOffsetY="0" height="47" scale9Grid="18,9,11,18" scaleX="1" scaleY="1"/>
+		<gui:Button id="btn_biaoqing" label="" x="375" y="17">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="lt_bt_biaoQing01"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</gui:skinName>
+		</gui:Button>
+		<e:EditableText id="edit_input" width="356" height="33" text="" x="15" y="23" anchorOffsetX="0" anchorOffsetY="0"/>
+	</e:Group>
+	<gui:Button id="btn_close" label="" x="39" y="746">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back02"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<e:Image source="ty_UIBg02" x="32" y="68" scale9Grid="18,15,6,6" width="530" anchorOffsetY="0" height="579"/>
+	<e:Image source="ty_UIBg06" x="32" y="34" height="40" scale9Grid="12,8,6,5" anchorOffsetX="0" width="530"/>
+	<e:Label id="nameLabel" text="Label" x="43" y="41" style="ht_24_lc" anchorOffsetX="0" width="313"/>
+	<e:List id="list_chat" width="515" height="556" x="39" y="81" anchorOffsetX="0" anchorOffsetY="0"/>
+</e:Skin>

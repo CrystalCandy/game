@@ -1,0 +1,7 @@
+{"file":"heifengxiaoyao_attack.png","frames":{
+"attack_3_body_00":{"x":0,"y":0,"w":84,"h":86,"offX":116,"offY":104,"sourceW":320,"sourceH":320},
+"attack_3_body_01":{"x":0,"y":88,"w":80,"h":86,"offX":126,"offY":110,"sourceW":320,"sourceH":320},
+"attack_3_body_02":{"x":86,"y":0,"w":72,"h":86,"offX":139,"offY":112,"sourceW":320,"sourceH":320},
+"attack_7_body_00":{"x":82,"y":170,"w":84,"h":71,"offX":120,"offY":110,"sourceW":320,"sourceH":320},
+"attack_7_body_01":{"x":82,"y":88,"w":80,"h":80,"offX":114,"offY":101,"sourceW":320,"sourceH":320},
+"attack_7_body_02":{"x":160,"y":0,"w":72,"h":86,"offX":109,"offY":94,"sourceW":320,"sourceH":320}}}

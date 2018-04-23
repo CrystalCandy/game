@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SevenDayLayout" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:gui="gui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="_tongYongDi01" horizontalCenter="0" top="0"/>
+	<e:Group width="640" height="110" x="0" anchorOffsetX="0" anchorOffsetY="0" bottom="0">
+		<e:Image source="ty_biaoTiDi02" bottom="0" horizontalCenter="0"/>
+		<gui:Button id="Btn_Return" xmlns:gui="gui.*" label="" bottom="0" right="0">
+			<gui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_bt_back03"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<e:Image source="ty_UIBg01" width="330" height="40" scale9Grid="15,14,2,3" horizontalCenter="0" x="155" scaleX="1" scaleY="1" bottom="42"/>
+		<e:Label id="time_txt" text="time_txt" width="330" height="40" textAlign="center" verticalAlign="middle" horizontalCenter="0" bottom="42" style="ht_24_lc_stroke"/>
+	</e:Group>
+	<e:Group width="622" top="10" bottom="90" x="9">
+		<e:Image source="ty_uiDiKuang01" width="100%" height="100%" scale9Grid="302,45,31,17" x="0" y="0"/>
+		<e:Group id="group_pannel" width="592" top="15" bottom="160" x="15">
+			<e:Image source="ty_UIBg02" height="100%" width="100%" scale9Grid="20,16,1,2" x="0" top="0"/>
+			<e:Panel id="group_tap" width="592" height="55" horizontalCenter="0" top="0">
+				<e:Image source="ty_UIBg06" width="100%" height="100%" verticalCenter="0" horizontalCenter="0" scale9Grid="14,12,1,1"/>
+				<e:Scroller id="tab_scroll_control" width="532" height="55" horizontalCenter="0" verticalCenter="0" scrollPolicyV="off" scrollPolicyH="auto">
+					<e:Group id="tab_scroll" width="947" height="100%">
+					<e:RadioButton id="tab1" label="第1天" x="-3" y="6" scaleX="1" scaleY="1">
+						<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="ty_tongYongBt05" source.down="ty_tongYongBt04"/>
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_26_lc_stroke" text=""/>
+						</e:Skin>
+						</e:skinName>
+					</e:RadioButton>
+					<e:RadioButton id="tab2" label="第2天" x="133.83" y="6" scaleX="1" scaleY="1">
+						<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="ty_tongYongBt05" source.down="ty_tongYongBt04"/>
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_26_lc_stroke" text=""/>
+						</e:Skin>
+						</e:skinName>
+					</e:RadioButton>
+					<e:RadioButton id="tab3" label="第3天" x="270.67" y="6" scaleX="1" scaleY="1">
+						<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="ty_tongYongBt05" source.down="ty_tongYongBt04"/>
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_26_lc_stroke" text=""/>
+						</e:Skin>
+						</e:skinName>
+					</e:RadioButton>
+					<e:RadioButton id="tab4" label="第4天" x="407.5" y="6" scaleX="1" scaleY="1">
+						<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="ty_tongYongBt05" source.down="ty_tongYongBt04"/>
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_26_lc_stroke" text=""/>
+						</e:Skin>
+						</e:skinName>
+					</e:RadioButton>
+					<e:RadioButton id="tab5" label="第5天" x="544.33" y="6" scaleX="1" scaleY="1">
+						<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="ty_tongYongBt05" source.down="ty_tongYongBt04"/>
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_26_lc_stroke" text=""/>
+						</e:Skin>
+						</e:skinName>
+					</e:RadioButton>
+					<e:RadioButton id="tab6" label="第6天" x="681.17" y="6" scaleX="1" scaleY="1">
+						<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="ty_tongYongBt05" source.down="ty_tongYongBt04"/>
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_26_lc_stroke" text=""/>
+						</e:Skin>
+						</e:skinName>
+					</e:RadioButton>
+					<e:RadioButton id="tab7" label="第7天" x="818" y="6" scaleX="1" scaleY="1">
+						<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="ty_tongYongBt05" source.down="ty_tongYongBt04"/>
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_26_lc_stroke" text=""/>
+						</e:Skin>
+						</e:skinName>
+					</e:RadioButton>
+					</e:Group>
+				</e:Scroller>
+				<gui:Button id="left_btn" label="" x="-5.14" y="3.8">
+					<gui:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="ty_bt_jianTou03"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</gui:skinName>
+				</gui:Button>
+				<gui:Button id="right_btn" label="" x="564" y="2">
+					<gui:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="ty_bt_jianTou04"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</gui:skinName>
+				</gui:Button>
+			</e:Panel>
+			<e:Scroller id="info_control" width="578" top="55" bottom="5" x="7">
+				<e:List id="list_prize" itemRendererSkinName="itemRender.SevenDayPrizeLayout"/>
+			</e:Scroller>
+		</e:Group>
+		<e:Group id="group_finish" width="204" height="146" x="20" bottom="11">
+			<e:Image source="qrrw_renWuDi01" width="100%" height="100%" verticalCenter="0" horizontalCenter="0"/>
+			<e:Label id="leiji_tl" text="${SEVEN_TXT6}" width="198" height="25" top="12" left="0" textAlign="center" verticalAlign="middle" style="ht_22_lc_stroke"/>
+			<gui:RichDisplayer id="leiji_rd" width="86" height="80" x="106" y="50" anchorOffsetX="0" anchorOffsetY="0">
+			</gui:RichDisplayer>
+			<gui:Button id="leiji_get" label="${TASK_EDIT_ACCEPT}" x="109" y="67" width="81">
+				<gui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="ty_tongYongBt15"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_22_lc_stroke"/>
+				</e:Skin>
+				</gui:skinName>
+			</gui:Button>
+		</e:Group>
+		<e:Group id="group_sign" width="204" height="146" x="229" bottom="11">
+			<e:Image width="100%" height="100%" verticalCenter="0" horizontalCenter="0" source="qrrw_renWuDi03"/>
+			<e:Label id="qiandao_tl" text="${SEVEN_TXT11}" width="198" height="25" top="12" left="0" textAlign="center" verticalAlign="middle" style="ht_22_lc_stroke"/>
+			<gui:RichDisplayer id="qiandao_rd" width="86" height="80" x="106" y="50" anchorOffsetX="0" anchorOffsetY="0"/>
+			<gui:Button id="qiandao_get" label="${GROW_SELECT_GO}" x="107" y="67" width="81">
+			<gui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_tongYongBt15"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_22_lc_stroke" text=""/>
+				</e:Skin>
+			</gui:skinName>
+			</gui:Button>
+		</e:Group>
+		<e:Group id="group_stone" width="184" height="170" x="433" bottom="12">
+			<e:Image source="39_qiRiRenWu.qrrw_wanNengShi01" verticalCenter="0" horizontalCenter="0"/>
+            <e:ProgressBar id="zaoji_imb" anchorOffsetY="0" anchorOffsetX="0" value="100" verticalCenter="-5" horizontalCenter="2" touchEnabled="false" direction="btt">
+                <e:skinName>
+                    <e:Skin >
+                        <e:Image width="100%" height="100%" verticalCenter="0" source=""/>
+                        <e:Image id="thumb" height="100%" width="100%"  source="qrrw_wanNengShi02" anchorOffsetX="1" verticalCenter="0"/>
+                    </e:Skin>
+                </e:skinName>
+            </e:ProgressBar>            
+			<e:Image source="39_qiRiRenWu.qrrw_textDi01" horizontalCenter="0" bottom="0"/>
+			<gui:RichDisplayer id="zaoji_rd" width="132" height="45" horizontalCenter="0.5" bottom="6"/>
+			<gui:Button id="zaoji_get" label="" horizontalCenter="0.5" verticalCenter="-4">
+				<gui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="qrrw_wanNengShi03"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</gui:skinName>
+			</gui:Button>
+		</e:Group>
+	</e:Group>
+</e:Skin>

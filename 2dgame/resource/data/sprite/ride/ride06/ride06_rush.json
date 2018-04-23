@@ -1,0 +1,9 @@
+{"file":"ride06_rush.png","frames":{
+"rush_3_ride2_00":{"x":179,"y":130,"w":35,"h":35,"offX":319,"offY":278,"sourceW":640,"sourceH":640},
+"rush_3_ride2_01":{"x":216,"y":130,"w":34,"h":35,"offX":320,"offY":278,"sourceW":640,"sourceH":640},
+"rush_3_ride_00":{"x":140,"y":0,"w":136,"h":128,"offX":256,"offY":255,"sourceW":640,"sourceH":640},
+"rush_3_ride_01":{"x":0,"y":0,"w":138,"h":127,"offX":253,"offY":256,"sourceW":640,"sourceH":640},
+"rush_7_ride3_00":{"x":132,"y":191,"w":46,"h":56,"offX":307,"offY":258,"sourceW":640,"sourceH":640},
+"rush_7_ride3_01":{"x":132,"y":130,"w":45,"h":59,"offX":308,"offY":259,"sourceW":640,"sourceH":640},
+"rush_7_ride_00":{"x":0,"y":129,"w":130,"h":125,"offX":248,"offY":246,"sourceW":640,"sourceH":640},
+"rush_7_ride_01":{"x":278,"y":0,"w":132,"h":129,"offX":249,"offY":242,"sourceW":640,"sourceH":640}}}

@@ -1,0 +1,12 @@
+﻿一、执行tinify-1.5.1的setup.cmd安装好环境
+
+二、png或者jpg放在目录下
+
+三、运行python脚本tinypng.py
+
+PS：
+1.如果执行 setup.cmd下载出错，则执行requests-2.18.3目录下的setup.cmd
+2.tinypng每个免费账号一个月可以处理500张图片，可以多申请几个账号换用（修改tinify.key =XXX即可）（https://tinypng.com/developers）
+
+
+

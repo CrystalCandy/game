@@ -1,0 +1,7 @@
+{"file":"yingkegui_combat_idle.png","frames":{
+"combat_idle_3_body_00":{"x":0,"y":190,"w":92,"h":61,"offX":114,"offY":158,"sourceW":320,"sourceH":320},
+"combat_idle_3_body_01":{"x":96,"y":64,"w":93,"h":61,"offX":113,"offY":158,"sourceW":320,"sourceH":320},
+"combat_idle_3_body_02":{"x":0,"y":64,"w":94,"h":61,"offX":112,"offY":158,"sourceW":320,"sourceH":320},
+"combat_idle_3_body_03":{"x":0,"y":0,"w":94,"h":62,"offX":113,"offY":157,"sourceW":320,"sourceH":320},
+"combat_idle_3_body_04":{"x":96,"y":0,"w":93,"h":62,"offX":114,"offY":157,"sourceW":320,"sourceH":320},
+"combat_idle_3_body_05":{"x":0,"y":127,"w":93,"h":61,"offX":114,"offY":158,"sourceW":320,"sourceH":320}}}

@@ -1,0 +1,9 @@
+{"file":"hulidaxian_combat_idle.png","frames":{
+"combat_idle_3_body_00":{"x":307,"y":0,"w":101,"h":119,"offX":106,"offY":103,"sourceW":320,"sourceH":320},
+"combat_idle_3_body_01":{"x":105,"y":129,"w":103,"h":120,"offX":104,"offY":102,"sourceW":320,"sourceH":320},
+"combat_idle_3_body_02":{"x":210,"y":129,"w":101,"h":122,"offX":106,"offY":100,"sourceW":320,"sourceH":320},
+"combat_idle_3_body_03":{"x":205,"y":0,"w":100,"h":121,"offX":107,"offY":101,"sourceW":320,"sourceH":320},
+"combat_idle_7_body_00":{"x":0,"y":0,"w":101,"h":127,"offX":116,"offY":95,"sourceW":320,"sourceH":320},
+"combat_idle_7_body_01":{"x":0,"y":129,"w":103,"h":123,"offX":116,"offY":94,"sourceW":320,"sourceH":320},
+"combat_idle_7_body_02":{"x":313,"y":129,"w":100,"h":123,"offX":116,"offY":93,"sourceW":320,"sourceH":320},
+"combat_idle_7_body_03":{"x":103,"y":0,"w":100,"h":127,"offX":116,"offY":95,"sourceW":320,"sourceH":320}}}

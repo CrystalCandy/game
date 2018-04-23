@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SkillsSettingLayout" width="640" height="900" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:gui="gui.*">
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image left="0" right="0" top="0" bottom="0" scale9Grid="58,136,161,166" source="00_tongYong01.ty_uiDi01"/>
+		<e:Label id="label_wndName" text="${ROLE_TXT26}" y="3" style="ht_24_lc_stroke" horizontalCenter="0"/>
+		<e:Image id="bg_scroll" scale9Grid="5,5,32,31" anchorOffsetY="0" anchorOffsetX="0" width="540.82" top="65" bottom="130" horizontalCenter="0" source="00_tongYong01.ty_uiDi02"/>
+		<e:Group id="group_skills" width="500" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" height="620" top="84">
+		</e:Group>
+		<e:Image id="bg_des" source="00_tongYong01.ty_uiDi02" scale9Grid="5,5,32,31" anchorOffsetY="0" height="103.12" anchorOffsetX="0" width="600" horizontalCenter="0" bottom="18"/>
+		<e:Label id="label_instruction" text="${ROLE_TXT27}" width="459" height="44" style="ht_24_lc_stroke" left="62" bottom="46" anchorOffsetX="0"/>
+		<gui:Button id="btn_back" label="" right="0" bottom="0">
+			<gui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_bt_back01"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+	</e:Group>
+</e:Skin>

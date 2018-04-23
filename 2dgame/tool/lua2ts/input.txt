@@ -1,0 +1,15 @@
+local function genFunction0(s)
+	return assert(loadstring("return function() return " .. s .. " end"))()
+end
+
+local function genFunction1(s)
+	return assert(loadstring("return function(a) return " .. s .. " end"))()
+end
+
+local function genFunction2(s)
+	return assert(loadstring("return function(a,b) return " .. s .. " end"))()
+end
+
+local function genFunction3(s)
+	return assert(loadstring("return function(a,b,c) return " .. s .. " end"))()
+end

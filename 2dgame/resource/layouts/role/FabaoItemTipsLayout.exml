@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FabaoItemTipsLayout" width="450" height="400" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:gui="gui.*">
+	<e:Group id="equip_wnd" top="0" left="0" right="0" bottom="0">
+		<e:Image source="00_tongYong01.ty_tipsDi" scaleX="1" scaleY="1" top="0" bottom="0" scale9Grid="20,19,2,2" left="0" right="0" anchorOffsetY="0"/>
+		<e:Group id="item" width="100" height="100" left="21" top="16"/>
+		<gui:RichDisplayer id="name" width="230" height="26" anchorOffsetY="0" left="140" top="19"/>
+		<gui:RichDisplayer id="des" width="230" height="20" y="52" anchorOffsetY="0" left="140"/>
+		<gui:BatchImage id="bImage" width="300" height="30" left="140" top="87"/>
+		<e:Group id="grouo_base" width="413" height="103" y="122" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+		<e:Image source="00_tongYong01.cz_uiLine01" scale9Grid="22,8,2,1" scaleX="1" scaleY="1" horizontalCenter="0" width="410" x="1" top="0"/>
+		<gui:RichDisplayer id="rd_base" height="85" width="420" anchorOffsetY="0" scaleX="1" scaleY="1" top="20" left="0"/>
+		</e:Group>
+		<e:Group id="group_effect" width="413" height="81" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0.5" top="234">
+		<e:Image source="00_tongYong01.cz_uiLine01" scale9Grid="22,8,2,1" scaleX="1" scaleY="1" horizontalCenter="0" width="410" x="1" top="0"/>
+		<gui:RichDisplayer id="rd_effect" height="60" width="420" anchorOffsetY="0" scaleX="1" scaleY="1" top="20" left="0"/>
+		</e:Group>
+		<e:Group id="group_dazao" width="413" height="61.34" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0.5" bottom="12">
+		<e:Image source="00_tongYong01.cz_uiLine01" scale9Grid="22,8,2,1" scaleX="1" scaleY="1" horizontalCenter="0" width="410" x="1" top="0"/>
+		<gui:RichDisplayer id="rd_dazao" height="20" width="420" anchorOffsetY="0" scaleX="1" scaleY="1" left="0" verticalCenter="0"/>
+			<e:Button id="btn_wear" label="穿戴" bottom="0" y="0.339999999999975" scaleX="1" scaleY="1" right="0" x="256">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="ty_tongYongBt2"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btn_show" label="展示" bottom="0" y="0.339999999999975" scaleX="1" scaleY="1" right="0" x="256">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="ty_tongYongBt2"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+		<e:Group id="btn_group" width="350" height="49" anchorOffsetY="0" anchorOffsetX="0" top="12" right="0">
+			<e:layout>
+			<e:HorizontalLayout gap="6" horizontalAlign="right" verticalAlign="middle" paddingRight="0"/>
+			</e:layout>
+		</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

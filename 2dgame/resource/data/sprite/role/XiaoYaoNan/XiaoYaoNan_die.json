@@ -1,0 +1,7 @@
+{"file":"XiaoYaoNan_die.png","frames":{
+"die_3_body_00":{"x":1,"y":96,"w":104,"h":85,"offX":123,"offY":156,"sourceW":320,"sourceH":320},
+"die_3_body_01":{"x":1,"y":1,"w":123,"h":93,"offX":123,"offY":152,"sourceW":320,"sourceH":320},
+"die_3_body_02":{"x":334,"y":83,"w":125,"h":72,"offX":123,"offY":173,"sourceW":320,"sourceH":320},
+"die_7_body_00":{"x":126,"y":1,"w":103,"h":102,"offX":81,"offY":122,"sourceW":320,"sourceH":320},
+"die_7_body_01":{"x":231,"y":1,"w":101,"h":97,"offX":80,"offY":127,"sourceW":320,"sourceH":320},
+"die_7_body_02":{"x":334,"y":1,"w":115,"h":80,"offX":80,"offY":144,"sourceW":320,"sourceH":320}}}

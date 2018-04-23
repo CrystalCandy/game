@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CommonEmbattleLayout" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:gui="gui.*">
+	<e:Image source="gz_buZhenDi01" top="0" right="0"/>
+	<e:Group id="group_right" width="320" height="569" x="320" y="3" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image id="rbottom7" source="gk_buZhenDi01" y="140" scaleX="1" scaleY="1" x="194"/>
+		<e:Image id="rbottom8" source="gk_buZhenDi01" y="281" scaleX="1" scaleY="1" x="198"/>
+		<e:Image id="rbottom9" source="gk_buZhenDi01" y="441" scaleX="1" scaleY="1" x="194"/>
+		<e:Image id="rbottom4" source="gk_buZhenDi01" y="87" scaleX="1" scaleY="1" x="101"/>
+		<e:Image id="rbottom5" source="gk_buZhenDi01" y="224" scaleX="1" scaleY="1" x="94"/>
+		<e:Image id="rbottom6" source="gk_buZhenDi01" y="378" scaleX="1" scaleY="1" x="93"/>
+		<e:Image id="rbottom1" source="gk_buZhenDi01" y="156" scaleX="1" scaleY="1" x="2"/>
+		<e:Image id="rbottom2" source="gk_buZhenDi01" y="293" scaleX="1" scaleY="1" x="-5"/>
+		<e:Image id="rbottom3" source="gk_buZhenDi01" y="447" scaleX="1" scaleY="1" x="-6"/>
+		<gui:ActorView id="rview7" width="20" height="20" x="237" y="164"/>
+		<gui:ActorView id="rview8" width="20" height="20" x="241" y="306"/>
+		<gui:ActorView id="rview9" width="20" height="20" x="240" y="467"/>
+		<gui:ActorView id="rview4" width="20" height="20" x="146" y="115"/>
+		<gui:ActorView id="rview6" width="20" height="20" x="137" y="404"/>
+		<gui:ActorView id="rview5" width="20" height="20" x="137" y="248"/>
+		<gui:ActorView id="rview1" width="20" height="20" x="45" y="182"/>
+		<gui:ActorView id="rview2" width="20" height="20" x="38" y="317"/>
+		<gui:ActorView id="rview3" width="20" height="20" x="41" y="470"/>
+	</e:Group>
+	<e:Group id="group_left" width="320" height="569" y="3" anchorOffsetX="0" anchorOffsetY="0" left="0">
+		<e:Image id="lbottom1" source="gk_buZhenDi01" y="140" scaleX="1" scaleY="1" x="194"/>
+		<e:Image id="lbottom2" source="gk_buZhenDi01" y="281" scaleX="1" scaleY="1" x="198"/>
+		<e:Image id="lbottom3" source="gk_buZhenDi01" y="441" scaleX="1" scaleY="1" x="194"/>
+		<e:Image id="lbottom4" source="gk_buZhenDi01" y="87" scaleX="1" scaleY="1" x="101"/>
+		<e:Image id="lbottom5" source="gk_buZhenDi01" y="224" scaleX="1" scaleY="1" x="94"/>
+		<e:Image id="lbottom6" source="gk_buZhenDi01" y="378" scaleX="1" scaleY="1" x="93"/>
+		<e:Image id="lbottom7" source="gk_buZhenDi01" y="156" scaleX="1" scaleY="1" x="2"/>
+		<e:Image id="lbottom8" source="gk_buZhenDi01" y="293" scaleX="1" scaleY="1" x="-5"/>
+		<e:Image id="lbottom9" source="gk_buZhenDi01" y="447" scaleX="1" scaleY="1" x="-6"/>
+		<gui:ActorView id="lview1" width="20" height="20" x="237" y="164"/>
+		<gui:ActorView id="lview2" width="20" height="20" x="241" y="306"/>
+		<gui:ActorView id="lview3" width="20" height="20" x="240" y="467"/>
+		<gui:ActorView id="lview4" width="20" height="20" x="146" y="115"/>
+		<gui:ActorView id="lview5" width="20" height="20" x="137" y="248"/>
+		<gui:ActorView id="lview6" width="20" height="20" x="137" y="404"/>
+		<gui:ActorView id="lview7" width="20" height="20" x="45" y="182"/>
+		<gui:ActorView id="lview8" width="20" height="20" x="38" y="317"/>
+		<gui:ActorView id="lview9" width="20" height="20" x="41" y="470"/>
+	</e:Group>
+	<e:Group id="group_array" anchorOffsetX="0" anchorOffsetY="0" width="640" top="592" bottom="92">
+		<e:Scroller id="scroller" width="622" x="6" anchorOffsetX="0" anchorOffsetY="0" top="12" bottom="19">
+			<e:Group id="group_fighterList" width="100%" height="100%">
+				<e:layout>
+					<e:TileLayout paddingLeft="5" horizontalGap="6" requestedColumnCount="6" orientation="rows"  paddingRight="5"/>
+				</e:layout>
+			</e:Group>
+		</e:Scroller>
+		<e:Image id="block" source="fuBen_fuBenHeiDi01" x="5" anchorOffsetX="0" width="623" anchorOffsetY="0" scale9Grid="17,16,14,15" top="-4" bottom="21"/>
+		<gui:RichDisplayer id="rdtips" width="510" height="29" y="-7" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" x="61" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Image source="gz_buZhenDi03" touchEnabled="false" y="0" x="565"/>
+	<e:Image source="gz_buZhenDi02" x="0" touchEnabled="false" y="314"/>
+	<gui:Button id="oneKeyToEquip" label="" x="0" y="2">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="gk_zhuangBeiBt01"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<e:Group id="group_bottom" x="0" bottom="0">
+		<e:Image source="ty_biaoTiDi02" x="0" y="12" scaleX="1" scaleY="1" width="640"/>
+		<gui:Button id="btn_close" label="" scaleX="1" scaleY="1" x="546" y="0">
+			<gui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_bt_back03"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<e:Image source="gk_kaiShiZhanDi01" x="29" y="-34" anchorOffsetY="0" height="96" anchorOffsetX="0" width="480" scale9Grid="46,34,26,18" scaleX="1" scaleY="1"/>
+		<gui:Button id="btn_ok" label="${BIG_BOSS_AUTO_OK}" x="253" y="-24" scaleX="1" scaleY="1" anchorOffsetY="0" height="76" width="248">
+			<gui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="gk_bt_kaiShiZhanDou01"/>
+				<e:Label id="labelDisplay" verticalCenter="0" text="" x="111" style="ht_30_lc_stroke"/>
+			</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<e:Image id="icon_ok" source="gk_queDingIcon01" x="301" y="-7" touchEnabled="false" scaleX="1" scaleY="1"/>
+		<e:Label id="label_zhanlititle" text="${PET_TXT2}" x="51" y="-2" style="ht_30_lc_stroke" scaleX="1" scaleY="1"/>
+		<e:Label id="label_zhanli" text="1000" x="135" y="0" anchorOffsetY="0" anchorOffsetX="0" style="ht_30_lc_stroke" textColor="0xff8800" scaleX="1" scaleY="1"/>
+	</e:Group>
+
+</e:Skin>

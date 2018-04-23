@@ -1,0 +1,7 @@
+{"file":"heifenglaoyao_idle.png","frames":{
+"idle_3_body_00":{"x":346,"y":193,"w":164,"h":191,"offX":103,"offY":18,"sourceW":320,"sourceH":320},
+"idle_3_body_01":{"x":0,"y":0,"w":178,"h":197,"offX":105,"offY":16,"sourceW":320,"sourceH":320},
+"idle_3_body_02":{"x":346,"y":0,"w":164,"h":191,"offX":103,"offY":18,"sourceW":320,"sourceH":320},
+"idle_7_body_00":{"x":180,"y":0,"w":164,"h":205,"offX":45,"offY":29,"sourceW":320,"sourceH":320},
+"idle_7_body_01":{"x":166,"y":207,"w":178,"h":179,"offX":29,"offY":64,"sourceW":320,"sourceH":320},
+"idle_7_body_02":{"x":0,"y":199,"w":164,"h":205,"offX":45,"offY":29,"sourceW":320,"sourceH":320}}}

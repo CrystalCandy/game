@@ -1,0 +1,10 @@
+{
+ "initial": [
+  "merged.js",
+  "allusdk.min.js",
+  "AlluGameSdk.min.js"
+],
+ "game": [
+  "main.min.js"
+ ]
+}

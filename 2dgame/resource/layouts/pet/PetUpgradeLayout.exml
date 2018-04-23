@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PetUpgradeLayout" width="620" height="620" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:gui="gui.*">
+	<e:Image x="0" y="1" width="100%" height="100%" scale9Grid="66,70,1,1" source="ty_UIDi01"/>
+	<e:Image source="00_tongYong03.ty_UIBg12" scale9Grid="47,33,18,9" anchorOffsetX="0" width="530" anchorOffsetY="0" height="120" scaleX="1" scaleY="1" horizontalCenter="-8" top="37"/>
+	<gui:Button id="Btn_List" label="" x="53" y="48" touchEnabled="true">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_BTlieBiao"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<e:Group id="pet_list_group" width="419" height="90" x="123" y="53" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Group id="group_top" width="527" height="120" x="43" y="164">
+		<e:Image anchorOffsetX="0" width="533" anchorOffsetY="0" height="120" scaleX="1" scaleY="1" horizontalCenter="3" verticalCenter="6" source="ty_xuanZheDi01" scale9Grid="21,21,1,1"/>
+		<e:Image y="17" anchorOffsetX="0" width="370" anchorOffsetY="0" height="104" scale9Grid="23,18,1,1" horizontalCenter="1.5" source="zy_skillKuang02"/>
+		<e:Image source="cz_uiLine01" x="193" y="46" anchorOffsetX="0" width="246" anchorOffsetY="0" height="3"/>
+		<e:Group id="Gropu_Head" width="100" height="100" x="91" y="11" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image id="Img_Head_Bg" source="00_tongYong02.ty_pet_pinJieBg01" x="-3" y="-8" scaleX="0.8" scaleY="0.8"/>
+			<e:Image id="Img_Head" source="touXiang01.pet_3001" x="-3" scaleX="0.8" scaleY="0.8" y="-8"/>
+		</e:Group>
+		<e:Label id="label_zhanlititle" text="${PET_TXT2}" x="201" y="18" anchorOffsetX="0" width="67" anchorOffsetY="0" height="32" size="25" textColor="0xe58a0d" textAlign="left" style="ht_20_lc"/>
+		<e:Label id="Label_Force" text="123" x="270" y="18" anchorOffsetX="0" width="132" anchorOffsetY="0" height="32" size="25" textColor="0xE58A0D" textAlign="left" style="ht_20_lc"/>
+		<e:Label id="Label_Level" text="Lv.99" x="199" y="53" size="25" anchorOffsetX="0" width="86" textColor="0xf2efe8" style="ht_20_lc"/>
+		<e:Label id="Label_Exp" text="356/6555" x="284" y="54" size="20" anchorOffsetX="0" width="148" textColor="0xbfa235" textAlign="center" anchorOffsetY="0" height="22" style="ht_20_lc"/>
+		<e:ProgressBar id="Bar_Exp" y="87.02" anchorOffsetY="0" anchorOffsetX="0" value="1" left="200" height="17">
+			<e:skinName>
+				<e:Skin >
+					<e:Image width="100%" height="100%" verticalCenter="0" source="hb_ExpBg01"/>
+					<e:Image id="thumb" height="80%" width="98%"  source="hb_Exp01" anchorOffsetX="1" verticalCenter="0" x="3"/>
+					<e:Label id="labelDisplay" verticalAlign="middle"
+					         horizontalCenter="0" verticalCenter="0"  text="" textColor="0xffffff" width="100%" height="100%" textAlign="center" style="ht_16_lc_stroke"/>
+				</e:Skin>
+			</e:skinName>
+		</e:ProgressBar>
+	</e:Group>
+	<e:Group id="group_item" width="520" height="131" x="46" y="307" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image source="00_tongYong01.ty_tyShangPinTextDi01" x="0" y="0" width="100%" height="100%" scale9Grid="14,15,1,1"/>
+		<e:Group id="Group_Item0" width="88" height="88" x="87" y="19" anchorOffsetX="0" anchorOffsetY="0">
+		</e:Group>
+		<e:Image id="Img_Item_Select0" source="00_tongYong01.ty_xuanZhongKuang01" x="87" y="19"/>
+		<e:Group id="Group_Item1" width="88" height="88" x="217" y="19" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Image id="Img_Item_Select1" source="00_tongYong01.ty_xuanZhongKuang01" x="216" y="20"/>
+		<e:Group id="Group_Item2" width="88" height="88" x="348" y="19" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Image id="Img_Item_Select2" source="00_tongYong01.ty_xuanZhongKuang01" x="347" y="18"/>
+	</e:Group>
+	<e:Image source="ty_tipsXuanZhe02" y="453" anchorOffsetX="0" width="267" anchorOffsetY="0" height="46" scale9Grid="20,21,2,2" horizontalCenter="-16.5"/>
+	<gui:RichDisplayer id="Rd_Tips" width="240" height="29" x="174" y="461" anchorOffsetX="0" anchorOffsetY="0">
+	</gui:RichDisplayer>
+	<gui:Button id="Btn_GetWay" label="${COMMON_TXT2}" x="444" y="454" anchorOffsetX="0" width="96" anchorOffsetY="0" height="39">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_tongYongBt21"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="18" style="ht_22_lc_stroke" textColor="0xffffff"/>
+			</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<gui:Button id="Btn_Upgrade" label="${PET_TXT12}" x="100" y="510" width="162">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_tongYongBt01"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_26_lc_stroke" text=""/>
+			</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<gui:Button id="Btn_OneKeyUpgrade" label="${PET_TXT7}" x="280" y="510" width="162">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_tongYongBt18"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_26_lc_stroke" text=""/>
+			</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<gui:Button id="Btn_Close" label="" right="0" top="0">
+		<gui:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back02"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<gui:Button id="Btn_Return" label="" right="0" bottom="0">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back04"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+</e:Skin>

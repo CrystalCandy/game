@@ -1,0 +1,14 @@
+setNetFromConfig( net, key){
+	let encrypt = gb.config.GetBoolDef(key, "encrypt", true, SYSTEM_INI)
+	let decrypt = gb.config.GetBoolDef(key,"decrypt", true, SYSTEM_INI)
+	//let encrypt_key = gb.config.GetStringDef(key, "encrypt_key", "", SYSTEM_INI)
+	//let decrypt_key = gb.config.GetStringDef(key, "decrypt_key", "", SYSTEM_INI)
+	let encrypt_seed = gb.config.GetIntDef(key, "encrypt_seed", 11, SYSTEM_INI)
+	let decrypt_seed = gb.config.GetIntDef(key, "decrypt_seed", 11, SYSTEM_INI)
+	let sendSerialNumber =gb.config.GetBoolDef(key, "send_serial_number", true, SYSTEM_INI)
+
+	net.setEncrypt(encrypt, decrypt)
+	//net.SetKey(encrypt_key, decrypt_key)
+	net.setSeed(encrypt_seed, decrypt_seed)
+	net.setSendSerialNumber(sendSerialNumber)
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BeiBaoSmeliteLayout" width="640" height="900" xmlns:e="http://ns.egret.com/eui" xmlns:gui="gui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="00_tongYong01.ty_uiDi01" left="0" right="0" top="0" bottom="0" scale9Grid="59,135,156,165"/>
+	<e:Label id="lable_wndName" text="背包" y="6" style="ht_24_lc_stroke" horizontalCenter="0"/>
+	<e:Group id="group" width="580" height="736" top="51" horizontalCenter="0">
+		<e:Image id="image_bg" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" source="bb_ztUiDi01"/>
+		<e:Group id="group_scroll" width="485.33" height="341.33" anchorOffsetX="0" anchorOffsetY="0" top="296" horizontalCenter="-0.5"/>
+		<gui:Button id="btn_smelte" label="熔炼" horizontalCenter="-106" top="665" y="669" scaleX="1" scaleY="1" left="110">
+			<gui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_tongYongBt1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+			</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<gui:Button id="btn_smelte50" label="熔炼50件" horizontalCenter="106.5" top="665" y="671" scaleX="1" scaleY="1" right="110">
+			<gui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_tongYongBt1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+			</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<gui:RichDisplayer id="rd_tips" width="265.21" height="117.58" top="91" anchorOffsetX="0" left="43" anchorOffsetY="0"/>
+	</e:Group>
+	<e:Image source="00_tongYong01.ty_uiDi02" bottom="16" scale9Grid="5,5,32,31" anchorOffsetY="0" height="82.82" anchorOffsetX="0" width="599.57" horizontalCenter="0"/>
+	<gui:Button id="btn_back" label="" right="0" bottom="0">
+		<gui:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back01"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<gui:Button id="btn_close" label="" right="2" top="0">
+		<gui:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back02"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+</e:Skin>

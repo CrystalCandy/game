@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PayActivityLayout" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:gui="gui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="_tongYongDi01" horizontalCenter="1" top="0"/>
+	<e:Group id="group_menu" width="100%" height="140" horizontalCenter="0" top="0">
+		<e:Image source="31_yunYingHuoDong.yyhd_shangFangDi01" scale9Grid="49,39,13,10" width="100%" height="100%" verticalCenter="0" horizontalCenter="0"/>
+		<gui:Button id="btn_left" label="" left="0" verticalCenter="0">
+			<gui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_bt_jianTou03"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<gui:Button id="btn_right" label="" right="0" verticalCenter="0">
+			<gui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_bt_jianTou04"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<e:Scroller width="573" height="125" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="0" horizontalCenter="0" scrollPolicyH="auto" scrollPolicyV="off">
+			<e:Group id="group_scroll_menu">
+			</e:Group>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="group_common" width="100%" x="1" anchorOffsetY="0" top="140" bottom="39"  visible="false">
+		<e:Group id="group_tips" width="100%" height="147" x="0" scaleX="1" scaleY="1" top="0">
+			<e:Image source="31_yunYingHuoDong.yyhd_textDi02" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0"/>
+			<e:Group id="group_tips_day" width="100%" height="100%" verticalCenter="0" horizontalCenter="0" visible="false">
+			<gui:RichDisplayer id="rd_tips_day" width="570" height="59" horizontalCenter="0" top="23" anchorOffsetY="0"/>
+			<e:Image source="31_yunYingHuoDong.yyhd_textDi03" x="33" y="88" width="280" height="40" scale9Grid="27,18,4,5"/>
+			<gui:RichDisplayer id="rd_day_day" width="280" height="40" x="33" y="88"/>
+			<e:Image source="31_yunYingHuoDong.yyhd_textDi03" x="324" y="88" width="280" height="40" scale9Grid="27,18,4,5"/>
+			<gui:RichDisplayer id="rd_day_time" width="280" height="40" x="324" y="88"/>
+			</e:Group>
+			<e:Group id="group_tips_accum" width="100%" height="100%" verticalCenter="0" horizontalCenter="0" x="-1" y="-140" scaleX="1" scaleY="1" visible="false">
+			<gui:RichDisplayer id="rd_tips_accum" width="570" height="59" horizontalCenter="0" top="23" anchorOffsetY="0"/>
+			<e:Image x="33" y="88" width="280" height="40" scale9Grid="27,18,4,5" source="yyhd_textDi04"/>
+			<gui:RichDisplayer id="rd_accum_value" width="144" height="40" x="169" y="88" anchorOffsetX="0"/>
+			<e:Label id="rd_accum_value_title" text="${ACTIVITY_PAY_TXT11}" x="34" y="91" anchorOffsetX="0" width="133" anchorOffsetY="0" height="34" verticalAlign="middle" textAlign="center" style="ht_24_lc_stroke"/>
+			<e:Image x="324" y="88" width="280" height="40" scale9Grid="27,18,4,5" source="yyhd_textDi04" anchorOffsetX="0"/>
+			<gui:RichDisplayer id="rd_accum_time" width="144" height="40" x="460" y="88" anchorOffsetX="0"/>
+			<e:Label id="rd_accum_time_title" text="${ENDING_TIME}" x="325" y="91" anchorOffsetX="0" width="133" anchorOffsetY="0" height="34" verticalAlign="middle" textAlign="center" style="ht_24_lc_stroke"/>
+			</e:Group>
+			<e:Group id="group_tips_single" width="100%" height="100%" verticalCenter="0" horizontalCenter="0" x="-1" y="-140" scaleX="1" scaleY="1" visible="false">
+			<gui:RichDisplayer id="rd_tips_single" width="570" height="59" horizontalCenter="0" top="23" anchorOffsetY="0"/>
+			<e:Image source="31_yunYingHuoDong.yyhd_textDi03" y="88" width="350" height="40" scale9Grid="27,18,4,5" horizontalCenter="0"/>
+			<gui:RichDisplayer id="rd_single_time" width="350" height="40" y="88" horizontalCenter="0"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="group_item" width="100%" anchorOffsetY="0" x="0" scaleX="1" scaleY="1" top="154" bottom="1">
+			<e:Scroller width="100%" height="100%" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0">
+			<e:List id="scroll_pay" itemRendererSkinName="itemRender.PayActivityItemLayout"/>
+			</e:Scroller>
+		</e:Group>
+	</e:Group>
+	<e:Group id="group_shop" width="100%" anchorOffsetY="0" horizontalCenter="1" top="140" bottom="41"  visible="false">
+		<e:Group id="group_tips_shop" width="98%" height="87" scaleX="1" scaleY="1" top="-1" horizontalCenter="-7.5">
+		<e:Image source="31_yunYingHuoDong.yyhd_textDi02" scaleX="1" scaleY="1" width="100%" height="100%" verticalCenter="0" horizontalCenter="0"/>
+		<e:Image source="31_yunYingHuoDong.yyhd_textDi03" width="320" height="40" scale9Grid="27,18,4,5" left="30" top="24"/>
+		<e:Label id="txt0" text="${ENDING_TIME}：" x="35" y="24" width="120" height="40" textAlign="center" verticalAlign="middle" style="ht_24_lc_stroke"/>
+		<e:Label id="txt1" text="" x="163" y="24" width="174" height="40" textAlign="center" verticalAlign="middle" style="ht_20_lc_stroke"/>
+		<e:Image source="01_zhuJieMian.zjm_bt_renWuTiao04" x="374" y="24" width="217" height="40" scale9Grid="18,19,7,8"/>
+		<gui:RichDisplayer id="txt2" width="217" height="40" y="24" x="374"/>
+		</e:Group>
+		<e:Group id="group_item_shop" width="100%" anchorOffsetY="0" scaleX="1" scaleY="1" top="93" bottom="1" x="0">
+		<e:Scroller width="100%" height="100%" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0">
+			<e:List id="scroll_pay_shop" itemRendererSkinName="itemRender.PayActivityShopItemLayout"/>
+		</e:Scroller>
+		</e:Group>
+	</e:Group>
+	<e:Image id="Img_Bottom" source="00_tongYong01.ty_biaoTiDi02" bottom="0" left="0" x="10" y="10"/>
+	<e:Group id="group_rank" width="100%" x="1" anchorOffsetY="0" top="140" bottom="60"  visible="false">
+		<e:Image source="31_yunYingHuoDong.yyhd_textDi02" scaleX="1" scaleY="1" horizontalCenter="0" top="0" x="0" y="-140"/>
+		<e:Group id="group_tips_rank" width="100%" height="147" horizontalCenter="0" x="-1" scaleX="1" scaleY="1" top="0">
+		<gui:RichDisplayer id="rd_tips_rank" width="570" height="59" horizontalCenter="0" top="23" anchorOffsetY="0"/>
+		<e:Image source="31_yunYingHuoDong.yyhd_textDi03" y="88" width="350" height="40" scale9Grid="27,18,4,5" horizontalCenter="0"/>
+		<gui:RichDisplayer id="rd_rank_time" width="350" height="40" y="88" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="group_item_rank" width="100%" anchorOffsetY="0" x="0" scaleX="1" scaleY="1" top="154" bottom="6">
+			<e:Scroller width="100%" height="100%" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0">
+			<e:List id="scroll_pay_rank" itemRendererSkinName="itemRender.PayActivityRankItemLayout"/>
+			</e:Scroller>
+		</e:Group>
+		<e:Group id="group_top" width="540" height="70" bottom="-49" left="5" x="4" y="739" scaleX="1" scaleY="1">
+		<e:Image source="00_tongYong02.ty_smpetTextDi01" width="100%" height="100%" verticalCenter="0" horizontalCenter="0" scale9Grid="25,20,6,5"/>
+		<e:Image source="00_tongYong03.ty_TextBg01" scale9Grid="12,11,2,3" width="215" height="40" verticalCenter="0" left="17"/>
+		<e:Label id="ID_MY_RANK_TITLE" text="${PAY_ACT_MY_RANK}" x="18" y="15" width="118" height="40" textAlign="center" verticalAlign="middle" textColor="0xd8bcbc" style="ht_22_lc_stroke"/>
+		<e:Label id="myranknumber" text="" x="140" y="15" height="40" style="ht_24_lc_stroke" textAlign="center" verticalAlign="middle" anchorOffsetX="0" width="91"/>
+		<e:Image source="00_tongYong03.ty_TextBg01" scale9Grid="12,11,2,3" width="290" height="40" verticalCenter="0" left="242"/>
+		<gui:RichDisplayer id="myvaluenumber" width="230" height="40" x="251.64" y="15" anchorOffsetX="0"/>
+		<gui:Button id="btn_rank_go" label="" x="454" y="14">
+			<gui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="zjm_bt_jia03"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		</e:Group>
+	</e:Group>
+	<gui:Button id="btn_close" label="" x="547" bottom="0">
+		<gui:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back03"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+</e:Skin>

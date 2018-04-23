@@ -1,0 +1,9 @@
+{"file":"wugui_spell.png","frames":{
+"spell_3_body_00":{"x":120,"y":353,"w":104,"h":106,"offX":117,"offY":116,"sourceW":320,"sourceH":320},
+"spell_3_body_01":{"x":0,"y":365,"w":101,"h":100,"offX":107,"offY":110,"sourceW":320,"sourceH":320},
+"spell_3_body_02":{"x":0,"y":0,"w":105,"h":133,"offX":110,"offY":79,"sourceW":320,"sourceH":320},
+"spell_3_body_03":{"x":107,"y":0,"w":103,"h":135,"offX":112,"offY":75,"sourceW":320,"sourceH":320},
+"spell_3_body_04":{"x":0,"y":137,"w":126,"h":110,"offX":110,"offY":115,"sourceW":320,"sourceH":320},
+"spell_3_body_05":{"x":128,"y":137,"w":123,"h":111,"offX":115,"offY":114,"sourceW":320,"sourceH":320},
+"spell_3_body_06":{"x":0,"y":249,"w":118,"h":114,"offX":116,"offY":110,"sourceW":320,"sourceH":320},
+"spell_3_body_07":{"x":120,"y":250,"w":110,"h":101,"offX":116,"offY":118,"sourceW":320,"sourceH":320}}}

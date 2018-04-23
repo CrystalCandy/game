@@ -1,0 +1,26 @@
+{
+  "anims":[
+    {
+      "dirs":[
+        3,
+        7
+      ],
+      "frameCount":1,
+      "interval":100,
+      "name":"idle"
+    }
+  ],
+  "bodyparts":[
+    {
+      "name":"body",
+      "offx":160,
+      "offy":210,
+      "order":0,
+      "shows":[]
+    }
+  ],
+  "name":"PoFuChenZhou_chongci",
+  "textures":[
+    "PoFuChenZhou_chongci_idle.png"
+  ]
+}

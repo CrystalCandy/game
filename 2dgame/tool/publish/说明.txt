@@ -1,0 +1,9 @@
+﻿一、publish_config.py
+1.配置引擎代码目录EGRET_TOOL_PATH
+
+
+二、运行批处理
+tool_publish_cn.bat
+
+
+

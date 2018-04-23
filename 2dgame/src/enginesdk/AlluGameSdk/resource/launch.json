@@ -1,0 +1,10 @@
+{
+	"debug": false,
+	"mode": 1,
+	"tool": 1,
+	"seachPkgFirst":true,
+	"guide":true,
+	"serverlist":true,
+	"dumpmsg":false,
+	"checkUpdate":true
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="QuickGainLayout" width="600" height="880" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:gui="gui.*">
+	<e:Image width="98%" height="98%" scale9Grid="66,70,1,1" source="ty_UIDi01" horizontalCenter="1" verticalCenter="0"/>
+	<e:Group width="540" height="120" y="37.36" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="5">
+		<e:Image source="00_tongYong01.ty_xuanZheDi01" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%" scale9Grid="21,23,1,1" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image source="00_tongYong01.ty_zhuangBeiBg00" x="26" y="11" width="96" height="96"/>
+		<e:Image id="Image_Icon" source="wuPin01.item_20056" x="33.65" y="17.65"/>
+		<e:Label id="Label_Name" text="Label_Name" x="150" y="38" anchorOffsetX="0" width="162" anchorOffsetY="0" height="48.67" textAlign="left" verticalAlign="middle" style="ht_24_lc"/>
+		<gui:RichDisplayer id="Rd_Des" width="194" height="95" x="322" y="13" anchorOffsetX="0" anchorOffsetY="0">
+		</gui:RichDisplayer>
+	</e:Group>
+	<e:Group width="521.33" height="587.34" x="39.67" y="169" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image source="ty_UIBg02" x="0" y="0" width="100%" height="100%" scale9Grid="21,17,1,1" locked="true"/>
+		<e:Group id="Group_ConTitle_Pannel" width="213" height="38" x="10" y="9" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image source="ty_TextBg02" x="2" y="4" scaleX="1" scaleY="1"/>
+			<e:Image x="11" y="-6" scaleX="1" scaleY="1" source="ty_tongYongIcon04"/>
+			<e:Label id="label_text1" text="${COMMON_TXT2}" x="54" y="6" bold="true" anchorOffsetX="0" width="98" anchorOffsetY="0" height="21" textAlign="center" verticalAlign="middle" size="18" scaleX="1" scaleY="1" textColor="0x3f3333" style="ht_18_lc"/>
+		</e:Group>
+		<e:Group id="Group_Content" width="504" height="517" x="7" y="56" anchorOffsetX="0" anchorOffsetY="0"/>
+	</e:Group>
+	<gui:Button id="btn_close_top" label="" right="0" top="0">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back02"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<e:Label id="team_no_operate" text="${TEAM_TXT51}" x="48" y="787" anchorOffsetX="0" width="191" textAlign="right" textColor="0xff0505" style="ht_22_lc"/>
+	<gui:Button id="btn_close" label="" x="504" y="784">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back04"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+</e:Skin>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FriendsLayout" width="640" height="900" xmlns:e="http://ns.egret.com/eui" xmlns:gui="gui.*" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15c966ef3b8"/>
+	<e:Image scaleX="1" scaleY="1" scale9Grid="58,133,161,143" source="ty_uiDi01" left="0" right="0" bottom="0" top="0"/>
+	<e:Label id="label_title" text="${FRIENDS_TXT1}" anchorOffsetX="0" width="640" horizontalCenter="0" textColor="0xffffff" x="238" y="0" scaleX="1" scaleY="1" height="35" style="ht_30_lc_stroke" textAlign="center" verticalAlign="middle"/>
+	<e:Group id="group_root" left="0" right="0" top="0" bottom="0">
+		<e:Group id="tab_wnd" width="560" height="69" scaleX="1" scaleY="1" top="45" horizontalCenter="0">
+		<e:Image source="ty_biaoQianDi01" scaleX="1" scaleY="1" left="0" top="0" bottom="0" right="0" scale9Grid="25,19,5,8"/>
+		<e:RadioButton id="tab_friend" label="${FRIENDS_TXT3}" width="131" x="0" y="0" scaleX="1" scaleY="1" height="69">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_tongYongBt15" source.down="ty_tongYongBt14"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton id="tab_apply" label="${FRIENDS_TXT4}" width="131" x="137" y="0" scaleX="1" scaleY="1" height="69">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_tongYongBt15" source.down="ty_tongYongBt14"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton id="tab_black" label="${FRIENDS_TXT5}" width="131" x="274" y="0" scaleX="1" scaleY="1" height="69">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_tongYongBt15" source.down="ty_tongYongBt14"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		</e:Group>
+		<e:Group id="viewstack" width="560" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" top="114" height="672">
+		<e:Group id="friend_wnd" scaleX="1" scaleY="1" width="100%" height="100%" y="0" visible="false">
+			<e:Group id="friend_scroll_wnd" width="560" height="605" scaleX="1" scaleY="1" top="0" horizontalCenter="0">
+				<e:Image scaleX="1" scaleY="1" source="ty_textDi08" scale9Grid="5,5,12,13" left="0" right="0" top="0" bottom="0"/>
+			</e:Group>
+			<e:Group id="group_seach" width="560" height="60" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" bottom="0">
+				<e:Image scaleX="1" scaleY="1" source="ty_textDi08" scale9Grid="5,5,14,13" bottom="0" left="0" right="0" top="0"/>
+			<e:Image scale9Grid="16,10,9,11" anchorOffsetX="0" width="440" height="40" verticalCenter="0" source="ty_shuRuDi01" left="10"/>
+			<e:EditableText id="input_edit" width="420" height="30" text="" anchorOffsetX="0" anchorOffsetY="0" verticalAlign="middle" x="20" verticalCenter="0"/>
+			<gui:Button id="btn_search" label="${FRIENDS_TXT7}" verticalCenter="0" width="94" height="49" right="10">
+				<gui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="ty_tongYongBt2"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="${FRIENDS_TXT7}" textAlign="center" verticalAlign="middle" style="ht_20_lc_stroke"/>
+				</e:Skin>
+				</gui:skinName>
+			</gui:Button>
+			</e:Group>
+		</e:Group>
+		<e:Group id="apply_wnd" scaleX="1" scaleY="1" width="100%" height="100%" x="0" y="0" visible="false">
+			<e:Group id="apply_scroll_wnd" width="560" height="365" scaleX="1" scaleY="1" horizontalCenter="0" top="0">
+			<e:Image scaleX="1" scaleY="1" source="ty_textDi08" top="0" bottom="0" left="0" right="0" scale9Grid="5,5,12,13"/>
+			</e:Group>
+			<e:Group id="apply_recommend_wnd" width="560" height="300" scaleX="1" scaleY="1" horizontalCenter="0" bottom="0">
+			<e:Image scaleX="1" scaleY="1" source="ty_textDi08" scale9Grid="5,5,12,13" left="0" bottom="0" top="0" right="0"/>
+			<e:Image width="560" height="40" source="ty_shuRuDi01" scale9Grid="15,5,94,37" horizontalCenter="0" top="0"/>
+			<e:Label id="recommond_txt" text="${FRIENDS_TXT6}" style="ht_22_lc_stroke" top="5" height="30" width="560" horizontalCenter="0" textAlign="center" verticalAlign="middle"/>
+			<e:Group id="recommand_player1" width="560" height="130" top="40" left="0">
+				<e:Image source="00_tongYong01.ty_uiDi03" left="0" right="0" bottom="0" top="0" scale9Grid="25,24,6,10"/>
+				<e:Image left="10" source="ty_renWuKuang01" bottom="0"/>
+				<e:Image id="player_icon1" source="zctx_90001" left="17" height="120" bottom="10"/>
+				<gui:RichDisplayer id="name_rd1" width="250" height="70" verticalCenter="0" left="155"/>
+				<gui:Button id="btn_apply1" label="${FRIENDS_TXT8}" width="94" height="49" verticalCenter="0" right="20">
+					<gui:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="ty_tongYongBt2"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+						</e:Skin>
+					</gui:skinName>
+				</gui:Button>
+			</e:Group>
+				<e:Group id="recommand_player2" width="560" height="130" left="0" bottom="0">
+					<e:Image source="00_tongYong01.ty_uiDi03" left="0" right="0" bottom="0" top="0" scale9Grid="25,24,6,10"/>
+					<e:Image left="10" bottom="0" source="ty_renWuKuang01"/>
+					<e:Image id="player_icon2" source="zctx_90001" left="17" bottom="10"/>
+					<gui:RichDisplayer id="name_rd2" width="250" height="70" verticalCenter="0" left="155"/>
+					<gui:Button id="btn_apply2" label="${FRIENDS_TXT8}" width="94" height="49" verticalCenter="0" right="20">
+					<gui:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="ty_tongYongBt2"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+						</e:Skin>
+					</gui:skinName>
+					</gui:Button>
+				</e:Group>
+			</e:Group>
+		</e:Group>
+		<e:Group id="black_wnd" scaleX="1" scaleY="1" width="100%" height="100%" x="0" y="0" visible="false">
+			<e:Image scaleX="1" scaleY="1" source="ty_textDi08" left="0" right="0" scale9Grid="5,5,12,13" x="0" top="0" bottom="0"/>
+		</e:Group>
+		</e:Group>
+		<e:Group id="bottom_group" width="600" height="90" scaleX="1" scaleY="1" bottom="15" x="20">
+		<e:Image width="600" height="90" horizontalCenter="0" verticalCenter="0" source="ty_textDi08" scale9Grid="5,5,13,14"/>
+		<gui:RichDisplayer id="tips_rd" width="400" height="60" x="20" y="15"/>
+		</e:Group>
+	</e:Group>
+	<gui:Button id="btn_close" label="" right="0" top="0" x="585" y="0" scaleX="1" scaleY="1">
+		<gui:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back02"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<gui:Button id="btn_close_top" label="" right="0" x="537" scaleX="1" scaleY="1" bottom="10">
+		<gui:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back01"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+</e:Skin>

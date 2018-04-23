@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EscortLayout" width="640" height="900" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:gui="gui.*">
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image source="00_tongYong01.ty_uiDi01" scale9Grid="40,106,197,196" left="-3" right="3" top="0" bottom="0"/>
+		<e:Image scaleX="1" scaleY="1" horizontalCenter="0" top="24" source="hd_huSongDi01"/>
+		<e:Group id="group_action" width="558" height="360" anchorOffsetX="0" anchorOffsetY="0" top="424" horizontalCenter="0">
+		</e:Group>
+		<e:Image id="image_kuang" source="00_tongYong01.ty_uiDi09" scale9Grid="33,107,202,195" left="0" right="0" top="0" bottom="0"/>
+		<gui:RichDisplayer id="rd_intercept" width="200" height="22" bottom="64" left="50"/>
+		<gui:RichDisplayer id="rd_escort" width="200" height="22" bottom="93" left="50">
+		</gui:RichDisplayer>
+		<gui:Button id="btn_escort" label="${ESCORT_HUSONG}" horizontalCenter="0" bottom="64">
+			<gui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_tongYongBt1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+				</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<e:Group id="group_time" width="294" height="47" bottom="69" x="247" visible="false">
+			<e:Image source="00_tongYong01.ty_shuRuDi01" bottom="0" scale9Grid="9,8,105,31" scaleX="1" scaleY="1" left="0" right="0" top="0"/>
+			<gui:RichDisplayer id="rd_quickFinish" width="80" height="22" verticalCenter="0" right="5">
+				<e:Rect height="2" fillColor="0x16af07" strokeColor="0x0ba503" bottom="0" left="0" right="0"/>
+			</gui:RichDisplayer>
+			<gui:RichDisplayer id="rd_time" width="200" height="20" verticalCenter="0" left="15"/>
+		</e:Group>
+		<gui:Button id="btn_intercept" label="" top="90" right="48">
+			<gui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="wjxq_touXiangDi01"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<e:Label id="label_title" text="${ESCORT_TITLE}" y="8" horizontalCenter="0" style="ht_24_lc_stroke"/>
+		<gui:Button id="btn_close" label="" right="0" bottom="0">
+			<gui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_bt_back01"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<gui:Button id="btn_close_top" label="" right="0" top="0" height="56">
+			<gui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_bt_back02"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<gui:Button id="btn_right" label="" right="1" top="606">
+			<gui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_bt_jianTou04"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<gui:Button id="btn_left" label="" left="1" top="606">
+			<gui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_bt_jianTou03"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+	</e:Group>
+</e:Skin>

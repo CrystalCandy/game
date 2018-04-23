@@ -1,0 +1,18 @@
+{
+	"GameKey" : "h5mhxy",
+    "GameName":"h5西游",
+    "QD_Key":"h5mhxy",
+    "QD_Code1":5,
+    "QD_Code2":6,
+    "IsOfficialLogin":true,
+    "CheatPay":true,
+    
+    "AppId":"1b8ee1b219de4e9bb75cf28c126164c5",
+    "ClientId":"1622d5f271420ecefee2228b70f4c194",
+    "AuthUrl":"http://47.92.89.237/console/platform/account_auth.php",
+    "RegisterUrl":"http://47.92.89.237/console/platform/account_register.php",
+
+    "UpdateUrl":"http://47.92.89.237/console/common/update.php",
+    "ServerUrl":"http://47.92.89.237/console/common/serverlist.php?platform=h5mhxy",
+    "BridgeUrl":"http://47.92.89.237/console/allu/bridge_yixiu.php"
+}

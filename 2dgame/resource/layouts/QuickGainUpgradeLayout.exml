@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="QuickGainUpgradeLayout" width="600" height="650" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:gui="gui.*">
+	<e:Image width="98%" height="98%" scale9Grid="66,70,1,1" source="ty_UIDi01" horizontalCenter="1" verticalCenter="0"/>
+	<e:Image source="ty_shengJiTuJing" x="34" y="-32"/>
+	<e:Group width="521.33" height="317.34" x="39.67" y="208" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image source="ty_UIBg02" scale9Grid="21,17,1,1" left="0" right="0" top="0" bottom="0"/>
+		<e:Group id="Group_Content" width="504" height="295" x="9" y="12" anchorOffsetX="0" anchorOffsetY="0"/>
+	</e:Group>
+	<gui:Button id="btn_close" label="" bottom="0" right="0">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back04"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<gui:Button id="btn_return" label="" top="0" right="0">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back02"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<e:Label id="team_no_operate" text="${TEAM_TXT51}" x="364" anchorOffsetX="0" width="191" textAlign="right" textColor="0xff0505" style="ht_22_lc" bottom="56" visible="false"/>
+	<e:Label id="tips7" text="${QUICKGAIN_TXT32}" anchorOffsetX="0" width="473" textAlign="center" style="ht_22_lc" bottom="86" verticalAlign="middle" textColor="0x6d5050" horizontalCenter="0.5"/>
+	<e:Label id="label_tips" text="${QUICKGAIN_TXT24}" x="241" y="114" anchorOffsetX="0" width="294" anchorOffsetY="0" height="74" textColor="0x0a0000" style="ht_18_lc"/>
+</e:Skin>

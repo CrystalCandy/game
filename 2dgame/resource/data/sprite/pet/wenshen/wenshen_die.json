@@ -1,0 +1,7 @@
+{"file":"wenshen_die.png","frames":{
+"die_3_body_00":{"x":372,"y":0,"w":111,"h":116,"offX":106,"offY":101,"sourceW":320,"sourceH":320},
+"die_3_body_01":{"x":259,"y":0,"w":111,"h":139,"offX":90,"offY":87,"sourceW":320,"sourceH":320},
+"die_3_body_02":{"x":0,"y":0,"w":145,"h":121,"offX":8,"offY":111,"sourceW":320,"sourceH":320},
+"die_7_body_00":{"x":147,"y":0,"w":110,"h":143,"offX":103,"offY":74,"sourceW":320,"sourceH":320},
+"die_7_body_01":{"x":0,"y":123,"w":111,"h":131,"offX":119,"offY":102,"sourceW":320,"sourceH":320},
+"die_7_body_02":{"x":259,"y":141,"w":146,"h":104,"offX":166,"offY":206,"sourceW":320,"sourceH":320}}}

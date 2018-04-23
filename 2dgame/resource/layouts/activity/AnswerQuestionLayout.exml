@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="AnswerQuestion" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:gui="gui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="640" height="1136" horizontalCenter="0" verticalCenter="0">
+		<e:Image width="640" height="1136" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" source="dt_diTu"/>
+		<gui:Button id="shop_btn" label="" top="0" x="-20">
+			<gui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="dt_Bt01"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<gui:Button id="help_btn" label="" x="410" y="360">
+			<gui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="dt_Bt01"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<gui:Button id="double_btn" label="" y="360" x="510">
+			<gui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="dt_Bt01"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<e:Group id="num_group" width="90" height="90" y="430" horizontalCenter="0">
+			<e:Image id="first_num" width="44" height="62" source="dt_daoJiShi0" verticalCenter="0" left="0"/>
+			<e:Image id="second_num" width="44" height="62" source="dt_daoJiShi1" verticalCenter="0" right="0"/>
+		</e:Group>
+		<e:Group id="rank_group" width="304" height="167" right="0" top="0" x="336" y="0" scaleX="1" scaleY="1">
+			<e:Image scale9Grid="44,45,14,15" height="167" width="304" y="0" x="0" anchorOffsetY="0" scaleX="1" scaleY="1" source="dt_paiMingDi"/>
+		</e:Group>
+		<e:Group id="group_question" width="626" height="174" y="520" horizontalCenter="0" x="7" scaleX="1" scaleY="1">
+			<e:Image scale9Grid="20,18,4,6" left="0" right="0" top="0" bottom="0" source="dt_tiMuDi"/>
+			<gui:RichDisplayer id="content" width="600" height="75" y="15" anchorOffsetY="0" horizontalCenter="0"/>
+			<gui:Button id="btn_a" label="" x="305" y="90" scaleX="1" scaleY="1">
+			<gui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="dt_xuanXiang01"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</gui:skinName>
+			</gui:Button>
+			<gui:Button id="btn_b" label="" x="5" y="90">
+			<gui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="dt_xuanXiang01"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</gui:skinName>
+			</gui:Button>
+			<e:Label id="chooseATitle" text="Label" x="25" y="108" width="240" style="ht_24_lc" textAlign="left" textColor="0xffffff" touchEnabled="false" verticalAlign="middle" height="50"/>
+			<e:Label id="chooseBTitle" text="Label" x="325" y="108" width="240" style="ht_24_lc" textColor="0xffffff" textAlign="left" touchEnabled="false" verticalAlign="middle" height="50"/>
+		</e:Group>
+		<e:Group id="group_chat" anchorOffsetY="0" height="118" touchEnabled="false" x="0" y="700" scaleX="1" scaleY="1" width="640"/>
+		<e:Group id="group_bottom" height="311" bottom="0" touchEnabled="false" width="640" x="0" y="825" scaleX="1" scaleY="1" visible="false">
+			<e:Image source="ty_UIDi03" scale9Grid="44,45,14,15" height="169" width="640" y="143" x="0" anchorOffsetY="0" scaleX="1" scaleY="1"/>
+			<e:Group id="group_anwser" left="0" right="0" top="0" bottom="0" touchEnabled="false">
+			<e:Image source="00_tongYong02.ty_smpetTextDi01" anchorOffsetX="0" width="580" scale9Grid="26,18,8,6" height="50" horizontalCenter="0" y="116"/>
+			<gui:RichDisplayer id="myInfo" width="558" height="30" x="39" y="125" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Group x="422" y="10">
+				<gui:Button id="btn_double" label="${ACTIVITY_QUESTION_TXT3}" x="6" y="5" width="90" height="91">
+				<gui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="dt_bt_shuangBeiJiFen"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" text="" style="ht_20_lc_stroke" y="64"/>
+					</e:Skin>
+				</gui:skinName>
+				</gui:Button>
+				<e:Image id="icon_double" source="27_daTi.dt_ciShuDi01" x="0" y="0"/>
+				<e:Label id="doubleNum" text="99" x="3" y="9" style="ht_22_lc_stroke" textAlign="center" width="31"/>
+				<gui:Button id="btn_helpme" label="${ACTIVITY_QUESTION_TXT4}" x="111" y="7" width="90" height="91">
+				<gui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="dt_bt_bangWoXuanZhe"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" text="" style="ht_20_lc_stroke" y="64"/>
+					</e:Skin>
+				</gui:skinName>
+				</gui:Button>
+				<e:Image id="icon_helpme" source="27_daTi.dt_ciShuDi01" x="106" y="0"/>
+				<e:Label id="helpmeNum" text="99" x="109" y="9" style="ht_22_lc_stroke" textAlign="center" width="31"/>
+			</e:Group>
+			<e:RadioButton id="checkA" label="" x="155" y="188">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="dt_bt_xuanZheA01" source.down="dt_bt_xuanZheA02"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:RadioButton>
+			<e:RadioButton id="checkB" label="" x="329" y="188">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="dt_bt_xuanZheB01" source.down="dt_bt_xuanZheB02"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:RadioButton>
+			<gui:BatchImage id="countdown" width="110" height="75" x="25" y="199"/>
+			<gui:Button id="btn_close" label="" bottom="0" right="0">
+				<gui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="ty_bt_back03"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</gui:skinName>
+			</gui:Button>
+			</e:Group>
+			<gui:Button id="btn_help" label="" x="8" y="92">
+				<gui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="dt_Bt01"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</gui:skinName>
+			</gui:Button>
+		</e:Group>
+	</e:Group>
+</e:Skin>

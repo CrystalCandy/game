@@ -1,0 +1,329 @@
+﻿函数命名规则
+ "S+系统名+功能名":"参数1;参数2..."          客户端发协议调用服务器函数/模块
+ "C+系统名+功能名":"参数1;参数2..."          服务器发协议调用客户端函数/模块
+ 
+数据结构定义 与函数命名
+{
+	"type":{
+
+		"Friend":[
+            "id:uint32",
+            "name:string"
+        ],
+        "Person":[
+           "id:uint32",
+           "name:string",
+           "friends:Friend[]"
+        ]
+    },
+
+    "method":{
+        "STest1":"bool;int8;int16;uint32",
+        "STest2":"Friend;string;float;double;uint16",
+        "CTest2":"Friend;string;float;double;uint16",
+        "CTest3":"int8[];uint8;bool;Friend[]",
+        "STest4":"int8[];uint8;bool;Person[]",
+		
+		登陆时发送
+		"G2C_ActorRoleInfoList":"ActorRole[]",-角色列表
+		"G2C_ActorPetInfoList":"ActorPet[]",-宠物列表
+		"G2C_ActorXianlvInfoList":"ActorXianlv[]",-仙侣列表
+		"G2C_ActorTempCellInfoList":"ActorTempCell[]",-通用玩法列表 
+		"G2C_ActorSimpleCellInfoList":"ActorSimpleCell[]",-简单玩法列表 
+		
+		
+		整体信息更新，一般是在解锁时
+			宠物整体信息更新
+		"G2C_ActorPetInfo":"ActorPet",
+			仙侣整体信息更新
+		"G2C_ActorXianlvInfo":"ActorXianlv",
+			通用玩法整体信息更新
+		"G2C_ActorTempCellInfo":"ActorTempCell",
+			简单玩法整体信息更新
+		"G2C_ActorSimpleCellInfo"::"ActorSimpleCell",
+		
+		
+		局部信息更新，一般是在做了某些操作
+			角色信息更新
+		"G2C_ActorRoleInfoUpdate":"ActorRole",
+			宠物信息更新
+		"G2C_ActorPetInfoUpdate":"ActorPet",
+			仙侣信息更新
+		"G2C_ActorXianlvInfoUpdate":"ActorXianlv",
+			通用玩法信息更新
+		"G2C_ActorTempCellInfoUpdate":"ActorTempCell",
+			简单玩法信息更新
+			"G2C_ActorSimpleCellInfoUpdate":"ActorSimpleCell",
+		
+		//离线收获
+			"OfflineGains":[
+				"time:uint32",//离线时间
+				"funds:uint32",//得到游戏币
+				"fundsadd:uint32",//因为月卡加成 得到的游戏币
+				"exp:uint32",//得到经验
+				"expadd:uint32",//因为月卡加成 得到的经验
+				"equip:uint32",//得到多少件装备
+				"equipsell:uint32",//因为背包满 卖了多少件装备
+			],	
+			
+		"G2C_CampaginRecord":"CampaginRecord[]",//关卡记录列表
+		"G2C_CurCampaginInfo":"uint32;uint16",//当前可以打的最高关卡，　现在已经累计挂机多少次()
+		"C2G_CampaginFight:"uint32",--关卡
+		"C2G_CampaginSetAuto":"uint8",--设置当遇怪数量到达时 自动打ＢＯＳＳ １是自动　0是取消自动　
+		
+		"G2C_OfflineGains":"OfflineGains",
+		
+		角色操作
+		"C2G_ACTOR_ROLE_INFO_EQUIP_SET":"table",-一键穿装备，table是装备的gid列表
+		"C2G_ACTOR_ROLE_UPGRADE":"",-升级
+		"C2G_ACTOR_ROLE_SKILL_UPGRADE_ONE":"uint8",-升级哪个技能
+		"C2G_ACTOR_ROLE_SKILL_UPGRADE_MUCH":"",-一键升级
+		"C2G_ACTOR_ROLE_SKILL_ORDER_UP":"uint8",-第几个技能上移一位
+		"C2G_ACTOR_ROLE_TITLE_UNLOCK":"uint16",-解锁称号第几个称号
+		"C2G_ACTOR_ROLE_TITLE_SET":"uint16",-设置当前称号为第几个
+		"C2G_ACTOR_ROLE_FASHION_UNLOCK":"uint16",-解锁时装第几个称号
+		"C2G_ACTOR_ROLE_FASHION_SET":"uint16",-设置当前时装为第几个	
+		"C2G_GOD_EQUIP_UP":"uint32,uint32",	--神装升级, itemId, 是否勾选重新生成 0没勾选 
+		"C2G_GOD_EQUIP_REFINE":"uint32,uint32",	--神装洗练, itemId, 洗练类型
+		"C2G_ACTOR_ROLE_PlayerAbility":"",		--查看个人属性面板
+		"G2C_PlayerAllAbilityInfo":"table",		--返回个人属性面板
+		
+		通用玩法操作
+		"C2G_TEMPCELLFUN_STAGE_UP":"uint16;uint8", --entryid 哪个玩法升阶 autobuy --0不自动买 1自动买
+		"C2G_TEMPCELLFUN_SKIN_UNLOCK":"uint16;uint16",--entryid 哪个玩法解锁皮肤 index --解锁第几个皮肤
+		"C2G_TEMPCELLFUN_SKIN_SET":"uint16;uint16",--entryid 哪个玩法设置皮肤 index --设置第几个皮肤
+		"C2G_TEMPCELLFUN_SHAPE_SET":"uint16;uint16",--entryid 哪个玩法设置外形 index --设置第几个外形
+		"C2G_TEMPCELLFUN_SKILL_UP":"uint16;uint16",--entryid 哪个玩法升级技能 index --升级第几个技能
+		"C2G_TEMPCELLFUN_EQUIP_SET":"uint16;table",--entryid 哪个玩法换装备 -一键穿装备，table是装备的gid列表
+		"C2G_TEMPCELLFUN_DRUG_USE":"uint16,uint16 ",--entryid 哪个玩法使用属性丹 num 使用多少个
+		
+		简单玩法操作
+		"C2G_SIMPLECELLFUN_DANYAOUP":"uint16;uint16"  --entryid 玩法丹药  index --升级第几个丹药 
+		"C2G_SIMPLECELLFUN_JINGMAIUP":"uint16;uint16;uint16"   --entryid 玩法筋脉  index --升级第几个经脉  indextype经脉多少重
+		
+		
+		宠物操作
+		"C2G_ACTOR_PET_UNLOCK":"uint16", --entryid 解锁哪个宠物
+		"C2G_ACTOR_PET_UPGRADE":"uint16;uint8",--entryid 哪个宠物升级 autobuy --0不自动买 1自动买
+		"C2G_ACTOR_PET_COMBAT_SET":"uint16;uint8",--entryid  哪个宠物调整出战; combatpos --0代表没有出战，1代表出战 2代表备战1 3代表备战2
+		"C2G_ACTOR_PET_SHOW":"uint16",--entryid  哪个宠物展示到世界聊天
+		"C2G_ACTOR_PET_GROW_UP":"uint16",--entryid  哪个宠物资质升级
+		"C2G_ACTOR_PET_RENAME":"uint16;string",--entryid  哪个宠物资质改名 name新的名字
+		"C2G_ACTOR_PET_SKILL_WASH":"uint16;uint8;uint8;table",--entryid  哪个宠物洗技能，washtype 0正常洗 1高级洗 autobuy 0不自动买。1自动买 locklist 锁定的技能位置列表
+		"C2G_ACTOR_PET_SKILL_ACCEPT":"uint16"--entryid  哪个宠物用洗出来的技能替换现在的技能
+		
+		装备锻造 ['qianghua'] = 1--强化 ['jinglian'] = 2--精炼 ['duanlian'] = 3--锻炼 ['baoshi'] = 4--宝石
+		"G2C_EQUIP_FORGE_INFO":"EquipForge"; 登陆时主动发送  
+		"C2G_EQUIP_FORGE_UPGRADE":"uint16"; 玩家升级操作，index指定升级哪个 1是强化 2是精炼 …………
+		"G2C_EQUIP_FORGE_UPDATE":"EquipForge"; 玩家操作之后的更新。
+		
+		仙侣操作
+		"C2G_ACTOR_XIANLV_UNLOCK":"uint16", --entryid 解锁哪个仙侣
+		"C2G_ACTOR_XIANLV_UPGRADE":"uint16;uint8",--entryid 升阶哪个仙侣 autobuy --0不自动买 1自动买
+		"C2G_ACTOR_XIANLV_COMBAT_SET":"uint16;uint8",--entryid 调整哪个仙侣战斗位置 combatpos 0代表没有出战，1代表出战1 2代表出战2
+		"C2G_ACTOR_XIANLV_UP_START":"uint16",--entryid 升星哪个仙侣		
+		
+		装备铸造
+		"G2C_EQUIP_FORGE_INFO":"EquipForge",登陆时发送铸造信息
+		"C2G_EQUIP_FORGE_UPGRADE":"uint16",升级某个锻造功能 1,--强化 2,--精炼 3,--锻炼 4,--宝石
+		"G2C_EQUIP_FORGE_UPDATE":"EquipForge",升级后，某个功能的数据有更新 
+		
+		"C2G_PacketUpstep":"uint16",背包扩展 扩展5格传1 扩展10格传2 ……
+		"C2G_EquipMelt":"uint16",装备熔炼 传9 或 50
+		"C2G_EXCHANGE_FUNDS":"",消耗特定道具　兑换游戏币　每天最多Ｘ次，通过savelocal来得到今天兑换了多少次
+		"C2G_SHOP_BUT_ITEM":"uint32;uint32;uint32",指定购买那个商店的　哪个物品　用多少钱，有时某些商店的物品价格是变动的
+		"C2G_MAP_ENTER":"uint32",跳转地图　传index 不是mapid
+		
+		--boss活动
+		"C2G_CreateBossFight":"uint16;uint16",  --创建战斗 activityIndex,npcIndex
+		"C2G_SweepBossActivity":"uint16;uint16", --扫荡  activityIndex,npcIndex
+		"C2G_SweepBossActivityEx":"uint16;table", --扫荡  activityIndex,args
+		"G2C_SweepBossActivity":"uint16;uint16;table", --扫荡 activityIndex,npcIndex,commonPrize
+		"C2G_GetBossActivityInfo":"uint16",  --活动整个活动的大致信息 activityIndex
+		"G2C_GetBossActivityInfo":"uint16;table", --返回活动大致信息 activityIndex, activityData
+		"C2G_GetBossIndexData":"uint16;uint16", --获取具体某个boss(关卡)信息 actvitiyIndex,npcIndex
+		"G2C_GetBossIndexData":"uint16;uint16;table",--获取具体某个boss(关卡)信息 actvitiyIndex,npcIndex,bossData
+		"C2G_ReviveActivityBoss":"uint16;uint16", --复活boss, activityIndex, npcIndex
+		"C2G_BuyActivityRemainFightCount":"uint16;table", --购买挑战次数 activityIndex, args(不定参)
+		"C2G_GetActivityStagePrize":"uint16;table", --获取阶段奖励 activityIndex, args(不定参)
+		
+		"C2G_GetChampionData":"", --获取竞技场数据
+		"G2C_SendChampionData":"uint32;ChampionHeroData[];uint16;uint32", --返回竞技场数据 目标列表，剩余挑战次数，恢复刷新时间
+		"G2C_RefreshChampionData":"uint16;uint32", --刷新数据，剩余挑战次数，恢复刷新时间
+		"C2G_ChampionFight":"uint32;string;uint32", --战斗 targetRank,targetName, targetId
+		
+		"C2G_WorldQuestionEnter":"",  --进入答题
+		"G2C_WorldQuestionEnter":"uint32", --返回进入答题 isActive
+		"C2G_WorldQuestionLeave":"", --离开
+		"G2C_WorldQuestionLeave":"", --离开
+		"G2C_WorldQuestionInfo":"uint32;uint32;uint32", --答题活动信息 score,follow,double
+		"G2C_WorldQuestionAnswer":"uint32", --是否答对 isRight 1对0错
+		"G2C_WorldQuestion":"table", --题目信息
+		
+		--帮派
+		"C2G_FactionCreate":"string;string;uint32;uint32", --帮派创建facName, facIntroduction, logoFaction,等级
+		"G2C_FactionSelfUpdate":"uint32;string;string", --个人帮派信息 facId, facName,facPost
+		"C2G_FactionInfoRefresh":"",--帮派信息
+		"G2C_FactionInfoRefresh":"FactionInfo",
+		"C2G_FactionAttendance":"", --签到
+		"C2G_FactionInfoList":"", --所有的帮派信息
+		"G2C_FactionInfoList":"FactionInfo[]",
+		"C2G_FactionApply":"uint32;string",--请求申请列表  facId, applyReason申请描述
+		"C2G_FactionCancelApply":"uint32", --取消申请
+		"G2C_FactionCancelApply":"uint32", 
+		"C2G_FactionApplyRefresh":"",--刷新帮派申请列表
+		"G2C_FactionApplyRefresh":"FactionApplyInfo[]",
+		"C2G_FactionNotice":"string",--帮派公告设置（对内）
+		"G2C_FactionNotice":"string",
+		"C2G_FactionName":"string",--帮派名字修改
+		"C2G_FactionDonation":"uint32",--帮派捐献 entryId
+		"G2C_FactionDonation":"uint32",
+		"C2G_FactionEnterForce":"uint32",--帮派自动加入战力,0表示不开启该功能
+		"G2C_FactionEnterForce":"uint32",
+		"C2G_FactionCheck":"uint32;uint8",--接受申请请求 plr玩家ID,isYes是否同意
+		"C2G_FactionMemberRefresh":"",--请求成员列表
+		"G2C_FactionMemberRefresh":"FactionMemberInfo[]",
+		"G2C_FactionSingleMemberRefresh":"FactionMemberInfo",--请求单个成员
+		"C2G_FactionIntroduction":"string", --公会介绍设置（对外）
+		"G2C_FactionIntroduction":"uint32;string",
+		"C2G_FactionLeave":"",--离开军团
+		"C2G_FactionPost":"uint32;uint8",--设置职位 plrId玩家ID,post职位
+		"C2G_FactionFire":"uint32", --踢出帮派
+		"C2G_FactionInvite":"string",--邀请进入帮派，name玩家名
+		"G2C_FactionInvite":"string;uint32;string",玩家名，军团ID，军团名
+		"C2G_FactionClearApply":"", --清空军团申请列表
+		"G2C_FactionMyApplyList":"table", --玩家自己的申请信息
+		"G2C_FactionEnterRefresh":"uint32",	--玩家进入帮派 玩家id(在线才返回)
+		"C2G_FactionRecord":"",	--帮会记录,记录玩家加入离开等信息
+		"G2C_FactionRecord":"table",--{{time, id, name, type},...} 如果类型是帮会升级{{os.time(), id=0, name="", type}}
+		
+		"C2G_FactionRenqiSet":"uint8", --上香 类型
+		"C2G_FactionRenqiInfo":"",  --获取军团上香信息
+		"G2C_FactionRenqiInfo":"uint32;uint32;table", --今日进度,今日上香次数，上香记录{time, plrId, plrName, type}
+		"C2G_FactionRenqiPrize":"uint8", --香火值 奖励索引index
+		
+		"C2G_FactionPlayerActiveLevelUp":"",	 --帮会活跃升级	
+		"C2G_FactionPlayerActiveInfo":"",		--帮会活跃信息
+		"G2C_FactionPlayerActiveInfo":"uint32;uint32;table", --帮会活跃信息  activeLevel=0, activeExp=0,taskData{type=当前次数}
+		"C2G_FactionPlayerDailyActivePrize":"uint32", --帮会每日活跃奖励
+		
+		"C2G_FactionMapEnter":"",		--进入帮会地图
+		"G2C_FactionMapEnter":"",		
+		"C2G_FactionMapLeave":"",		--离开地图
+		"G2C_FactionMapLeave":"",	
+		
+		"C2G_FactionMapTaskFinishOnce":"uint32",  --帮会任务完成一次 type（1采集，2打小怪）
+		"G2C_FactionMapTaskFinishOnce":"",
+		"C2G_FactionMapTaskOneKey":"uint32",--帮会任务一键完成 type（1采集，2打小怪）
+		"C2G_FactionMapTaskReset":"uint32",--帮会任务重置 type（1采集，2打小怪）
+		"C2G_FactionMapTaskPrize":"uint32",--帮会任务奖励 type（1采集，2打小怪）
+		"G2C_FactionMapTaskPrize":"",
+		
+		"C2G_FactionExchangeItem":"uint32",		--帮会物品兑换 itemEntry
+		"C2G_FactionExchangeItemList":"uint8",		--获取物品兑换列表, 0表示免费刷新,1收费
+		"G2C_FactionExchangeItem":"uint32[];uint32,uint32",	--返回可兑换物品id列表 itemEntry[],剩余刷新次数，刷新倒计时
+		
+		
+		"C2G_FactionSkillInfo":"",
+		"G2C_FactionSkillInfo":"uint32;unit8;uint32;table",		--技能等级，技能索引，技能增加总战力,8个技能等级表
+		"C2G_FactionSkillLevelUp":"",	--帮会技能升级
+		
+		"C2G_EnterEscortActivity":"",  --进入护送
+		"G2C_EnterEscortActivity":"unit8;unit32;unit32;table;table;unit32;unit32", --进入返回 1当前护送索引，2过期时间戳，3橙色护送总次数, 4当前奖励，5被抢记录 6.护送剩余次数,7,拦截剩余次数
+		"G2C_EscortList":"table", --当前护送列表  											--{id,name,overTime,,scortData,escortIndex,其他人马车信息,帮派名称,战斗力}
+		"C2G_BeginEscort":"",     --开始护送
+		"C2G_GetEscortPrize":"",      --获取护送奖励
+		"C2G_RobberEscort":"unit32",  --抢夺  1被抢人Id
+		"C2G_RandEscortIndex":"unit8", --随机护送类型 1一键护送(1一键橙色0随机)
+		"G2C_RandEscortIndex":"unit8", --返回随机护送类型 1护送类型
+		"C2G_RobberEscortRecordList":"", --抢夺历史列表
+		"G2C_RobberEscortRecordList":"table", --返回抢夺历史列表
+		"C2G_RevengeEscort":"unit8",      --复仇
+		"C2G_QuickOverEscort":"",		-- 给钱快速结束
+		"G2C_PutEscortPrizeInfo":"table",					--返回领取奖励和信息
+		"C2G_GetEscortPrizeInfo":"" 领取奖励前被抢夺的记录
+		
+		"C2G_MEIRISANBAI_MonsterNum":"" --请求今日遇怪次数
+		"G2C_MEIRISANBAI_MonsterNum":"uite32,uite8;uite8" --返回今日遇怪次数 领取第几个
+		"C2G_MEIRISANBAI_Get":""		--获得礼物指定物品   -- 领取奖励物品的索引位置
+		"C2G_MEIRISANBAI_YIJIAN":""				--快速完成每日300  
+		
+		
+		- "C2G_XiyouLilian_Info":""	--西游历练等级经验信息
+		- "C2G_XiyouLilian_ActiveLevelUp":"",	 --西游历练升级	 
+		- "G2C_XiyouLilian_Info":"unit16;unit16;unit32;table", --西游历练信息 1,等级  2,经验,  3,战力 4,taskData{type=当前次数}
+		 "C2G_XiyouLilian_RecordInfo":"",	--西游历练昨日任务信息	
+		 "G2C_XiyouLilian_RecordInfo":"table", --西游历练昨日任务未完成完成信息 
+		"C2G_XiyouLilian_FindBack":"unit8",		--用钱赎回昨天未完成的任务			--任务id
+		
+		"G2C_SendOperateData":"uint32;table", --发送运营活动数据 1活动索引 2活动数据
+		"C2G_getOperateData":"uint32",        --查询运营活动 1活动索引
+		"C2G_getOperateActivityPrize":"uint32;table", --获取运营活动奖励 1活动索引 2自定义参数
+		"C2G_DoOperateActivity":"uint32;table", --运营活动操作(抽奖,购买基金...)  1活动索引 2自定义参数
+		"G2C_SendOpenActivityList":"uint32[]",       --发送开启活动列表 1开启的活动列表
+		"C2G_SendOperatePlayerData":"uint32",     --请求活动玩家数据 1活动索引
+		"G2C_SendOperatePlayerData":"uint32;table",  --发送玩家数据  1活动索引 2玩家数据
+		"C2G_SendOperateAndPlayerData":"uint32",     --请求活动与玩家数据 1活动索引
+		"G2C_SendOperateAndPlayerData":"uint32;table;table",  --发送活动与玩家数据  1活动索引 2活动数据 3玩家数据
+		
+		"C2G_CreateTeam":"uint32;uint32",     --创建队伍 1活动索引 2活动关卡索引
+		"G2C_UpdateTeamInfo":"Team",    --更新队伍信息
+		"C2G_ApplyTeam":"uint32",          --申请加入 1队长id
+		"C2G_ApplyAllTeam":"uint32;uint32", --快速加入(一键申请)  1活动索引 2活动关卡索引
+		"C2G_KickMember":"uint32",       --踢出队员 1队员Id
+		"C2G_LeaveTeam":"",        --离开队伍 
+		"G2C_LeaveTeam":"uint32",  --离开队伍 
+		"C2G_Disband":"",             --解散队伍
+		"G2C_Disband":"",             --解散队伍
+		"C2G_CreateTeamBattle":"table",    --创建队伍战斗 1活动索引 2活动关卡索引
+		"C2G_AutoAddMember":"",      --自动加入队员
+		
+		
+		
+		
+		"C2G_DailySignPrize":"uint8",	--每日签到奖励 1类型dailyPrizeType
+		"C2G_MonthCardInfo":"",				--月卡信息
+		"G2C_MonthCardInfo":"unit32;unit8",--月卡信息 1过期时间|是否领取奖励(0未领取1领取)
+		"C2G_MonthCardPrize":"",			--领取月卡奖励
+		
+		"C2G_WeekCardInfo":"",	--周卡信息
+		"G2C_WeekCardInfo":"unit32;unit8",--周卡信息 1过期时间|是否领取奖励(0未领取1领取)
+		"C2G_WeekhCardPrize":"",--领取周卡奖励
+		
+		
+		"C2G_PlatFormCode":"string",  发送激活码  1激活码字符串
+		
+		"C2G_XiyouWelfareInfo":"",  --西游福利
+		"G2C_XiyouWelfareInfo":"uint32;PlayerAppearInfo[]", --西游福利信息 1世界等级 2玩家信息
+		"C2G_XiyouWelfarePrize":"uint32",--领取奖励
+		
+		--神装
+		
+		
+		--结婚
+		"C2G_Proposal":"uint32;uint32;uint8",	--被求婚者Id, 求婚类型, 1丈夫 2妻子
+		"G2C_Proposal":"uint32;string;uint32",	--求婚者Id, 求婚者名字, 求婚类型,
+		"C2G_PromiseMarry":"uint32;uint32;uint8",	--求婚者Id, 求婚类型, 是否答应 0不答应
+		"G2C_PromiseMarry":"string;string",		--通知答应了求婚
+		"C2G_MarryGift":"uint32;uint32,uint32",	--赠送礼金，结婚双方id，礼金类型
+		"G2C_MarryGift":"string;string;uint32",	--通知在线玩家有人结婚, 结婚双方名字, 赠送类型
+		"G2C_HourseUpdate":"table;table;uint32",--房子属性更新, 房子数据，双方外观，房子加成战力
+		"C2G_HourseUpdate":"uint8", --升阶,是否自动购买 1自动购买
+		"C2G_HourseAutoUpdate":""--自动升阶
+		"C2G_EndMarriage":"", --结束婚姻
+		"G2C_EndMarriage":""
+		
+		
+		
+		--法宝
+		"C2G_EquipTalismanSet":"table",						--穿上物品
+		"C2G_EquipTalismanUp":"uint16,uint8",						--请求法宝升级  那个玩法, 索引位置
+		"C2G_EquipTalismanCreate":"uint8",				--打造物品  1为普通打造  2为完美打造
+		"C2G_EquipFaBaoMelt":"table",				--法宝分解
+		
+		"G2C_TALISMAN_lEVEL_INFO":"table"		--登录时自动发送法宝等级列表
+		"G2C_TALISMAN_lEVEL_UPDATE":"EquipForge"; 玩家操作之后的更新。
+    }
+} 
+
+/**************************************************************************/

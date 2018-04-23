@@ -1,0 +1,9 @@
+{"file":"keshuishe_combat_idle.png","frames":{
+"combat_idle_3_body_00":{"x":126,"y":0,"w":61,"h":73,"offX":115,"offY":135,"sourceW":320,"sourceH":320},
+"combat_idle_3_body_01":{"x":63,"y":0,"w":61,"h":73,"offX":115,"offY":135,"sourceW":320,"sourceH":320},
+"combat_idle_3_body_02":{"x":0,"y":0,"w":61,"h":74,"offX":115,"offY":134,"sourceW":320,"sourceH":320},
+"combat_idle_3_body_03":{"x":63,"y":75,"w":60,"h":74,"offX":115,"offY":134,"sourceW":320,"sourceH":320},
+"combat_idle_3_body_04":{"x":125,"y":75,"w":60,"h":74,"offX":115,"offY":134,"sourceW":320,"sourceH":320},
+"combat_idle_3_body_05":{"x":189,"y":0,"w":60,"h":74,"offX":115,"offY":134,"sourceW":320,"sourceH":320},
+"combat_idle_3_body_06":{"x":0,"y":76,"w":61,"h":74,"offX":115,"offY":134,"sourceW":320,"sourceH":320},
+"combat_idle_3_body_07":{"x":0,"y":152,"w":61,"h":74,"offX":115,"offY":134,"sourceW":320,"sourceH":320}}}

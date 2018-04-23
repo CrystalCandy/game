@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GoldBuyLayout" width="600" height="460" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:gui="gui.*">
+	<e:Image source="ty_UIDi01" scale9Grid="57,62,31,7" anchorOffsetX="0" width="600" anchorOffsetY="0" height="440" horizontalCenter="0" verticalCenter="0"/>
+	<e:Group width="600" height="440" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="ty_UIBg02" x="30" y="30" width="540" height="280" scale9Grid="20,15,6,5" scaleX="1" scaleY="1"/>
+		<e:Group width="540" height="280" y="30" x="30" scaleX="1" scaleY="1">
+			<gui:RichDisplayer id="info_rtxt" width="510" height="80" y="15" scaleX="1" scaleY="1" x="15"/>
+			<e:Image source="ty_UIBg05" y="125" width="410" height="130" scale9Grid="11,12,7,5" x="65"/>
+			<gui:RichDisplayer id="exchange_rtxt" width="410" height="75" x="65" y="125"/>
+			<e:Image source="00_tongYong01.ty_xiangTextDi01" y="202" width="230" height="40" scale9Grid="7,7,2,2" x="155"/>
+			<e:Label id="surplus_txt" text="" x="65" y="202" width="410" height="40" textAlign="center" verticalAlign="middle"/>
+		</e:Group>
+		<gui:Button id="btn_close_top" label="" x="525" y="-14" scaleX="1" scaleY="1">
+			<gui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_bt_back02"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<gui:Button id="btn_close" label="" x="516" y="348" scaleX="1" scaleY="1">
+			<gui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_bt_back04"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<gui:Button id="buy_btn" label="${SHOP_TXT2}" x="233" y="324" scaleX="1" scaleY="1">
+			<gui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_tongYongBt01"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_30_lc_stroke"/>
+			</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+	</e:Group>
+</e:Skin>

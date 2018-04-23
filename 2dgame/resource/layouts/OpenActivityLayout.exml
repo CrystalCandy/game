@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="OpenActivityLayout" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:gui="gui.*">
+	<e:Image source="_tongYongDi01" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image source="00_tongYong01.ty_biaoTiDi01" left="0" top="0"/>
+	<e:Image source="00_tongYong01.ty_biaoTiDi02" bottom="0" x="0"/>
+	<e:Label id="title" text="${OPEN_RANK1}" y="9" anchorOffsetX="0" width="166" textAlign="center" style="ht_title_font" x="237" height="30"/>
+	<e:Group height="960" width="640" verticalCenter="0" horizontalCenter="0">
+		<e:Image source="00_tongYong03.ty_uiDiKuang01" width="620" scale9Grid="314,49,5,6" x="10" top="80" bottom="90"/>
+		<e:Group width="603" height="55" x="19" y="92">
+			<e:Image source="00_tongYong03.ty_UIBg06" x="0" y="0" width="603" height="55" scale9Grid="15,13,1,1" locked="true"/>
+			<e:Scroller width="603" height="50" x="0" y="5" scrollPolicyV="off">
+				<e:Group id="tab_group">
+					<e:layout>
+						<e:HorizontalLayout paddingLeft="5"/>
+					</e:layout>
+				</e:Group>
+			</e:Scroller>
+		</e:Group>
+		<e:Group id="prize_bg" width="603" x="19" top="148" bottom="101">
+			<e:Image source="cb_cbJieMianTu01" x="0" bottom="0" height="711"/>
+			<e:Label id="timeLab" text="" x="402" y="28" anchorOffsetX="0" width="189" textAlign="center" verticalAlign="middle" height="30" style="ht_20_lc"/>
+			<e:Label id="numIndex1" text="" x="48" y="238" anchorOffsetX="0" width="172" textAlign="center" style="ht_24_lc_stroke" height="30" verticalAlign="middle"/>
+			<e:Label id="numIndex2" text="" x="48" y="366" anchorOffsetX="0" width="172" textAlign="center" style="ht_24_lc_stroke" height="30" verticalAlign="middle"/>
+			<e:Label id="numIndex3" text="" x="48" y="494" anchorOffsetX="0" width="172" textAlign="center" style="ht_24_lc_stroke" height="30" verticalAlign="middle"/>
+		</e:Group>
+	</e:Group>
+	<gui:Button id="btn_close" label="" bottom="0" right="0">
+		<gui:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back03"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<gui:Button id="rankBtn" label="${MAIN_TXT16}" x="42" width="155" height="52" bottom="23">
+		<gui:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_tongYongBt25"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+		</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<gui:Button id="btn_close_top" label="" right="0" top="0">
+		<gui:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back01"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+</e:Skin>

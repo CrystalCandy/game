@@ -1,0 +1,26 @@
+{
+	"GameKey" : "h5dld",
+    "GameName":"乱斗全明星",
+    "QD_Key":"allu",
+    "QD_Code1":5,
+    "QD_Code2":6,
+    "IsOfficialLogin":false,
+    "CheatPay":false,
+    "IsReLogin":false,
+    "a":"192.168.1.254",
+    "h5":"139.199.2.135",
+    "test":"47.92.89.237",
+    "AppId":"1b8ee1b219de4e9bb75cf28c126164c5",
+    "ClientId":"1622d5f271420ecefee2228b70f4c194",
+
+    "AuthUrl":"http://139.199.2.135/h5_console/platform/account_auth.php",
+    "RegisterUrl":"http://139.199.2.135/h5_console/platform/account_register.php",
+
+    "PublicNoticeUrl":"http://139.199.2.135/h5_console/common/get_notice_info.php",
+    "PublicNoticeContentUrl":"http://139.199.2.135/h5_console/common/get_notice_detail.php",
+    "PublicNoticeUpdateUrl":"http://139.199.2.135/h5_console/common/get_update_notice.php",
+    
+    "ServerUrl":"http://139.199.2.135/h5_console/common/serverlist.php?platform=allu",
+    "BridgeUrl":"http://139.199.2.135/h5_console/bridge/alluh5/yixiu.php",
+    "ReportUrl":"http://139.199.2.135/h5_console/common/logic_error.php"    
+}

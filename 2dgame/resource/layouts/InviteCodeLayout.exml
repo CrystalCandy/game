@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="InviteCodeLayout" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:gui="gui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="ty_UIDi01" scale9Grid="72,56,16,18" left="0" right="0" top="0" bottom="0"/>
+	<e:Image source="00_tongYong01.ty_biaoTiHuaWen01" x="188" y="24"/>
+	<e:Label id="ui_title" text="${INVITE_TEXT}" x="226" y="30" anchorOffsetX="0" width="220" anchorOffsetY="0" height="45" textAlign="center" verticalAlign="middle" style="ht_30_lc_stroke"/>
+	<e:Group width="580" height="150" x="30" y="93">
+		<e:Image source="ty_UIBg02" width="100%" height="100%" verticalCenter="0" horizontalCenter="0" scale9Grid="18,15,5,5"/>
+		<e:Label id="my_title" text="${INVITE_TEXT1}" x="15" y="25" style="ht_22_lc_stroke" width="130" height="40" textAlign="center" verticalAlign="middle"/>
+		<e:Image source="00_tongYong01.ty_UIBg04" x="150" y="23" width="250" height="50" scale9Grid="11,11,6,6"/>
+		<e:Label id="my_code" text="" x="150" y="23" anchorOffsetX="0" width="250" anchorOffsetY="0" height="50" style="ht_24_lc" textAlign="center" verticalAlign="middle" textColor="0x442619"/>
+		<e:Label id="other_title" text="${INVITE_TEXT2}" x="15" y="82" style="ht_22_lc_stroke" width="130" height="40" textAlign="center" verticalAlign="middle"/>
+		<e:Image source="00_tongYong01.ty_UIBg04" x="150" y="80" width="250" height="50" scale9Grid="11,11,6,6"/>
+		<e:EditableText id="edit_text" width="250" height="50" text="" x="150" y="80" anchorOffsetX="0" anchorOffsetY="0" textAlign="center" verticalAlign="middle"  textColor="0x442619"/>
+		<gui:Button id="share_btn" label="${SETTING_TXT6}" x="432" y="23" width="90" height="50">
+			<gui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_tongYongBt15"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+				</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<gui:Button id="confirm_btn" label="${SURE}" x="432" y="77" width="90" height="50">
+			<gui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_tongYongBt15"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+			</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+	</e:Group>
+	<e:Group width="580" height="182" x="30" y="248">
+		<e:Image source="ty_UIBg02" width="100%" height="100%" verticalCenter="0" horizontalCenter="0" scale9Grid="18,15,5,5" x="-30" y="-248" scaleX="1" scaleY="1"/>
+		<e:Scroller width="570" height="172" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="0" horizontalCenter="0">
+			<e:List id="scroller_my" itemRendererSkinName="itemRender.InviteCodeRowLayout"/>
+		</e:Scroller>
+	</e:Group>
+	<e:Group width="580" height="60" x="30" y="437">
+		<e:Image width="100%" height="100%" verticalCenter="0" horizontalCenter="0" scale9Grid="18,15,5,5" source="ty_UIBg06"/>
+		<e:Label id="invited_friends" text="" anchorOffsetX="0" width="572" anchorOffsetY="0" height="37" textAlign="center" verticalAlign="middle" style="ht_22_lc_stroke" textColor="0x50d142" horizontalCenter="0" verticalCenter="-9.5"/>
+	</e:Group>
+	<e:Group width="585.33" height="368" x="30" y="477" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image source="ty_UIBg02" width="100%" height="100%" verticalCenter="0" horizontalCenter="0" scale9Grid="18,15,5,5"/>
+		<e:Scroller width="100%" height="100%" verticalCenter="0" horizontalCenter="0">
+			<e:List id="scroller_list"/>
+		</e:Scroller>
+	</e:Group>
+	<gui:Button id="btn_close_top" label="" top="0" right="0" height="80">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back02"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<gui:Button id="btn_close" label="" right="0" bottom="0">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back04"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+</e:Skin>

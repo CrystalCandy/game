@@ -1,0 +1,203 @@
+<keys>
+  <item key="Alert.Confirm" value="OK"/>
+  <item key="Alert.Cancel" value="Cancel"/>
+  <item key="Alert.Yes" value="Yes"/>
+  <item key="Alert.No" value="No"/>
+  <item key="GlobalMenuData.NewFont" value="New Font"/>
+  <item key="GlobalMenuData.OpenFont" value="Open Font"/>
+  <item key="GlobalMenuData.SaveFont" value="Save Font"/>
+  <item key="GlobalMenuData.NewProject" value="New Project"/>
+  <item key="GlobalMenuData.NewProjects" value="New Projects"/>
+  <item key="GlobalMenuData.CreateConvertAnimate" value="Create Conversion Animation"/>
+  <item key="GlobalMenuData.HistoricalRecord" value="Historical Record"/>
+  <item key="GlobalMenuData.LocalResourceNotFound" value="Local Resource NotFound"/>
+  <item key="GlobalMenuData.Enlarge" value="Zoom In"/>
+  <item key="GlobalMenuData.Adapt" value="Adapt"/>
+  <item key="GlobalMenuData.ZoomOut" value="Zoom Out"/>
+  <item key="GlobalMenuData.OpenManual" value="Open Manual"/>
+  <item key="GlobalMenuData.ExportOption" value="Export Options"/>
+  <item key="GlobalMenuData.Scale" value="Scale:"/>
+  <item key="GlobalMenuData.VersionError" value="This file was created with a newer version. Please upgrate to the latest version."/>
+  <item key="GlobalMenuData.CurrentFont" value="Current Font:"/>
+  <item key="GlobalMenuData.CurrentFontNothing" value="Current Font: None"/>
+  <item key="GlobalMenuData.SameFileNameRename" value="File with the same name exists, please choose a nother name"/>
+  <item key="GlobalMenuData.ProjectFileNotFound" value="Project File NotFound"/>
+  <item key="GlobalMenuData.SelectImageFile" value="Select Image File"/>
+  <item key="GlobalMenuData.SelectFontFile" value="Select Font File"/>
+  <item key="GlobalMenuData.ParseProjectError" value="Cannot parse project file"/>
+  <item key="GlobalMenuData.Processing" value="Processing..."/>
+  <item key="GlobalMenuData.AreYouSaveFont" value="Do you want to save current font?"/>
+  <item key="GlobalMenuData.Yes" value="Yes"/>
+  <item key="GlobalMenuData.No" value="No"/>
+  <item key="GlobalMenuData.SaveTo" value="Save to:"/>
+  <item key="GlobalMenuData.CantSave" value="Cannot save font"/>
+  <item key="GlobalMenuData.SelectSavePath" value="Select Save Path"/>
+  <item key="GlobalMenuData.ExportTo" value="Export to:"/>
+  <item key="GlobalMenuData.DragFileTo" value="Drag File To Here"/>
+  <item key="GlobalMenuData.Width" value="Width"/>
+  <item key="GlobalMenuData.Height" value="Height"/>
+  <item key="GlobalMenuData.TextureMaxSizeError" value="The texture size cannot exceed 2048x2048"/>
+  <item key="GlobalMenuData.FontName" value="Font name"/>
+  <item key="GlobalMenuData.EditCenterPoint" value="Edit center point"/>
+  <item key="GlobalMenuData.KeyDragChangeCenterPoint" value="Press down Ctrl or Command key and drag to adjust center point"/>
+  <item key="GlobalMenuData.OffsetX" value="x-offset:"/>
+  <item key="GlobalMenuData.OffsetY" value=" y-offset:"/>
+  <item key="GlobalMenuData.Reset" value="Reset"/>
+  <item key="GlobalMenuData.CurrentProject" value="Current project:"/>
+  <item key="GlobalMenuData.CurrentProjectNothing" value="Current Project: None"/>
+  <item key="GlobalMenuData.SelectProjectFile" value="Select project file"/>
+  <item key="GlobalMenuData.ParseingProjectFile" value="Parsing project file..."/>
+  <item key="GlobalMenuData.AddAction" value="Add action"/>
+  <item key="GlobalMenuData.AreYouSaveProject" value="Do you want to save current project?"/>
+  <item key="GlobalMenuData.AddFrame" value="Add frame"/>
+  <item key="GlobalMenuData.SelectFrameImage" value="Select frame image"/>
+  <item key="GlobalMenuData.HaveSameFrameNameRename" value="Frame with the same name already exists, please choose another name"/>
+  <item key="GlobalMenuData.ProjectName" value="Project Name:"/>
+  <item key="GlobalMenuData.ProjectPath" value="Project Path"/>
+  <item key="GlobalMenuData.OpenFilePath" value="Open file path"/>
+  <item key="GlobalMenuData.Refresh" value="Refresh"/>
+  <item key="GlobalMenuData.Clean" value="Clean"/>
+  <item key="GlobalMenuData.LinkLocalResource" value="Link  local resource"/>
+  <item key="GlobalMenuData.ConvertToNewProject" value="Convert to new project"/>
+  <item key="GlobalMenuData.ConvertComplete" value="Conversion complete"/>
+  <item key="GlobalMenuData.SelectResourcePath" value="Select resource path"/>
+  <item key="GlobalMenuData.TextureLinkFaild" value="Texture link failed"/>
+  <item key="GlobalMenuData.VersionNumber" value="Version number"/>
+  <item key="GlobalMenuData.VersionOldTips" value="This project file is too old to support Auto Refresh.\n(You may create new project file or convert project to exprience Auto Refresh feature.)"/>
+  <item key="GlobalMenuData.Nothing" value="None"/>
+  <item key="ItemDataCreaterForAnimate.SameFile" value="The file name already exists"/>
+  <item key="ItemDataCreaterForAnimate.ParseGif" value="Parsing Gif..."/>
+  <item key="ItemDataCreaterForAnimate.ParseSwf" value="Parsing SWF..."/>
+  <item key="ItemDataCreaterForConfig.LoadProject" value="Loading project..."/>
+  <item key="ItemDataCreaterForConfig.FileNotExist" value="Some image files are missing"/>
+  <item key="ItemDataCreaterForJson.FormatError" value="JSON file format error"/>
+  <item key="ItemDataCreaterForJson.FileNotExist" value="{0} texture is missing"/>
+  <item key="ItemDataCreaterForTextrueFile.LoadTexture" value="Loading texture"/>
+  <item key="FontTextureEditor.Rename" value="Rename"/>
+  <item key="ListEditor.Title" value="List Configuration"/>
+  <item key="ListEditor.AppendExtension" value="Append  extension"/>
+  <item key="ProEditor.Title" value="Texture Configuration"/>
+  <item key="ProEditor.Layout" value="Layout"/>
+  <item key="ProEditor.Canvas" value="Canvas"/>
+  <item key="ProEditor.Gap" value="Gap"/>
+  <item key="ProEditor.Extend" value="Extend"/>
+  <item key="ProEditor.CutImage" value="Strip whitespace"/>
+  <item key="BoardForEditMode.Title" value="Choose Edit Mode"/>
+  <item key="BoardForFontEdit.Menu1" value="System fonts"/>
+  <item key="BoardForFontEdit.Menu2" value="Texture fonts"/>
+  <item key="BoardForFontEdit.Commit" value="Confirm"/>
+  <item key="BoardForFontEdit.FontSize" value=" Font size:"/>
+  <item key="BoardForFontEdit.FontColor" value=" Font Color:"/>
+  <item key="BoardForFontEdit.FontBold" value=" Bold:"/>
+  <item key="BoardForFontEdit.SelectFile" value=" Choose file"/>
+  <item key="BoardForFontEdit.FillTextTip" value=" Type in characters (Order: top to bottom, left to right)"/>
+  <item key="BoardForFontEdit.SameFile" value=" This name already exists. It's been renamed. "/>
+  <item key="InfoBar.ScaleView" value="Scale view"/>
+  <item key="InfoBar.Teach" value="Help"/>
+  <item key="InfoBar.TextureSize" value="Texture size"/>
+  <item key="SourceList.MenuItem1" value="Delete"/>
+  <item key="SourceList.Delete.Content" value="Are you sure to delete the selected item?"/>
+  <item key="SourceList.Delete.Title" value="Notice"/>
+  <item key="SourceList.Delete.OK" value="Confirm"/>
+  <item key="SourceList.Delete.Cancle" value="Cancel"/>
+  <item key="SourceList.Sort" value="Sort"/>
+  <item key="SystemMenu.Open.Texture" value="Choose a texture"/>
+  <item key="SystemMenu.Open.Animate" value="Choose an animation"/>
+  <item key="SystemMenu.Open.FontTexture" value="Choose font texture"/>
+  <item key="SystemMenu.Open.Project" value="Open a project"/>
+  <item key="SystemMenu.NoTexture.Title" value="Notice"/>
+  <item key="SystemMenu.NoTexture.Content" value="There is no texture added"/>
+  <item key="SystemMenu.Save" value="Save"/>
+  <item key="SystemMenu.Saveing" value="Saving..."/>
+  <item key="SystemMenu.Exporting" value="Exporting..."/>
+  <item key="ViewBox.Drag.Texture" value="Drag files to here"/>
+  <item key="ViewBox.Drag.Animate" value="Drag files to here"/>
+  <item key="ViewBox.Drag.Font" value="Drag texture to here"/>
+  <item key="GlobalMenuData.New" value="New"/>
+  <item key="GlobalMenuData.Export" value="Export"/>
+  <item key="GlobalMenuData.Texture.OpenProject" value="Open Project"/>
+  <item key="GlobalMenuData.Texture.SaveProject" value="Save Project"/>
+  <item key="GlobalMenuData.Texture.AddTexture" value="Add Texture"/>
+  <item key="GlobalMenuData.Animate.newAnimate" value="New a animation"/>
+  <item key="GlobalMenuData.Animate.AddAnimate" value="Add an animation"/>
+  <item key="GlobalMenuData.Font.AddChar" value="Add Characters"/>
+  <item key="GlobalMenuData.Font.AddChar.ToolTip" value="Sigle character texutre is allowed to be added"/>
+  <item key="GlobalMenuData.Font.MoreChar" value="More Characters"/>
+  <item key="AnimatePrivewWindow.priview" value="Preview action"/>
+  <item key="AnimatePrivewWindow.framerate" value="FPS:{0}"/>
+  <item key="AnimatePrivewWindow.play" value="Play"/>
+  <item key="AnimatePrivewWindow.stop" value="Stop"/>
+  <item key="ContextMenuWorkerForAnimate.edit" value="Edit"/>
+  <item key="ContextMenuWorkerForAnimate.delete" value="Delete"/>
+  <item key="ContextMenuWorkerForAnimate.newaction" value="New action"/>
+  <item key="ContextMenuWorkerForAnimate.preview" value="Preview"/>
+  <item key="ContextMenuWorkerForAnimate.addframe" value="Add frame"/>
+  <item key="ActionCreateWindow.title" value="Create Action"/>
+  <item key="AnimateCreateWindow.title" value="Create Animation"/>
+  <item key="AnimateCreateWindow.framerate" value="FPS:"/>
+  <item key="CreateWindow.name" value="Name:"/>
+  <item key="CreateWindow.ok" value="OK"/>
+  <item key="ColorWindow.Title" value="Color Selector"/>
+  <item key="ColorWindow.SelectColor" value="Select Color:"/>
+  <item key="ColorWindow.NewColor" value="New:"/>
+  <item key="ColorWindow.CurrentColor" value="Current:"/>
+  <item key="ColorWindow.UseDefault" value="Default Value"/>
+  <item key="CloseTabButtonSkin.CloseButton.ToolTip" value="Close"/>
+  <item key="AlertWindowSkin.ButtonOne" value="Yes"/>
+  <item key="AlertWindowSkin.ButtonTwo" value="No"/>
+  <item key="AlertWindowSkin.ButtonThree" value="Cancel"/>
+  <item key="TabGroup.MenuButton" value="Tab Group"/>
+  <item key="FileUtil.Browse" value="Browse Files"/>
+  <item key="FileUtil.Save" value="Save Files"/>
+  <item key="StatuBar.EditArea" value="Edit Area"/>
+  <item key="StatuBar.Restore" value="Restore"/>
+  <item key="TabGroup.Close" value="Close"/>
+  <item key="TabGroup.Minimum" value="Minimum"/>
+  <item key="TabGroup.CloseTab" value="Close Tab Group"/>
+  <item key="CloseTabButton.Close" value="Close"/>
+  <item key="CloseTabButton.CloseOther" value="Close Others"/>
+  <item key="CloseTabButton.CloseAll" value="Close All"/>
+  <item key="LoginWindow.Title" value="Log in"/>
+  <item key="LoginWindow.Email" value="Egret ID:"/>
+  <item key="LoginWindow.Passwrod" value="Password:"/>
+  <item key="LoginWindow.Login" value="Log in"/>
+  <item key="LoginWindow.Register" value="Register"/>
+  <item key="LoginWindow.Loading" value="Logging in..."/>
+  <item key="LoginWindow.ErrorNoUser" value="User does not exist"/>
+  <item key="LoginWindow.ErrorPassword" value="Wrong password"/>
+  <item key="LoginWindow.ErrorLogin" value="Login failed"/>
+  <item key="LoginWindow.ErrorEmail" value="Please log in with the email address your BBS account is using."/>
+  <item key="LoginWindow.ErrorBadNet" value="Network connection error"/>
+  <item key="LoginWindow.CloseContent" value="Egret Wing will close if this window is closed. Still close the window"/>
+  <item key="LoginWindow.CloseTitle" value="Close Tips"/>
+  <item key="LoginWindow.AlertErrorTitle" value="Login Tips"/>
+  <item key="LoginWindow.AlertLoading" value="Trying to log in..."/>
+  <item key="LoginWindow.AlertErrorContent" value="Your account has been logged in. Please change your password if it is not your action. \n\n Egret Wing will close if this window is closed."/>
+  <item key="LoginWindow.ReLogin" value="Relogin"/>
+  <item key="LoginWindow.ChangePassword" value="Reset password"/>
+  <item key="LoginWindow.RemeberPassword" value="Remember password"/>
+  <item key="LoginWindow.FindPassword" value="Retrieve password"/>
+  <item key="LoginWindow.NoQualification" value="This account is not qualified for an internal test version"/>
+  <item key="LoginWindow.PromptApplyContent" value="Your account is not qualified for an internal test version."/>
+  <item key="LoginWindow.PromptApplyTitle" value="Login Tips"/>
+  <item key="LoginWindow.EgretIDPrompt" value="Your Email"/>
+  <item key="LoginWindow.Apply" value="Apply for internal test version"/>
+  <item key="AboutWindow.Title" value="About {0}"/>
+  <item key="AboutWindow.Version" value="Version: {0}"/>
+  <item key="AboutWindow.TechGroup" value="Technical Support"/>
+  <item key="AboutWindow.ContactGroup" value="Contact us"/>
+  <item key="AboutWindow.BusinessGroup" value="Business Cooperation"/>
+  <item key="AboutWindow.PromiseGroup" value="Egret's Promise"/>
+  <item key="AboutWindow.BBS" value="BBS: {0}"/>
+  <item key="AboutWindow.SupportMail" value="Email: {0}"/>
+  <item key="AboutWindow.DeveloperQQ" value="Egret QQ Group: {0}"/>
+  <item key="AboutWindow.Telephone" value="Tel: {0}"/>
+  <item key="AboutWindow.Website" value="Website: {0}"/>
+  <item key="AboutWindow.Address" value="Addr.: {0}"/>
+  <item key="AboutWindow.BusinessMail" value="Email: {0}"/>
+  <item key="AboutWindow.ProductQQ" value="Product Cooperation QQ：{0}"/>
+  <item key="AboutWindow.ChannelQQ" value="Channel Cooperation QQ：{0}"/>
+  <item key="ColorWindow.Restore" value="Restore"/>
+  <item key="AboutWindow.Twitter" value="Twitter: {0}"/>
+  <item key="AboutWindow.Facebook" value="Facebook: {0}"/>
+</keys>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="AthleticsLayout" width="640" height="900" xmlns:e="http://ns.egret.com/eui" xmlns:gui="gui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image scaleX="1" scaleY="1" top="0" bottom="0" scale9Grid="58,133,161,143" left="0" right="0" source="ty_uiDi01"/>
+	<e:Label id="title" text="竞技场" textAlign="center" horizontalCenter="0" top="0" style="ht_30_lc_stroke" height="35" width="640"/>
+	<e:Group id="arena_wnd" width="640" height="900" x="0" y="0" visible="false">
+		<e:Image source="jj_ztBg01" horizontalCenter="0" top="35"/>
+		<e:Group width="610" height="562" horizontalCenter="0" top="35" x="15" y="35" scaleX="1" scaleY="1">
+			<e:Group id="group_0" width="177" height="200" top="38" y="33" scaleX="1" scaleY="1" anchorOffsetY="0" horizontalCenter="-121.5">
+			<e:Group anchorOffsetX="0" height="60" width="177" x="0" scaleX="1" scaleY="1" y="0">
+				<e:Image scaleX="1" scaleY="1" scale9Grid="87,28,5,4" width="220" horizontalCenter="0" y="0" height="60" source="jj_textDi01"/>
+				<e:Image left="0" bottom="0" source="ty_text01"/>
+				<gui:BatchImage id="batch_force0" height="30" left="30" width="146" anchorOffsetX="0" bottom="0"/>
+				<e:Group height="30" top="0" width="144" horizontalCenter="0">
+				<e:Label id="txt_di0" text="${JJC_TXT3}" style="ht_18_lc_stroke" verticalAlign="middle" textAlign="center" height="30" width="30" y="0" x="0"/>
+				<e:Label id="txt_min0" text="${JJC_TXT4}" style="ht_18_lc_stroke" verticalAlign="middle" textAlign="center" height="30" width="30" y="0" x="114"/>
+				<gui:BatchImage id="batch_rank0" width="80" height="30" y="0" horizontalCenter="0"/>
+				</e:Group>
+			</e:Group>
+				<e:Group id="actor_view0" width="100" height="120" x="39" y="60"/>
+				<e:Image id="floor0" source="12_jingJi.jj_renWuDi01" horizontalCenter="0" bottom="-20"/>
+			<e:Label id="name0" text="" height="30" width="177" bottom="0" horizontalCenter="0" textAlign="center" style="ht_24_lc_stroke"/>
+			</e:Group>
+			<e:Group id="group_1" width="177" height="200" top="38" y="33" scaleX="1" scaleY="1" anchorOffsetY="0" right="95">
+			<e:Group anchorOffsetX="0" height="60" width="177" x="0" scaleX="1" scaleY="1" y="0">
+				<e:Image scaleX="1" scaleY="1" scale9Grid="87,28,5,4" width="220" horizontalCenter="0" y="0" height="60" source="jj_textDi01"/>
+				<e:Image left="0" bottom="0" source="ty_text01"/>
+				<gui:BatchImage id="batch_force1" height="30" left="30" width="146" anchorOffsetX="0" bottom="0"/>
+				<e:Group height="30" top="0" width="144" horizontalCenter="0">
+				<e:Label id="txt_di1" text="${JJC_TXT3}" style="ht_18_lc_stroke" verticalAlign="middle" textAlign="center" height="30" width="30" y="0" x="0"/>
+				<e:Label id="txt_min1" text="${JJC_TXT4}" style="ht_18_lc_stroke" verticalAlign="middle" textAlign="center" height="30" width="30" y="0" x="114"/>
+				<gui:BatchImage id="batch_rank1" width="80" height="30" y="0" horizontalCenter="0"/>
+				</e:Group>
+			</e:Group>
+				<e:Group width="100" height="120" x="39" y="60" id="actor_view1"/>
+				<e:Image id="floor1" source="12_jingJi.jj_renWuDi01" horizontalCenter="0" bottom="-20" x="-127" y="469" scaleX="1" scaleY="1"/>
+			<e:Label text="" height="30" width="177" bottom="0" horizontalCenter="0" textAlign="center" style="ht_24_lc_stroke" id="name1" x="-121" y="494" scaleX="1" scaleY="1"/>
+			</e:Group>
+			<e:Group id="group_2" width="177" height="200" top="250" y="33" scaleX="1" scaleY="1" anchorOffsetY="0" left="20">
+			<e:Group anchorOffsetX="0" height="60" width="177" x="0" scaleX="1" scaleY="1" y="0">
+				<e:Image scaleX="1" scaleY="1" scale9Grid="87,28,5,4" width="220" horizontalCenter="0" y="0" height="60" source="jj_textDi01"/>
+				<e:Image source="ty_text01" left="0" bottom="0"/>
+				<gui:BatchImage id="batch_force2" height="30" left="30" width="146" anchorOffsetX="0" bottom="0"/>
+				<e:Group height="30" top="0" width="144" horizontalCenter="0">
+				<e:Label id="txt_di2" text="${JJC_TXT3}" style="ht_18_lc_stroke" verticalAlign="middle" textAlign="center" height="30" width="30" y="0" x="0"/>
+				<e:Label id="txt_min2" text="${JJC_TXT4}" style="ht_18_lc_stroke" verticalAlign="middle" textAlign="center" height="30" width="30" y="0" x="114"/>
+				<gui:BatchImage id="batch_rank2" width="80" height="30" y="0" horizontalCenter="0"/>
+				</e:Group>
+			</e:Group>
+				<e:Group width="100" height="120" x="39" y="60" id="actor_view2"/>
+				<e:Image id="floor2" source="12_jingJi.jj_renWuDi01" horizontalCenter="0" bottom="-20" x="191" y="257" scaleX="1" scaleY="1"/>
+			<e:Label text="" height="30" width="177" bottom="0" horizontalCenter="0" textAlign="center" style="ht_24_lc_stroke" id="name2" x="197" y="282" scaleX="1" scaleY="1"/>
+			</e:Group>
+			<e:Group id="group_3" width="177" height="200" top="250" y="33" scaleX="1" scaleY="1" anchorOffsetY="0" right="20">
+			<e:Group anchorOffsetX="0" height="60" width="177" x="0" scaleX="1" scaleY="1" y="0">
+				<e:Image scaleX="1" scaleY="1" scale9Grid="87,28,5,4" width="220" horizontalCenter="0" y="0" height="60" source="jj_textDi01"/>
+				<e:Image source="ty_text01" left="0" bottom="0"/>
+				<gui:BatchImage id="batch_force3" height="30" left="30" width="146" anchorOffsetX="0" bottom="0"/>
+				<e:Group height="30" top="0" width="144" horizontalCenter="0">
+				<e:Label id="txt_di3" text="${JJC_TXT3}" style="ht_18_lc_stroke" verticalAlign="middle" textAlign="center" height="30" width="30" y="0" x="0"/>
+				<e:Label id="txt_min3" text="${JJC_TXT4}" style="ht_18_lc_stroke" verticalAlign="middle" textAlign="center" height="30" width="30" y="0" x="114"/>
+				<gui:BatchImage id="batch_rank3" width="80" height="30" y="0" horizontalCenter="0"/>
+				</e:Group>
+			</e:Group>
+				<e:Group width="100" height="120" x="39" y="60" id="actor_view3"/>
+				<e:Image id="floor3" source="12_jingJi.jj_renWuDi01" horizontalCenter="0" bottom="-20" x="-202" y="257" scaleX="1" scaleY="1"/>
+			<e:Label text="" height="30" width="177" bottom="0" horizontalCenter="0" textAlign="center" style="ht_24_lc_stroke" id="name3" x="-196" y="282" scaleX="1" scaleY="1"/>
+			</e:Group>
+			<e:Group id="group_4" width="177" height="200" top="310" y="33" scaleX="1" scaleY="1" anchorOffsetY="0" horizontalCenter="0">
+			<e:Group anchorOffsetX="0" height="60" width="177" x="0" scaleX="1" scaleY="1" y="0">
+				<e:Image scaleX="1" scaleY="1" scale9Grid="87,28,5,4" width="220" horizontalCenter="0" y="0" height="60" source="jj_textDi01"/>
+				<e:Image source="ty_text01" left="0" bottom="0"/>
+				<gui:BatchImage id="batch_force4" height="30" left="30" width="146" anchorOffsetX="0" bottom="0"/>
+				<e:Group height="30" top="0" width="144" horizontalCenter="0">
+				<e:Label id="txt_di4" text="${JJC_TXT3}" style="ht_18_lc_stroke" verticalAlign="middle" textAlign="center" height="30" width="30" y="0" x="0"/>
+				<e:Label id="txt_min4" text="${JJC_TXT4}" style="ht_18_lc_stroke" verticalAlign="middle" textAlign="center" height="30" width="30" y="0" x="114"/>
+				<gui:BatchImage id="batch_rank4" width="80" height="30" y="0" horizontalCenter="0"/>
+				</e:Group>
+			</e:Group>
+				<e:Group width="100" height="120" x="39" y="60" id="actor_view4"/>
+				<e:Image id="floor4" source="12_jingJi.jj_renWuDi01" horizontalCenter="0" bottom="-20" x="-6" y="197" scaleX="1" scaleY="1"/>
+			<e:Label text="" height="30" width="177" bottom="0" horizontalCenter="0" textAlign="center" style="ht_24_lc_stroke" id="name4" x="0" y="222" scaleX="1" scaleY="1"/>
+				<e:Image id="ms_pic" source="01_zhuCheng03.jj_text01" x="140" y="140"/>
+			</e:Group>
+		</e:Group>
+		<e:Group anchorOffsetX="0" left="25" right="25" top="600" bottom="110" x="25" y="600" scaleX="1" scaleY="1">
+			<e:Group width="268" height="77" anchorOffsetY="0" left="0" top="4">
+			<gui:Button id="btn_rank" label="" x="36" y="20">
+				<gui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="jj_Bt01"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</gui:skinName>
+			</gui:Button>
+			<gui:Button id="btn_challenge" label="" x="46" y="30">
+				<gui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="jj_Bt02"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</gui:skinName>
+			</gui:Button>
+			<gui:Button id="btn_shop" label="" x="56" y="40">
+				<gui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="jj_Bt03"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</gui:skinName>
+			</gui:Button>
+			<e:layout>
+				<e:HorizontalLayout gap="2"/>
+			</e:layout>
+			</e:Group>
+			<e:Group width="250" height="56" anchorOffsetY="0" anchorOffsetX="0" right="0" top="25">
+			<e:Image left="0" bottom="0" top="0" right="0" source="ty_textDi01" scale9Grid="8,5,5,9"/>
+			<gui:Button id="buy_btn" label="" verticalCenter="0" right="5">
+				<gui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="ty_jiaIcon01"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</gui:skinName>
+			</gui:Button>
+			<gui:RichDisplayer id="count_rd" height="50" left="10" right="50" verticalCenter="0"/>
+			</e:Group>
+			<e:Group height="105" bottom="0" left="0" right="0">
+			<e:Image left="0" top="0" bottom="0" right="0" scale9Grid="59,22,8,4" source="ty_shuRuDi01"/>
+			<e:Group width="210" height="75" x="20" anchorOffsetY="0" verticalCenter="0">
+				<e:Group width="185" height="30" top="4" horizontalCenter="0">
+				<e:Label id="txt_di" text="${JJC_TXT3}" width="30" height="30" style="ht_24_lc" textAlign="center" verticalAlign="middle" y="0" scaleX="1" scaleY="1" left="0"/>
+				<e:Label id="txt_min" text="${JJC_TXT4}" width="30" height="30" style="ht_24_lc" textAlign="center" verticalAlign="middle" y="0" scaleX="1" scaleY="1" right="0"/>
+				<gui:BatchImage id="batch_rank" height="30" top="0" width="120" horizontalCenter="0" x="47" y="-6" scaleX="1" scaleY="1"/>
+				</e:Group>
+				<e:Image left="0" right="0" scale9Grid="23,8,2,1" y="30" source="cz_uiLine01"/>
+				<e:Image source="01_zhuCheng02.ty_text01" x="10" y="40"/>
+				<gui:BatchImage id="batch_force" height="30" y="43" width="200" horizontalCenter="0"/>
+			</e:Group>
+			<e:Group id="prize_wnd0" width="80" height="80" x="245" y="13"/>
+			<e:Group id="prize_wnd1" width="80" height="80" x="335" y="13"/>
+			<e:Label id="tips_txt" text="${JJC_TXT6}" y="39" height="30" width="160" style="ht_24_lc" textAlign="center" verticalAlign="middle" x="420" textColor="0xffffff"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+	<e:Group id="peerless_wnd" width="640" height="900" x="0" y="0" visible="false"/>
+	<e:Group id="group_bottom" width="600" height="88" anchorOffsetY="0" anchorOffsetX="0" bottom="18" horizontalCenter="0">
+		<e:Image source="00_tongYong01_json.ty_uiDi02" scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0" scale9Grid="21,21,3,3"/>
+		<e:Group id="group" width="240" height="51" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="0" left="10">
+		<e:RadioButton id="arena" label="${JJC_TXT1}" horizontalCenter="-263.67" bottom="66.33000000000001" x="-498" y="0" scaleX="1" scaleY="1" width="117" height="51">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_tongYongBt4" source.down="ty_tongYongBt3"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+			</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton id="peerless" label="天下第一" horizontalCenter="-171.67000000000002" bottom="72.33000000000001" x="-375" y="0" scaleX="1" scaleY="1" visible="false">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_tongYongBt4" source.down="ty_tongYongBt3"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+			</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="left" verticalAlign="middle"/>
+		</e:layout>
+		</e:Group>
+	</e:Group>
+	<gui:Button id="btn_close_top" label="" right="0" top="0">
+		<gui:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back02"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<gui:Button id="btn_close" label="" scaleX="1" scaleY="1" right="-3.96" bottom="0">
+		<gui:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back01"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+</e:Skin>

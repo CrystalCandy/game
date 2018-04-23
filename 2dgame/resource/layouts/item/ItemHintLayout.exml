@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ItemHintLayout" width="450" height="320" xmlns:e="http://ns.egret.com/eui" xmlns:gui="gui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group left="0" top="0" bottom="0" right="0">
+		<e:Image source="00_tongYong01.ty_tipsDi" scaleX="1" scaleY="1" left="0" top="0" bottom="0" right="0" scale9Grid="20,19,2,2"/>
+		<e:Group id="equip_wnd" width="450" height="320" y="0" x="0">
+			<gui:RichDisplayer id="e_name" width="150" height="30" top="20" left="35"/>
+			<e:Label id="e_force" text="" height="30" width="200" right="20" top="20" textAlign="right" style="ht_24_lc_stroke"/>
+			<e:Group id="e_box" width="80" height="80" left="35" top="60"/>
+			<gui:RichDisplayer id="e_des" width="230" height="70" x="140" y="65"/>
+			<gui:BatchImage id="e_batch" width="300" height="30" left="35" top="155"/>
+			<e:Group id="com_wnd" width="410" height="110" y="195" horizontalCenter="0">
+				<e:Image source="00_tongYong01.cz_uiLine01" scale9Grid="22,8,2,1" y="0" scaleX="1" scaleY="1" right="0" left="0"/>
+				<gui:RichDisplayer id="com_base" height="60" y="20" left="15" right="15"/>
+				<e:Image source="00_tongYong01.cz_uiLine01" scale9Grid="22,8,2,1" y="85" scaleX="1" scaleY="1" right="0" left="0"/>
+				<gui:RichDisplayer id="com_add" height="60" y="105" left="15" right="15"/>
+			</e:Group>
+			<e:Group id="role_wnd" width="410" height="110" y="195" horizontalCenter="0">
+				<e:Image source="00_tongYong01.cz_uiLine01" scale9Grid="22,8,2,1" y="0" scaleX="1" scaleY="1" right="0" left="0"/>
+				<gui:RichDisplayer id="role_base" height="80" y="20" left="15" right="15"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="item_wnd" width="450" height="320" y="0" x="0">
+			<e:Group id="i_box" width="80" height="80" left="30" top="25"/>
+			<gui:RichDisplayer id="i_des" width="300" height="60" top="35" left="130"/>
+			<e:Image source="00_tongYong01.cz_uiLine01" left="20" right="20" scale9Grid="22,8,2,1" y="120"/>
+			<gui:RichDisplayer id="i_explain" height="150" y="145" left="35" right="35"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

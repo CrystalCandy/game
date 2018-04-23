@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DailyFindBackT" width="640" height="400" xmlns:e="http://ns.egret.com/eui" xmlns:gui="gui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image scale9Grid="142,190,3,6" bottom="0" top="0" source="ty_uiDi01" left="0" right="0"/>
+	<e:Label id="title" text="${ESCORT_TIPS}" top="0" horizontalCenter="0" width="640" textAlign="center" verticalAlign="middle" height="35" style="ht_24_lc_stroke"/>
+	<e:Image scale9Grid="23,20,1,2" height="240.08" source="ty_uiDi02" anchorOffsetY="0" width="526" top="57" horizontalCenter="1"/>
+	<gui:Button id="btn_close_top" label="" top="0" right="0">
+		<gui:skinName>
+		<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="ty_bt_back02"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<gui:Button id="btn_sure" label="${RENAME_TXT4}" left="110" bottom="29">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_tongYongBt5"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+			</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<gui:Button id="btn_cancel" label="${RENAME_TXT5}" right="110" bottom="29">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_tongYongBt1"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+			</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<e:CheckBox id="cBox_1" label="" bottom="114" left="248">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_xuanZheDi01" source.down="ty_xuanZhe01"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:CheckBox>
+	<e:Label id="label_1" text="${DAILY_TIPS}" style="ht_20_lc" textColor="0x0f0b0b" left="297" bottom="122" width="174"/>
+	<e:Label id="label_des" text="" width="446" style="ht_24_lc" horizontalCenter="0" height="24" textColor="0x110e0e" verticalAlign="middle" textAlign="center" top="152"/>
+</e:Skin>

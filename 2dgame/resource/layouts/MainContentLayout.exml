@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MainContentLayout" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:gui="gui.*" xmlns:tween="egret.tween.*">
+	<w:Declarations></w:Declarations>
+	<e:Group id="map_wnd" width="132" height="104" right="0" top="50">
+		<e:Image id="map_pic" source="01_zhuCheng.zjm_diTuDi01" x="0" y="0"/>
+		<gui:RichDisplayer id="map_name" width="132" height="30" x="0" y="28"/>
+		<gui:RichDisplayer id="map_xy" width="132" height="25" bottom="12" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="preview_wnd" width="150" height="150" right="0" top="154" visible="false">
+		<gui:Button id="preview_btn" label="" left="0" y="6">
+			<gui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="zjm_gongNengKaiQi"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<e:Group id="preview_view_group" width="1" height="1" y="65" anchorOffsetX="0" anchorOffsetY="0" x="76"/>
+		<gui:AnimBox id="preview_anim_box" width="106" height="40" x="73" y="65" anchorOffsetX="53" anchorOffsetY="20"/>
+		<gui:RichDisplayer id="open_level" width="128" height="30" x="10" y="107" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Image id="preview_name_pic" source="01_zhuCheng.zjm_gongNengKaiQi02" x="-10" y="6"/>
+		<e:Label id="preview_name" text="时装" x="-23" y="15" style="ht_20_lc_stroke" width="88" height="22" textAlign="center"/>
+	</e:Group>
+	<gui:Button id="wing_rank_btn" label="" right="5" bottom="400" visible="false">
+		<gui:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="zjm_Bt31"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<e:Group id="activity_wnd" width="70" height="478" anchorOffsetX="0" anchorOffsetY="0" left="0" bottom="420">
+		<e:layout>
+			<e:VerticalLayout horizontalAlign="left" verticalAlign="bottom" gap="0"/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="func_wnd" width="70" height="160" anchorOffsetX="0" anchorOffsetY="0" left="0" bottom="445" visible="false">
+		<e:layout>
+		<e:VerticalLayout gap="0" verticalAlign="top" horizontalAlign="center"/>
+		</e:layout>
+		<gui:Button id="btn_bag" label="" x="0" y="-240" scaleX="1" scaleY="1" visible="false">
+			<gui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="zjm_Bt29"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<gui:Button id="btn_daily" label="" x="42" y="-335" scaleX="1" scaleY="1" visible="false">
+			<gui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="zjm_Bt36"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+	</e:Group>
+	<e:Group id="task_wnd" width="397" height="91" left="0" bottom="250">
+		<e:Image id="task_pic" source="01_zhuCheng.zjm_renWuKuang01" x="0" y="0"/>
+		<gui:RichDisplayer id="task_rd" width="300" height="60" x="95" y="18" anchorOffsetX="0" anchorOffsetY="0"/>
+	</e:Group>
+	<e:Group id="auto_wnd" width="120" height="105" right="4" bottom="250">
+		<e:Image id="auto_pic" source="zjm_ZiDongBt01" horizontalCenter="0" top="0"/>
+		<e:Image id="auto_tip" source="01_zhuCheng.zjm_ZiDongTiShi" left="-10" top="-25"/>
+		<gui:Button id="auto_btn" label="" bottom="0" horizontalCenter="0">
+			<gui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="zjm_Bt33"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<e:Group id="fire_wnd0" width="30" height="31" y="-15" x="50">
+		<e:Image source="01_zhuCheng.zjm_ZiDongTiShi02" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image id="fire0" source="01_zhuCheng.zjm_ZiDongTiShi03" bottom="-5" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="fire_wnd1" width="30" height="31" y="-2" x="73">
+		<e:Image source="01_zhuCheng.zjm_ZiDongTiShi02" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image id="fire1" source="01_zhuCheng.zjm_ZiDongTiShi03" bottom="-5" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="fire_wnd2" width="30" height="31" y="20" x="92">
+		<e:Image source="01_zhuCheng.zjm_ZiDongTiShi02" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image id="fire2" source="01_zhuCheng.zjm_ZiDongTiShi03" bottom="-5" horizontalCenter="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="capture_group" width="73" height="69" bottom="254" x="417">
+		<gui:Button id="capture_btn" label="" y="3" horizontalCenter="0">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="zjm_tongZhi01"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</gui:skinName>
+		</gui:Button>
+	</e:Group>
+</e:Skin>

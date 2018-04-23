@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GodEquipLayout" width="640" height="900" xmlns:e="http://ns.egret.com/eui" xmlns:gui="gui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="ty_uiDi01" scale9Grid="142,190,3,6" left="0" bottom="0" top="0" right="0"/>
+	<e:Label id="title" text="" top="0" horizontalCenter="0" width="640" textAlign="center" verticalAlign="middle" height="35" style="ht_30_lc_stroke"/>
+	<e:Image source="ty_uiDi02" bottom="18" scale9Grid="23,20,1,2" height="90" left="20" right="20"/>
+	<e:Group id="upgrade_group" width="640" height="900" x="0" y="0" anchorOffsetY="0" visible="false">
+		<e:Group width="349" height="605" horizontalCenter="0.5" top="60" anchorOffsetY="0">
+			<e:Group width="349" height="169" y="0" horizontalCenter="0">
+				<e:Image source="sz_ztBg01" horizontalCenter="0" verticalCenter="0"/>
+				<e:Group width="80" height="80" x="30" y="40">
+					<e:Image source="00_tongYong01.ty_textDi05" horizontalCenter="5" top="80"/>
+					<e:Label text="" height="30" width="100" textAlign="center" verticalAlign="middle" horizontalCenter="0" top="85"/>
+				</e:Group>
+				<e:Group width="80" height="80" y="40" x="239">
+					<e:Image source="00_tongYong01.ty_textDi05" horizontalCenter="5" top="80"/>
+					<e:Label text="" height="30" width="100" textAlign="center" verticalAlign="middle" horizontalCenter="0" top="85"/>
+				</e:Group>
+			</e:Group>
+			<e:Group width="349" height="430" y="175" horizontalCenter="0">
+				<e:Image source="00_tongYong01.ty_uiDi02" left="0" top="0" bottom="0" right="0" scale9Grid="21,22,3,2"/>
+				<e:Image source="00_tongYong01.ty_huoDeDi01" horizontalCenter="0" y="10"/>
+				<e:Label text="" y="10" height="30" width="250" horizontalCenter="0" textAlign="center" verticalAlign="middle"/>
+				<e:Image y="52" horizontalCenter="0" source="sz_text01"/>
+				<e:Image source="00_tongYong01.cz_uiLine01" y="77" scale9Grid="22,8,3,1" horizontalCenter="0" width="320"/>
+				<gui:RichDisplayer height="120" y="100" anchorOffsetX="0" anchorOffsetY="0" width="269" horizontalCenter="0"/>
+				<e:Image source="01_zhuCheng04.sz_text02" y="230" horizontalCenter="0"/>
+				<e:Image source="00_tongYong01.cz_uiLine01" y="255" scale9Grid="22,8,3,1" horizontalCenter="0" width="320"/>
+				<gui:RichDisplayer height="120" y="278" anchorOffsetX="0" anchorOffsetY="0" width="269" horizontalCenter="0"/>
+			</e:Group>
+		</e:Group>
+		<e:Group height="90" width="550" horizontalCenter="0" y="680">
+			<e:CheckBox label="" x="0" y="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="ty_xuanZheDi01" source.down="ty_xuanZhe01"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:CheckBox>
+			<e:Label text="升级重新生成所有极品属性" x="48" height="30" verticalAlign="middle" y="13" width="350" style="ht_28_lc" textColor="0x474747"/>
+			<gui:RichDisplayer width="300" height="30" x="5" y="55"/>
+			<e:Label text="获取材料" style="ht_24_lc" textColor="0x1dff00" height="30" textAlign="center" verticalAlign="middle" y="55" left="310"/>
+			<e:Rect width="100" height="2" x="308" y="83" fillColor="0x1dff00"/>
+			<gui:Button label="升级" x="432.74" y="24.85">
+				<gui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="ty_tongYongBt2"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_22_lc_stroke"/>
+					</e:Skin>
+				</gui:skinName>
+			</gui:Button>
+		</e:Group>
+		<e:Group height="90" width="550" horizontalCenter="0" y="680">
+			<e:Label text="尚未穿戴神装装备，通过以下途径获取" height="30" verticalAlign="middle" width="500" textColor="0x474747" horizontalCenter="0" top="0" style="ht_24_lc" textAlign="center"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="xilian_group" width="640" height="900" x="0" y="0" anchorOffsetY="0" visible="false">
+		<e:Group width="349" height="605" horizontalCenter="0.5" top="60" anchorOffsetY="0" x="146" y="60" scaleX="1" scaleY="1">
+			<e:Group width="349" height="169" y="0" horizontalCenter="0">
+			<e:Image horizontalCenter="0" verticalCenter="0" source="sz_ztBg02"/>
+			<e:Group width="80" height="80" y="40" horizontalCenter="0">
+				<e:Image source="00_tongYong01.ty_textDi05" horizontalCenter="5" top="80"/>
+				<e:Label text="" height="30" width="100" textAlign="center" verticalAlign="middle" horizontalCenter="0" top="85"/>
+			</e:Group>
+			</e:Group>
+			<e:Group width="349" height="430" y="175" horizontalCenter="0">
+			<e:Image source="00_tongYong01.ty_uiDi02" left="0" top="0" bottom="0" right="0" scale9Grid="21,22,3,2"/>
+			<e:Image source="00_tongYong01.ty_huoDeDi01" horizontalCenter="0" y="10"/>
+			<e:Label text="" y="10" height="30" width="250" horizontalCenter="0" textAlign="center" verticalAlign="middle"/>
+			<e:Image y="52" horizontalCenter="0" source="sz_text02"/>
+			<e:Image source="00_tongYong01.cz_uiLine01" y="77" scale9Grid="22,8,3,1" horizontalCenter="0" width="320"/>
+				<e:Group height="200" top="100" width="273" horizontalCenter="0">
+					<gui:RichDisplayer width="273" height="30" x="8" y="18"/>
+					<e:ProgressBar width="273" height="20" x="26" y="54">
+						<e:skinName>
+							<e:Skin minWidth="30" minHeight="18">
+							<e:Image scale9Grid="1,1,4,4" width="100%" height="100%" verticalCenter="0" source="sz_loadinDi01"/>
+							<e:Image id="thumb" height="100%" width="100%" source="sz_loadin01"/>
+							<e:Label id="labelDisplay" textAlign="center" verticalAlign="middle" size="15" fontFamily="Tahoma" horizontalCenter="0" verticalCenter="0" textColor="0xffffff" style="ht_24_lc_stroke"/>
+							</e:Skin>
+						</e:skinName>
+					</e:ProgressBar>
+					<gui:RichDisplayer width="273" height="30" x="18" y="28"/>
+					<e:ProgressBar width="273" height="20" x="36" y="64">
+						<e:skinName>
+						<e:Skin minWidth="30" minHeight="18">
+							<e:Image scale9Grid="1,1,4,4" width="100%" height="100%" verticalCenter="0" source="sz_loadinDi01"/>
+							<e:Image id="thumb" height="100%" width="100%" source="sz_loadin01"/>
+							<e:Label id="labelDisplay" textAlign="center" verticalAlign="middle" size="15" fontFamily="Tahoma" horizontalCenter="0" verticalCenter="0" textColor="0xffffff" style="ht_24_lc_stroke"/>
+						</e:Skin>
+						</e:skinName>
+					</e:ProgressBar>
+					<gui:RichDisplayer width="273" height="30" x="28" y="38"/>
+					<e:ProgressBar width="273" height="20" x="46" y="74">
+						<e:skinName>
+						<e:Skin minWidth="30" minHeight="18">
+							<e:Image scale9Grid="1,1,4,4" width="100%" height="100%" verticalCenter="0" source="sz_loadinDi01"/>
+							<e:Image id="thumb" height="100%" width="100%" source="sz_loadin01"/>
+							<e:Label id="labelDisplay" textAlign="center" verticalAlign="middle" size="15" fontFamily="Tahoma" horizontalCenter="0" verticalCenter="0" textColor="0xffffff" style="ht_24_lc_stroke"/>
+						</e:Skin>
+						</e:skinName>
+					</e:ProgressBar>
+					<e:layout>
+						<e:VerticalLayout/>
+					</e:layout>
+				</e:Group>
+			</e:Group>
+		</e:Group>
+		<e:Group height="105" width="550" horizontalCenter="0" y="680">
+			<gui:RichDisplayer width="137" height="30" y="0" x="80"/>
+			<e:Label text="" x="0" height="24" bottom="0" width="297"/>
+			<gui:Button label="" top="32" x="90">
+				<gui:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="ty_tongYongBt3"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</gui:skinName>
+			</gui:Button>
+			<gui:RichDisplayer width="137" height="30" y="0" x="333"/>
+			<e:Label text="" height="24" bottom="0" width="157" x="323"/>
+			<gui:Button label="" y="32" x="343">
+				<gui:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="ty_tongYongBt3"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</gui:skinName>
+			</gui:Button>
+		</e:Group>
+	</e:Group>
+	<e:Group id="cuilian_group" width="640" height="900" x="0" y="0" anchorOffsetY="0" visible="false">
+		<e:Group width="349" height="605" horizontalCenter="0.5" top="60" anchorOffsetY="0" x="146" y="60" scaleX="1" scaleY="1">
+			<e:Group width="349" height="169" y="0" horizontalCenter="0">
+			<e:Image horizontalCenter="0" verticalCenter="0" source="sz_ztBg03"/>
+			<e:Group width="80" height="80" y="40" horizontalCenter="0">
+				<e:Image source="00_tongYong01.ty_textDi05" horizontalCenter="5" top="80"/>
+				<e:Label text="" height="30" width="100" textAlign="center" verticalAlign="middle" horizontalCenter="0" top="85"/>
+			</e:Group>
+			</e:Group>
+			<e:Group width="349" height="430" y="175" horizontalCenter="0">
+			<e:Image source="00_tongYong01.ty_uiDi02" left="0" top="0" bottom="0" right="0" scale9Grid="21,22,3,2"/>
+			<e:Image source="00_tongYong01.ty_huoDeDi01" horizontalCenter="0" y="10"/>
+			<e:Label text="" y="10" height="30" width="250" horizontalCenter="0" textAlign="center" verticalAlign="middle"/>
+			<e:Image y="52" horizontalCenter="0" source="sz_text02"/>
+			<e:Image source="00_tongYong01.cz_uiLine01" y="77" scale9Grid="22,8,3,1" horizontalCenter="0" width="320"/>
+			<e:Group height="200" top="100" width="273" horizontalCenter="0">
+				<gui:RichDisplayer width="273" height="30" x="8" y="18"/>
+				<e:ProgressBar width="273" height="20" x="26" y="54">
+				<e:skinName>
+					<e:Skin minWidth="30" minHeight="18">
+					<e:Image scale9Grid="1,1,4,4" width="100%" height="100%" verticalCenter="0" source="sz_loadinDi01"/>
+					<e:Image id="thumb" height="100%" width="100%" source="sz_loadin01"/>
+					<e:Label id="labelDisplay" textAlign="center" verticalAlign="middle" size="15" fontFamily="Tahoma" horizontalCenter="0" verticalCenter="0" textColor="0xffffff" style="ht_24_lc_stroke"/>
+					</e:Skin>
+				</e:skinName>
+				</e:ProgressBar>
+				<gui:RichDisplayer width="273" height="30" x="18" y="28"/>
+				<e:ProgressBar width="273" height="20" x="36" y="64">
+				<e:skinName>
+					<e:Skin minWidth="30" minHeight="18">
+					<e:Image scale9Grid="1,1,4,4" width="100%" height="100%" verticalCenter="0" source="sz_loadinDi01"/>
+					<e:Image id="thumb" height="100%" width="100%" source="sz_loadin01"/>
+					<e:Label id="labelDisplay" textAlign="center" verticalAlign="middle" size="15" fontFamily="Tahoma" horizontalCenter="0" verticalCenter="0" textColor="0xffffff" style="ht_24_lc_stroke"/>
+					</e:Skin>
+				</e:skinName>
+				</e:ProgressBar>
+				<gui:RichDisplayer width="273" height="30" x="28" y="38"/>
+				<e:ProgressBar width="273" height="20" x="46" y="74">
+				<e:skinName>
+					<e:Skin minWidth="30" minHeight="18">
+					<e:Image scale9Grid="1,1,4,4" width="100%" height="100%" verticalCenter="0" source="sz_loadinDi01"/>
+					<e:Image id="thumb" height="100%" width="100%" source="sz_loadin01"/>
+					<e:Label id="labelDisplay" textAlign="center" verticalAlign="middle" size="15" fontFamily="Tahoma" horizontalCenter="0" verticalCenter="0" textColor="0xffffff" style="ht_24_lc_stroke"/>
+					</e:Skin>
+				</e:skinName>
+				</e:ProgressBar>
+				<e:layout>
+				<e:VerticalLayout/>
+				</e:layout>
+			</e:Group>
+				<e:Label text="" bottom="5" height="30" width="349" textAlign="center" horizontalCenter="0"/>
+			</e:Group>
+		</e:Group>
+		<e:Group height="105" width="550" horizontalCenter="0" y="680">
+			<gui:RichDisplayer width="137" height="30" y="0" x="80"/>
+			<e:Label text="" x="70" height="24" width="157" y="81"/>
+			<gui:Button label="" x="90" y="32">
+			<gui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_tongYongBt3"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</gui:skinName>
+			</gui:Button>
+			<gui:RichDisplayer width="137" height="30" y="0" x="333"/>
+			<e:Label text="" height="24" bottom="0" width="197" x="303"/>
+			<gui:Button label="" x="343" y="32">
+			<gui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_tongYongBt3"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</gui:skinName>
+			</gui:Button>
+		</e:Group>
+	</e:Group>
+	<e:Group id="left_equip_group" width="80" height="590" left="45" top="70">
+		<e:Group id="equip_wnd0" width="80" height="110" x="22" y="53" scaleX="1" scaleY="1">
+		<e:Image id="equip_bg0" source="ty_weiZhuangBei01" horizontalCenter="0" top="0"/>
+		<e:Label id="equip_lv0" text="Lv.300" horizontalCenter="0" width="80" style="ht_24_lc" bottom="0" textAlign="center" verticalAlign="middle" height="30" textColor="0xff0000"/>
+		</e:Group>
+		<e:Group id="equip_wnd1" width="80" height="110" x="32" y="63" scaleX="1" scaleY="1">
+		<e:Image horizontalCenter="0" top="0" id="equip_bg1" source="ty_weiZhuangBei03"/>
+		<e:Label text="Lv.300" horizontalCenter="0" width="80" style="ht_24_lc" bottom="0" textAlign="center" verticalAlign="middle" height="30" textColor="0xFF0000" id="equip_lv1"/>
+		</e:Group>
+		<e:Group id="equip_wnd2" width="80" height="110" x="42" y="73" scaleX="1" scaleY="1">
+		<e:Image horizontalCenter="0" top="0" id="equip_bg2" source="ty_weiZhuangBei05"/>
+		<e:Label text="Lv.300" horizontalCenter="0" width="80" style="ht_24_lc" bottom="0" textAlign="center" verticalAlign="middle" height="30" textColor="0xFF0000" id="equip_lv2"/>
+		</e:Group>
+		<e:Group id="equip_wnd3" width="80" height="110" x="52" y="83" scaleX="1" scaleY="1">
+		<e:Image horizontalCenter="0" top="0" id="equip_bg3" source="ty_weiZhuangBei07"/>
+		<e:Label text="Lv.300" horizontalCenter="0" width="80" style="ht_24_lc" bottom="0" textAlign="center" verticalAlign="middle" height="30" textColor="0xFF0000" id="equip_lv3"/>
+		</e:Group>
+		<e:Group id="equip_wnd4" width="80" height="110" x="62" y="93" scaleX="1" scaleY="1">
+		<e:Image horizontalCenter="0" top="0" id="equip_bg4" source="ty_weiZhuangBei09"/>
+		<e:Label text="Lv.300" horizontalCenter="0" width="80" style="ht_24_lc" bottom="0" textAlign="center" verticalAlign="middle" height="30" textColor="0xFF0000" id="equip_lv4"/>
+		</e:Group>
+		<e:layout>
+		<e:VerticalLayout gap="10"/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="right_equip_group" width="80" height="590" right="45" top="70">
+		<e:Group id="equip_wnd5" width="80" height="110" x="22" y="53" scaleX="1" scaleY="1">
+		<e:Image id="equip_bg5" horizontalCenter="0" top="0" source="ty_weiZhuangBei02"/>
+		<e:Label id="equip_lv5" text="Lv.300" horizontalCenter="0" width="80" style="ht_24_lc" bottom="0" textAlign="center" verticalAlign="middle" height="30" textColor="0xFF0000"/>
+		</e:Group>
+		<e:Group id="equip_wnd6" width="80" height="110" x="32" y="63" scaleX="1" scaleY="1">
+		<e:Image horizontalCenter="0" top="0" id="equip_bg6" source="ty_weiZhuangBei04"/>
+		<e:Label text="Lv.300" horizontalCenter="0" width="80" style="ht_24_lc" bottom="0" textAlign="center" verticalAlign="middle" height="30" textColor="0xFF0000" id="equip_lv6"/>
+		</e:Group>
+		<e:Group id="equip_wnd7" width="80" height="110" x="42" y="73" scaleX="1" scaleY="1">
+		<e:Image horizontalCenter="0" top="0" id="equip_bg7" source="ty_weiZhuangBei06"/>
+		<e:Label text="Lv.300" horizontalCenter="0" width="80" style="ht_24_lc" bottom="0" textAlign="center" verticalAlign="middle" height="30" textColor="0xFF0000" id="equip_lv7"/>
+		</e:Group>
+		<e:Group id="equip_wnd8" width="80" height="110" x="52" y="83" scaleX="1" scaleY="1">
+		<e:Image horizontalCenter="0" top="0" id="equip_bg8" source="ty_weiZhuangBei08"/>
+		<e:Label text="Lv.300" horizontalCenter="0" width="80" style="ht_24_lc" bottom="0" textAlign="center" verticalAlign="middle" height="30" textColor="0xFF0000" id="equip_lv8"/>
+		</e:Group>
+		<e:Group id="equip_wnd9" width="80" height="110" x="62" y="93" scaleX="1" scaleY="1">
+		<e:Image source="ty_weiZhuangBei10" horizontalCenter="0" top="0" id="equip_bg9"/>
+		<e:Label text="Lv.300" horizontalCenter="0" width="80" style="ht_24_lc" bottom="0" textAlign="center" verticalAlign="middle" height="30" textColor="0xFF0000" id="equip_lv9"/>
+		</e:Group>
+		<e:layout>
+		<e:VerticalLayout gap="10"/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="bottom_group" height="51" bottom="35" left="30" width="371">
+		<e:RadioButton id="tab0" label="${GOD_EQUIP_UPGRADE}" x="0" y="0" scaleX="1" scaleY="1" width="117" height="51">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_tongYongBt4" source.down="ty_tongYongBt3"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+			</e:Skin>
+		</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton id="tab1" label="${GOD_EQUIP_XILIAN}" x="0" y="0" width="117" height="51">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_tongYongBt4" source.down="ty_tongYongBt3"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+			</e:Skin>
+		</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton id="tab2" label="${GOD_EQUIP_CUILIAN}" x="0" y="0" width="117" height="51">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_tongYongBt4" source.down="ty_tongYongBt3"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+			</e:Skin>
+		</e:skinName>
+		</e:RadioButton>
+		<e:layout>
+		<e:HorizontalLayout gap="10" paddingLeft="0" horizontalAlign="center" verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+	<gui:Button id="btn_close" label="" right="0" bottom="12">
+		<gui:skinName>
+		<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="ty_bt_back01"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<gui:Button id="btn_close_top" label="" top="0" right="0">
+		<gui:skinName>
+		<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="ty_bt_back02"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+</e:Skin>

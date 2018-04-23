@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ChatDisplaySelectLayout" width="590" height="680" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:gui="gui.*">
+	<e:Image source="00_tongYong03.ty_UIDi01" width="590" height="680" scale9Grid="70,64,5,7" horizontalCenter="0" verticalCenter="0" locked="true"/>
+	<e:Group width="590" height="680" horizontalCenter="0" verticalCenter="0">
+		<e:Group width="540" height="500" x="25" y="90">
+			<e:Image source="00_tongYong03.ty_UIBg02" x="0" y="0" width="540" height="500" scale9Grid="21,17,1,1" locked="true"/>
+			<e:Scroller id="pet_scroller" width="520" height="500" y="0" scaleX="1" scaleY="1" x="10">
+				<e:Group id="pet_wnd" y="64" x="46" anchorOffsetY="0">
+					<e:layout>
+						<e:TileLayout horizontalGap="2" paddingLeft="1" paddingTop="5" requestedColumnCount="4"/>
+					</e:layout>
+				</e:Group>
+			</e:Scroller>
+			<e:Scroller id="item_scroller" width="520" height="500" y="0" scaleX="1" scaleY="1" x="10">
+				<e:Group id="item_wnd" y="64" x="46" anchorOffsetY="0">
+					<e:layout>
+						<e:TileLayout horizontalGap="10" verticalGap="10" paddingLeft="20" paddingTop="10" requestedColumnCount="5"/>
+					</e:layout>
+				</e:Group>
+			</e:Scroller>
+		</e:Group>
+		<e:Group width="540" height="64" x="25" y="30">
+			<e:Image source="00_tongYong03.ty_UIBg06" x="0" y="0" scaleX="1" scaleY="1" width="540" height="64" scale9Grid="15,12,1,1" locked="true"/>
+			<e:Group width="519" height="50" bottom="0" anchorOffsetX="0" x="11">
+				<e:RadioButton id="tab1" label="${ROLE_TXT1}" x="131" y="30" width="129" height="50">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="ty_tongYongBt05" source.down="ty_tongYongBt04"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+						</e:Skin>
+					</e:skinName>
+				</e:RadioButton>
+				<e:RadioButton id="tab2" label="${ITEM_TXT10}" x="141" y="40" width="129" height="50">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="ty_tongYongBt05" source.down="ty_tongYongBt04"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+						</e:Skin>
+					</e:skinName>
+				</e:RadioButton>
+				<e:RadioButton id="tab3" label="${ITEM_TXT9}" x="151" y="50" width="129" height="50">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="ty_tongYongBt05" source.down="ty_tongYongBt04"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+						</e:Skin>
+					</e:skinName>
+				</e:RadioButton>
+				<e:RadioButton id="tab4" label="${ITEM_TXT8}" x="161" y="60" width="129" height="50">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="ty_tongYongBt05" source.down="ty_tongYongBt04"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+						</e:Skin>
+					</e:skinName>
+				</e:RadioButton>
+				<e:layout>
+					<e:HorizontalLayout gap="1"/>
+				</e:layout>
+			</e:Group>
+		</e:Group>
+		<gui:Button id="btn_close_top" label="" right="0" top="-10" locked="true">
+			<gui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_bt_back02"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<gui:Button id="btn_close" label="" right="0" bottom="0" locked="true">
+			<gui:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_bt_back04"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+	</e:Group>
+</e:Skin>

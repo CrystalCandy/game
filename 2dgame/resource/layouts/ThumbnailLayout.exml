@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ThumbnailLayout" width="640" height="770" xmlns:e="http://ns.egret.com/eui" xmlns:gui="gui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="ty_UIDi01" scale9Grid="65,49,20,20" left="0" right="0" top="0" bottom="0"/>
+	<gui:Button id="btn_close_top" label="" right="0" top="0">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back02"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<gui:Button id="btn_close" label="" right="0" bottom="0">
+		<gui:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back04"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<e:Image source="00_tongYong01.ty_biaoTiHuaWen01" y="8" horizontalCenter="0"/>
+	<e:Label id="label_title" text="地图" y="20" anchorOffsetX="0" width="208" textAlign="center" style="ht_title_font" textColor="0xfcfaf9" horizontalCenter="0"/>
+	<e:Scroller width="583" height="590" x="32" y="78" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Group id="group_scroll">
+		<e:Image id="thumbnail" source="dt_zt_shengDi" x="2" y="2" scaleX="1" scaleY="1"/>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

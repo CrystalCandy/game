@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopLayout" width="640" height="900" xmlns:e="http://ns.egret.com/eui" xmlns:gui="gui.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="00_tongYong01.ty_uiDi01" scale9Grid="142,190,3,6" left="1" bottom="1" top="-1" right="-1"/>
+	<e:Label id="title" text="仙侣商店" top="0" horizontalCenter="0" width="640" textAlign="center" verticalAlign="middle" height="35" style="ht_24_lc_stroke"/>
+	<e:Group height="50" left="40" right="40" top="45">
+		<e:Image source="00_tongYong01.ty_textDi02" left="0" right="0" top="0" bottom="0" scale9Grid="25,25,2,3"/>
+		<e:Group id="group_richang" width="334.67" height="32" anchorOffsetY="0" anchorOffsetX="0" left="12" verticalCenter="0">
+			<e:Label id="label_2" text="${SHOP_HAD_TXT6}" scaleX="1" scaleY="1" verticalAlign="middle" textAlign="left" width="132" style="ht_20_lc_stroke" height="20" verticalCenter="0" left="6"/>
+			<gui:RichDisplayer id="rd_1" width="170" height="20" left="132" verticalCenter="1">
+				<e:Rect height="2" fillColor="0x7cf931" strokeColor="0x7cf931" y="20" left="0" right="0"/>
+			</gui:RichDisplayer>
+			<e:Label id="label_1" text="${SHOP_HAD_TXT7}" scaleX="1" scaleY="1" verticalAlign="middle" textAlign="left" width="132" style="ht_20_lc_stroke" height="20" verticalCenter="0" left="295"/>
+		</e:Group>
+		<gui:RichDisplayer id="rd_limit" height="20" left="14" width="332" verticalCenter="0">
+		</gui:RichDisplayer>
+		<gui:RichDisplayer id="rd_access" width="80" height="20" anchorOffsetY="0" verticalCenter="0" y="10.999999999999993" scaleX="1" scaleY="1" left="258">
+			<e:Rect height="2" fillColor="0x5fef26" strokeColor="0x5fef26" width="80" horizontalCenter="0" y="20"/>
+		</gui:RichDisplayer>
+		<gui:RichDisplayer id="rd_had" height="20" anchorOffsetY="0" verticalCenter="0" y="10.999999999999993" scaleX="1" scaleY="1" right="13" width="166"/>
+	</e:Group>
+	<e:Group id="group_equip" left="40" right="40" top="102" anchorOffsetY="0" bottom="112" visible="false">
+		<e:Image source="17_shangDian.sd_biaoQianDi01" scale9Grid="15,30,2,3" left="0" bottom="0" top="0" width="156" anchorOffsetX="0"/>
+		<e:Image source="00_tongYong01.ty_uiDi02" left="147" right="0" bottom="0" top="0" scale9Grid="20,20,3,3"/>
+		<e:Group id="equip_shop" width="155" top="0" left="0" height="686">
+		</e:Group>
+		<e:Group id="equip_shop_scroll" width="393" height="666" horizontalCenter="73.5" top="10">
+		</e:Group>
+	</e:Group>
+	<e:Group id="group_tempcell" left="29" right="29" top="102" anchorOffsetY="0" bottom="112" width="590" anchorOffsetX="0">
+		<e:Image source="00_tongYong01.ty_uiDi02" bottom="0" top="0" scale9Grid="21,21,2,2" left="0" right="0"/>
+		<e:Group id="group_scroll" top="0" height="670" width="560" horizontalCenter="0" anchorOffsetY="0"/>
+	</e:Group>
+	<e:Image source="00_tongYong01.ty_uiDi02" bottom="20" scale9Grid="23,20,1,2" height="85" left="23" right="23"/>
+	<e:Group id="bottom_group" height="51" bottom="35" left="35" width="498">
+		<e:RadioButton id="tab1" label="商店1" x="0" y="0" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_tongYongBt4" source.down="ty_tongYongBt3"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton id="tab2" label="商店2" x="0" y="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_tongYongBt4" source.down="ty_tongYongBt3"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton id="tab3" label="商店3" x="0" y="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_tongYongBt4" source.down="ty_tongYongBt3"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton id="tab4" label="商店4" x="0" y="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ty_tongYongBt4" source.down="ty_tongYongBt3"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:layout>
+		<e:HorizontalLayout gap="10" paddingLeft="0" horizontalAlign="center" verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+	<gui:Button id="btn_close" label="" right="0" bottom="13">
+		<gui:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back01"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<gui:Button id="btn_close_top" label="" top="0" right="0">
+		<gui:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back02"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	
+</e:Skin>

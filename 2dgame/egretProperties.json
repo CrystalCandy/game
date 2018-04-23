@@ -1,0 +1,56 @@
+{
+	"native": {
+		"path_ignore": [],
+		"android_path": "H5GameAndroidApp"
+	},
+	"publish": {
+		"web": 0,
+		"native": 1,
+		"path": "bin-release"
+	},
+	"egret_version": "5.0.12",
+	"modules": [
+		{
+			"name": "egret"
+		},
+		{
+			"name": "game"
+		},
+		{
+			"name": "eui"
+		},
+		{
+			"name": "res"
+		},
+		{
+			"name": "tween"
+		},
+		{
+			"name": "socket"
+		},
+		{
+			"name": "dragonBones",
+			"path": "./libs/dragonBones5.1"
+		},
+		{
+			"name": "promise",
+			"path": "./libs/promise"
+		},
+		{
+			"name": "engine2d",
+			"path": "./libs/engine2d"
+		},
+		{
+			"name": "stringformat",
+			"path": "./libs/stringformat"
+		},
+		{
+			"name": "jszip",
+			"path": "./libs/jszip"
+		},
+		{
+			"name": "particle",
+			"path": "./libs/particle"
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{"file":"xiangjing02_die.png","frames":{
+"die_3_body_00":{"x":0,"y":325,"w":119,"h":100,"offX":101,"offY":120,"sourceW":320,"sourceH":320},
+"die_3_body_01":{"x":150,"y":162,"w":87,"h":142,"offX":100,"offY":69,"sourceW":320,"sourceH":320},
+"die_3_body_02":{"x":0,"y":0,"w":147,"h":115,"offX":122,"offY":177,"sourceW":320,"sourceH":320},
+"die_7_body_00":{"x":0,"y":117,"w":119,"h":117,"offX":108,"offY":108,"sourceW":320,"sourceH":320},
+"die_7_body_01":{"x":149,"y":0,"w":87,"h":160,"offX":131,"offY":63,"sourceW":320,"sourceH":320},
+"die_7_body_02":{"x":0,"y":236,"w":148,"h":87,"offX":49,"offY":142,"sourceW":320,"sourceH":320}}}

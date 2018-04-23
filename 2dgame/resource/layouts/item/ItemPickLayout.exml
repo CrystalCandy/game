@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ItemPickLayout" width="620" height="800" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:gui="gui.*">
+	<e:Image width="100%" height="100%" scale9Grid="66,70,1,1" source="ty_UIDi01" horizontalCenter="0" verticalCenter="0"/>
+	<gui:Button id="Btn_Return" label="" bottom="8" right="6">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back04"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+	<gui:Button id="Btn_Submit" label="${CONFIRM_INFO}" y="647" scaleX="1" scaleY="1" horizontalCenter="0" width="171" height="85">
+		<e:skinName>
+		<e:Skin states="up,down,disabled" xmlns:gui="gui.*" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="ty_tongYongBt01"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_28_lc_stroke" textAlign="center" verticalAlign="middle" textColor="0xffffff"/>
+		</e:Skin>
+		</e:skinName>
+	</gui:Button>
+	<gui:Button id="Btn_Clear" label="${TASK_EDIT_QUIT}" x="428" y="650" width="84">
+		<e:skinName>
+		<e:Skin states="up,down,disabled" xmlns:gui="gui.*" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="ty_tongYongBt06"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_20_lc_stroke"/>
+		</e:Skin>
+		</e:skinName>
+	</gui:Button>
+	<e:Group id="Group_Tab" width="521" height="64" x="37" y="30" anchorOffsetX="0" anchorOffsetY="0">
+		<e:RadioButton id="Btn_Tab_0" label="${MAIN_TXT19}" x="6" y="6">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_tongYongBt05" source.down="ty_tongYongBt04"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton label="${MAIN_TXT19}" x="132.66666666666666" y="6" id="Btn_Tab_1">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_tongYongBt05" source.down="ty_tongYongBt04"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton label="${MAIN_TXT19}" x="259.3333333333333" y="6" id="Btn_Tab_2">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_tongYongBt05" source.down="ty_tongYongBt04"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton label="${MAIN_TXT19}" x="386" y="6" id="Btn_Tab_3">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_tongYongBt05" source.down="ty_tongYongBt04"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:RadioButton>
+	</e:Group>
+	<e:Group id="Group_One_Tab" width="546" height="64" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-2.5" y="30">
+		<e:Image width="100%" height="100%" x="0" y="0" source="ty_UIBg06" scale9Grid="10,12,10,4"/>
+		<e:Label id="Label_One_Title" text="${MAIN_TXT19}" y="11" anchorOffsetX="0" width="448" anchorOffsetY="0" height="37" style="ht_24_lc_stroke" verticalAlign="middle" textAlign="center" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="Group_Panel" width="550" height="505" y="81" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-1.5">
+		<e:Image source="ty_UIBg02" x="0" y="0" width="100%" height="553" scale9Grid="20,17,1,1" anchorOffsetY="0"/>
+		<e:Label id="Label_Tips" text="" x="3" y="507" anchorOffsetX="0" width="526" anchorOffsetY="0" height="31" textAlign="center" verticalAlign="middle" style="ht_20_lc_stroke"/>
+		<e:Scroller width="100%" height="541" horizontalCenter="0" verticalCenter="18" anchorOffsetY="0">
+			<e:List id="scroller_list" itemRendererSkinName="itemRender.ItemPickLineLayout" anchorOffsetY="0"/>
+		</e:Scroller>
+	</e:Group>
+	<gui:Button id="Btn_Close" label="" right="0" top="0">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_bt_back02"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+</e:Skin>

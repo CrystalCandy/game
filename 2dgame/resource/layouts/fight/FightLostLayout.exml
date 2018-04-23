@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FightPrizeLayout" width="640" height="660" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:gui="gui.*">
+	<e:Image height="600" scale9Grid="325,112,9,11" width="640" y="60" x="0" source="ty_uiDi08"/>
+	<e:Image width="175" height="108" y="23" source="zd_bai" horizontalCenter="0"/>
+	<e:Label id="label_title" text="你可以尝试通过以下方式变强" y="180" anchorOffsetX="0" width="400" textAlign="center" horizontalCenter="0" textColor="0x91553f" style="ht_24_lc" bold="true"/>
+	<e:Group id="btn_group" width="480" height="130" y="270" x="80">
+		<gui:Button id="shouchong_btn" label="" width="70" height="80" x="10" scaleX="1" scaleY="1" verticalCenter="0">
+			<gui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="zjm_Bt27"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+			</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<gui:Button id="chongwu_btn" label="" width="108" height="107" x="120" scaleX="1" scaleY="1" verticalCenter="0">
+			<gui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="zjm_Bt24"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+			</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<gui:Button id="zhuangbei_btn" label="" width="87" height="83" x="250" scaleX="1" scaleY="1" verticalCenter="0">
+			<gui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="zjm_Bt13"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+			</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+		<gui:Button id="skill_btn" label="" width="88" height="77" x="380" scaleX="1" scaleY="1" verticalCenter="0">
+			<gui:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="hb_Bt04"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+			</e:Skin>
+			</gui:skinName>
+		</gui:Button>
+	</e:Group>
+	<gui:Button id="exit_btn" label="退出" y="545" horizontalCenter="0">
+		<gui:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ty_tongYongBt1"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" style="ht_24_lc_stroke"/>
+			</e:Skin>
+		</gui:skinName>
+	</gui:Button>
+</e:Skin>
